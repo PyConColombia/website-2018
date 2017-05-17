@@ -1,0 +1,95 @@
+
+.header-content
+	background #382092
+	background -moz-radial-gradient(center, ellipse cover, #382092 0%, #430786 100%)
+	background -webkit-radial-gradient(center, ellipse cover, #382092 0%,#430786 100%)
+	background radial-gradient(ellipse at center, #382092 0%,#430786 100%)
+	background-attachment fixed
+
+	.background-content
+		padding 100px 0 25px
+
+		&:after
+			background-attachment fixed
+			mix-blend-mode color-dodge
+			transform rotate(-5deg)
+
+		&:before
+			background-attachment fixed
+			mix-blend-mode soft-light
+			transform rotate(10deg)
+
+	.logo
+		background url(images/logo.svg) center center no-repeat
+		background-size contain
+		height 220px
+		margin 0 auto 57px
+		width 485px
+
+	.date
+		color color-white
+		font-size 23px
+		font-weight regular
+		line-height 1.2
+		margin-bottom 75px
+		text-align center
+
+	.social-icons-container
+		margin-bottom 105px
+		text-align center
+		position relative
+		z-index 1
+
+		.social-icon
+			background center center no-repeat
+			background-size contain
+			display inline-block
+			height 28px
+			margin 0 10px
+			width 28px
+
+			&.social-twitter
+				background-image url(images/social-twitter.svg)
+			&.social-facebook
+				background-image url(images/social-facebook.svg)
+			&.social-instagram
+				background-image url(images/social-instagram.svg)
+			&.social-medium
+				background-image url(images/social-medium.svg)
+
+
+/*@media screen and (max-width: 992px)*/
+
+@media screen and (max-width: 768px)
+	.header-content
+		background-attachment initial
+
+		.background-content
+			padding 75px 0 70px
+
+			&:after
+				background-attachment initial
+				transform rotate(0deg)
+
+			&:before
+				background-attachment initial
+				transform rotate(0deg)
+
+		.logo
+			height 165px
+			margin 0 auto 43px
+			width 80%
+
+		.date
+			font-size 18px
+			line-height 1.2
+			margin-bottom 57px
+
+		.social-icons-container
+			margin-bottom 79px
+
+			.social-icon
+				height 28px
+				margin 0 8px
+				width 28px
+
