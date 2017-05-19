@@ -314,6 +314,11 @@ a {
   top: 900px;
   right: -270px;
 }
+.layout-home {
+  height: 700px;
+  overflow: hidden;
+  background: #430786;
+}
 @media screen and (max-width: 992px) {
   .vector-img {
     transform: scale(0.5, 0.5);
