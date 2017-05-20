@@ -55,18 +55,18 @@
   background: -moz-radial-gradient(center, ellipse cover, #382092 0%, #430786 100%);
   background: -webkit-radial-gradient(center, ellipse cover, #382092 0%, #430786 100%);
   background: radial-gradient(ellipse at center, #382092 0%, #430786 100%);
-  background-attachment: fixed;
+/*background-attachment fixed*/
 }
 .header-content .background-content {
   padding: 100px 0 25px;
 }
 .header-content .background-content:after {
-  background-attachment: fixed;
+/*background-attachment fixed*/
   mix-blend-mode: color-dodge;
   transform: rotate(-5deg);
 }
 .header-content .background-content:before {
-  background-attachment: fixed;
+/*background-attachment fixed*/
   mix-blend-mode: soft-light;
   transform: rotate(10deg);
 }
@@ -150,18 +150,18 @@
   background: -moz-linear-gradient(-45deg, #00dbcf 0%, #6b59ef 100%);
   background: -webkit-linear-gradient(-45deg, #00dbcf 0%, #6b59ef 100%);
   background: linear-gradient(135deg, #00dbcf 0%, #6b59ef 100%);
-  background-attachment: fixed;
+/*background-attachment fixed*/
 }
 .subscribe-content .background-content {
   padding: 255px 0 500px;
 }
 .subscribe-content .background-content:after {
-  background-attachment: fixed;
+/*background-attachment fixed*/
   mix-blend-mode: color-dodge;
   transform: rotate(5deg);
 }
 .subscribe-content .background-content:before {
-  background-attachment: fixed;
+/*background-attachment fixed*/
   mix-blend-mode: soft-light;
   transform: rotate(-10deg);
 }
@@ -313,11 +313,6 @@ a {
 .vector-img.small-right {
   top: 900px;
   right: -270px;
-}
-.layout-home {
-  height: 700px;
-  overflow: hidden;
-  background: #430786;
 }
 @media screen and (max-width: 992px) {
   .vector-img {
