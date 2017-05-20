@@ -178,6 +178,20 @@
   text-align: center;
   z-index: 1;
 }
+.subscribe-content .form-container .validation-message {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  position: absolute;
+  top: -35px;
+  width: 100%;
+}
+.subscribe-content .form-container .validation-message.success-message {
+  color: #fff;
+}
+.subscribe-content .form-container .validation-message.error-message {
+  color: #ff0;
+}
 .subscribe-content .form-container .form-input {
   background: #fff;
   border: none;
@@ -313,6 +327,9 @@ a {
 .vector-img.small-right {
   top: 900px;
   right: -270px;
+}
+input {
+  outline: none !important;
 }
 @media screen and (max-width: 992px) {
   .vector-img {
