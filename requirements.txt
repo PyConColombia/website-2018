@@ -6,4 +6,3 @@ Jinja2==2.9.6
 MarkupSafe==0.23
 pastedeploy==1.5.2 
 Werkzeug==0.12.2
-#wsgiref
