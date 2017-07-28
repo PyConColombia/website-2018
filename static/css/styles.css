@@ -216,7 +216,15 @@
   margin: 0 7px;
   text-transform: none;
   width: 133px;
+  vertical-align: top;
 }
+.subscribe-content .mc-field-group {
+    display: inline-block;
+}
+.subscribe-content .mce_inline_error{
+    border-radius: 50px;
+}
+
 @media screen and (max-width: 768px) {
   .subscribe-content {
     background-attachment: initial;
