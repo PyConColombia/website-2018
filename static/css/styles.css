@@ -231,7 +231,7 @@
 }
 .subscribe-content .form-container .validation-message{
     position: relative !important;
-    top: 0px !important;
+    top: 5px !important;
     width: 50% !important;
     margin: 0 auto;
 }
