@@ -249,9 +249,12 @@
     font-size: 27px;
     margin: 0 auto 52px;
   }
+  .subscribe-content .form-container .mc-field-group {
+    width: 55%;
+  }
   .subscribe-content .form-container .form-input {
     height: 35px;
-    width: 55%;
+    width: 100%;
   }
   .subscribe-content .form-container .form-btn {
     height: 35px;
