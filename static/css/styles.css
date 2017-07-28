@@ -229,6 +229,12 @@
     color: #e85c41  !important;
     background-color: inherit !important;
 }
+.subscribe-content .form-container .validation-message{
+    position: relative !important;
+    top: 0px !important;
+    width: 50% !important;
+    margin: 0 auto;
+}
 
 @media screen and (max-width: 768px) {
   .subscribe-content {
@@ -259,6 +265,9 @@
   .subscribe-content .form-container .form-btn {
     height: 35px;
     width: 30%;
+  }
+  .subscribe-content .form-container .validation-message{
+    width: 100% !important;
   }
 }
 * {
