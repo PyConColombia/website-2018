@@ -221,8 +221,13 @@
 .subscribe-content .mc-field-group {
     display: inline-block;
 }
-.subscribe-content .mce_inline_error{
-    border-radius: 50px;
+.subscribe-content input.mce_inline_error{
+    color: #e85c41 !important;
+    border: 2px solid #e85c41 !important;
+}
+.subscribe-content div.mce_inline_error{
+    color: #e85c41  !important;
+    background-color: inherit !important;
 }
 
 @media screen and (max-width: 768px) {
