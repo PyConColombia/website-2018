@@ -259,12 +259,14 @@
     width: 55%;
   }
   .subscribe-content .form-container .form-input {
+    margin-top: 15px;
     height: 35px;
     width: 100%;
   }
   .subscribe-content .form-container .form-btn {
+    margin-top: 15px;
     height: 35px;
-    width: 30%;
+    width: 55%;
   }
   .subscribe-content .form-container .validation-message{
     width: 100% !important;
