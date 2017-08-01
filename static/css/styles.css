@@ -216,7 +216,26 @@
   margin: 0 7px;
   text-transform: none;
   width: 133px;
+  vertical-align: top;
 }
+.subscribe-content .mc-field-group {
+    display: inline-block;
+}
+.subscribe-content input.mce_inline_error{
+    color: #e85c41 !important;
+    border: 2px solid #e85c41 !important;
+}
+.subscribe-content div.mce_inline_error{
+    color: #e85c41  !important;
+    background-color: inherit !important;
+}
+.subscribe-content .form-container .validation-message{
+    position: relative !important;
+    top: 5px !important;
+    width: 50% !important;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 768px) {
   .subscribe-content {
     background-attachment: initial;
@@ -236,13 +255,21 @@
     font-size: 27px;
     margin: 0 auto 52px;
   }
+  .subscribe-content .form-container .mc-field-group {
+    width: 55%;
+  }
   .subscribe-content .form-container .form-input {
+    margin-top: 15px;
+    height: 35px;
+    width: 100%;
+  }
+  .subscribe-content .form-container .form-btn {
+    margin-top: 15px;
     height: 35px;
     width: 55%;
   }
-  .subscribe-content .form-container .form-btn {
-    height: 35px;
-    width: 30%;
+  .subscribe-content .form-container .validation-message{
+    width: 100% !important;
   }
 }
 * {
