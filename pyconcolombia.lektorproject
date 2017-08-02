@@ -1,0 +1,13 @@
+[project]
+name = pyconcolombia
+url = http://pycon.co
+
+[alternatives.en]
+name = English
+primary = yes
+locale = en
+
+[alternatives.es]
+name = Español
+url_prefix = /es/
+locale = es

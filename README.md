@@ -7,11 +7,11 @@ This site is currently a minimal Flask app serving a single template.
 There are 2 branches, `develop` and `production`.
 
 ## Develop
-Default branch is develop and is deployed with Heroku to http://staging.pycon.co
+Default branch is develop and is deployed with gh-pages via Lektor to http://staging.pycon.co
 
 ## Production
 After test have been carried out by the QA Team, the changes from `develop`
-will be merged in `production` and deployed with Heroku to http://pycon.co
+will be merged in `production` and deployed gh-pages via Lektor to http://pycon.co
 and http://2018.pycon.co
 
 # Run locally (Unix)
