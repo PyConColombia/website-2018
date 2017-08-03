@@ -10,10 +10,10 @@ install:
 script: "lektor build"
 deploy:
   - provider: script
-    script: "lektor deploy staging"
+    script: "lektor deploy staging --password ${LEKTOR_DEPLOY_PASSWORD}"
     on:
        branch: develop
   - provider: script
-    script: "lektor deploy production"
+    script: "lektor deploy production --password ${LEKTOR_DEPLOY_PASSWORD}"
     on:
        branch: production
