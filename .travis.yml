@@ -10,7 +10,7 @@ install:
 script: "lektor build"
 deploy:
   - provider: script
-    script: "lektor deploy staging --password ${LEKTOR_DEPLOY_PASSWORD}"
+    script: "lektor deploy staging --username ${LEKTOR_DEPLOY_PASSWORD} --password ${LEKTOR_DEPLOY_PASSWORD}"
     on:
        branch: develop
   - provider: script
