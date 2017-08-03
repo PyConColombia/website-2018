@@ -1,3 +1,8 @@
+{% from "macros/translation.html" import transbag %}
+{% set t_place = transbag('translate', this.alt, 'place') %}
+{% set t_date = transbag('translate', this.alt, 'date') %}
+{% set t_description = transbag('translate', this.alt, 'description') %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,26 +10,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <meta name="description"
-    content="PyCon Colombia 2018 will be the second national conference for users and developers of the Python programming language. This year it will be in Bogotá, Colombia from February 9 to 12.">
-
+    <meta name="description" content="{{ t_description }}">
     <meta property="og:site_name" content="PyCon Colombia"/>
-    <meta property="og:title" content="PyCon Colombia | February 9th - 12th 2018 | Bogotá, Colombia"/>
-    <meta property="og:description"
-    content="PyCon Colombia 2018 will be the second national conference for users and developers of the Python programming language. This year it will be in Bogotá, Colombia from February 9 to 12."/>
-    <meta property="og:image" content="http://pycon.co/static/images/opimage.png">
-    <meta property="og:url" content="http://pycon.co/">
+    <meta property="og:title" content="PyCon Colombia | {{ t_date }} | {{ t_place }}"/>
+    <meta property="og:description"content="{{ t_description }}"/>
+    <meta property="og:image" content="https://pycon.co/static/images/opimage.png">
+    <meta property="og:url" content="https://www.pycon.co/">
     <meta property="og:type" content="website"/>
-
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@pyconcolombia">
-    <meta name="twitter:creator" content="@soyelhijo">
-    <meta name="twitter:title" content="PyCon Colombia | February 10th - 11th 2017 | Bogotá, Colombia">
-    <meta name="twitter:description"
-    content="PyCon Colombia 2017 will be the first national conference for users and developers of the Python programming language. This year it will be held at Universidad Santo Tomás from February 10-11.">
+    <meta name="twitter:title" content="PyCon Colombia | {{ t_date }} | {{ t_place }}">
+    <meta name="twitter:description" content="{{ t_description }}">
     <meta name="twitter:image" content="http://pycon.co/static/images/opimage.png">
 
-    <title>PyCon Colombia | February 10th - 11th 2017 | Bogotá, Colombia</title>
+    <title>PyCon Colombia | {{ t_date }} | {{ t_place }}</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="../static/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../static/favicon/apple-icon-60x60.png">
@@ -48,7 +47,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-
     <!-- CSS -->
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -62,7 +60,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="../static/js/libs/wow.js"></script>
     <script src="../static/js/libs/dialog-polyfill.js"></script>
-    
 
     <script>
       $(document).ready(function() {
@@ -81,7 +78,7 @@
 
             <div class="background-content">
               <div class="logo"></div>
-              <div class="date">Bogota - Colombia<br>February 9 - 12 2018</div>
+              <div class="date">{{ t_place }}<br>{{ t_date }}</div>
               <div class="social-icons-container">
                 <a href="https://www.twitter.com/pyconcolombia" target="blank"><div class="social-icon social-twitter"></div></a>
                 <a href="https://www.facebook.com/pyconcolombia" target="blank"><div class="social-icon social-facebook"></div></a>
