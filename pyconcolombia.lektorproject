@@ -14,8 +14,8 @@ locale = es
 
 [servers.staging]
 name = Staging
-target = target = ghpages://your-user/your-repository?cname=www.example.com
+target = ghpages+https://pyconcolombia/website-staging?cname=develop.pycon.co
 
 [servers.production]
 name = Production
-target = target = ghpages://your-user/your-repository?cname=www.example.com
+target = ghpages+https://pyconcolombia/website-production?cname=pycon.co
