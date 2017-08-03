@@ -18,4 +18,4 @@ target = ghpages+https://pyconcolombia/website-staging?cname=develop.pycon.co
 
 [servers.production]
 name = Production
-target = ghpages+https://pyconcolombia/website-production?cname=pycon.co
+target = ghpages+https://pyconcolombia/website-production?cname=www.pycon.co
