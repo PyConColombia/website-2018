@@ -71,7 +71,7 @@
   transform: rotate(10deg);
 }
 .header-content .logo {
-  background: url("images/logo.svg") center center no-repeat;
+  background: url("../images/logo.svg") center center no-repeat;
   background-size: contain;
   height: 220px;
   margin: 0 auto 57px;
@@ -100,16 +100,16 @@
   width: 28px;
 }
 .header-content .social-icons-container .social-icon.social-twitter {
-  background-image: url("images/social-twitter.svg");
+  background-image: url("../images/social-twitter.svg");
 }
 .header-content .social-icons-container .social-icon.social-facebook {
-  background-image: url("images/social-facebook.svg");
+  background-image: url("../images/social-facebook.svg");
 }
 .header-content .social-icons-container .social-icon.social-instagram {
-  background-image: url("images/social-instagram.svg");
+  background-image: url("../images/social-instagram.svg");
 }
 .header-content .social-icons-container .social-icon.social-medium {
-  background-image: url("images/social-medium.svg");
+  background-image: url("../images/social-medium.svg");
 }
 @media screen and (max-width: 768px) {
   .header-content {
@@ -328,10 +328,10 @@ a {
   z-index: 0;
 }
 .background-content:after {
-  background-image: url("images/plus-background-blue.svg");
+  background-image: url("../images/plus-background-blue.svg");
 }
 .background-content:before {
-  background-image: url("images/plus-background-white.svg");
+  background-image: url("../images/plus-background-white.svg");
 }
 .vector-img {
   mix-blend-mode: color-dodge;
