@@ -14,11 +14,12 @@ last_name: Peña-Castellanos
 ---
 name: Gonzalo
 ---
-category: Organizer
+category: Co-Organizer
 ---
-information: I am currently the Technical Lead for the Anaconda Navigator project working with Continuum Analytics and a core developer for the Scientific PYthon Development EnviRonment - Spyder, and related projects (QtPy, QtAwesome, Conda-Manager).
----
-summary:
+information:
 
 I am a Water Resources Engineer with B.S. in Civil Engineering, an MSc. in Hydroinformatics and an MSc. in Sanitary Engineering. Since 2009, Gonzalo has been working with the Python language and it's scientific computing stack to solve problems related to Hydrology (Stochastic Downdscaling of Precipitation), Hydraulics (River dynamics modelling) and Water Quality (Biological Reactors Simulation).
 
+I am currently the Technical Lead for the Anaconda Navigator project working with Continuum Analytics and a core developer for the Scientific PYthon Development EnviRonment - Spyder, and related projects (QtPy, QtAwesome, Conda-Manager).
+---
+summary: Water Resources. Sustainable development. Open Source. Python. Spyder developer @spyder_ide . Navigator Tech Lead @continuumio Project Engineer @sihsaco
