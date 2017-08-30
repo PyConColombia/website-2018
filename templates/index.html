@@ -66,33 +66,47 @@
     {% include '_googleanalytics.html' %}
   </head>
   <body>
-    <div class="container-fluid header-content">
-      <div class="background-content">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="logo"></div>
-            <div class="date">{{ t_place }}<br>{{ t_date }}</div>
-          </div>
-          <div class="col-md-12">
-            <div class="social-icons-container">
-              <a href="https://www.twitter.com/pyconcolombia" target="blank"><div class="social-icon social-twitter"></div></a>
-              <a href="https://www.facebook.com/pyconcolombia" target="blank"><div class="social-icon social-facebook"></div></a>
-              <!--<a href="https://www.twitter.com/pyconcolombia"><div class="social-icon social-instagram"></div></a>-->
-              <a href="https://www.medium.com/@pyconcolombia" target="blank"><div class="social-icon social-medium"></div></a>
+    <div class="body-container">
+      <img src="/static/images/graph-big-left.png" class="vector-img big-left">
+      <img src="/static/images/graph-big-right.png" class="vector-img big-right">
+      <img src="/static/images/graph-small-left.png" class="vector-img small-left">
+      <img src="/static/images/graph-small-right.png" class="vector-img small-right">
+      <div class="container-fluid header-content">
+        <div class="background-content">
+          <div class="row">
+            <div class="col-md-offset-0 col-md-12 col-sm-offset-0 col-sm-12 col-xs-offset-0 col-xs-12">
+              <div class="logo"></div>
+            </div>
+            <div class="col-md-12">
+              <div class="date">{{ t_place }}<br>{{ t_date }}</div>
+            </div>
+            <div class="col-md-12">
+              <div class="social-icons-container">
+                <a href="https://www.twitter.com/pyconcolombia" target="blank"><div class="social-icon social-twitter"></div></a>
+                <a href="https://www.facebook.com/pyconcolombia" target="blank"><div class="social-icon social-facebook"></div></a>
+                <!--<a href="https://www.twitter.com/pyconcolombia"><div class="social-icon social-instagram"></div></a>-->
+                <a href="https://www.medium.com/@pyconcolombia" target="blank"><div class="social-icon social-medium"></div></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container-fluid subscribe-content">
-      <div class="background-content">
-        <div class="row">
-          <div class="col-md-offset-2 col-md-8">
-            {% include '_mailchimp.html' %}
+      <div class="container-fluid container-no-padding subscribe-content">
+        <div class="background-content">
+          <div class="row">
+            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+              {% include '_mailchimp.html' %}
+            </div>
           </div>
         </div>
       </div>
+      <div class="container-fluid container-no-padding header-content">
+        <div class="row">
+          <div class="col-md-12">
+          </div>
+        </div>
+      </div>
+      <img class="hidden" src="/static/images/opimage.jpg" />
     </div>
-    <img class="hidden" src="/static/images/opimage.jpg" />
   </body>
 </html>
