@@ -5940,6 +5940,8 @@ footer-content {
 
 @media screen and (max-width: 768px) {
   .vector-img {
+    display: none; }
+  .speaker-job {
     display: none; } }
 
 .header-content .date {
@@ -6032,7 +6034,6 @@ footer-content {
   font-size: 14px;
   font-weight: 400;
   height: 40px;
-  margin: 0 7px;
   padding: 0 17px;
   width: 100%; }
 
@@ -6103,14 +6104,17 @@ input {
 .speaker {
   border: 4px solid #2bb6da;
   position: relative;
-  width: 324px;
-  height: 324px;
+  max-width: 324px;
+  height: auto;
   margin: 20px;
   display: table;
   margin-left: auto;
   margin-right: auto;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s; }
+  .speaker p {
+    padding-top: 10px;
+    font-size: 1.5em; }
   .speaker:hover {
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
@@ -6118,8 +6122,9 @@ input {
 
 .speaker-image {
   position: relative;
-  width: 320px;
-  height: 320px;
+  display: block;
+  max-width: 100%;
+  height: auto;
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
@@ -6134,7 +6139,7 @@ input {
 
 .speaker-social {
   position: absolute;
-  top: 220px;
+  top: 200px;
   width: 100%;
   text-align: center; }
 
@@ -6142,7 +6147,7 @@ input {
   color: #fff;
   position: absolute;
   text-shadow: 0.1em 0.1em 0.2em black;
-  top: 235px;
+  top: 220px;
   left: 0;
   width: 100%;
   magin: auto;
