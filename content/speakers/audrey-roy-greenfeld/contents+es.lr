@@ -1,6 +1,8 @@
-id: audrey-roy-greenfeld
+employer: Two Scoops Academy
 ---
 github_handle: audreyr
+---
+image: audreyroygreenfeld.png
 ---
 information:
 
@@ -18,12 +20,8 @@ last_name: Roy Greenfeld
 ---
 name: Audrey
 ---
+position: Instructora Senior
+---
 summary: Creator of Python/JS/CSS open-source libraries. Coauthor of Two Scoops of Django. Painter, sculptor, artist.
 ---
 twitter_handle: audreyr
----
-employer: Two Scoops Academy
----
-position: Senior  Instructor
----
-image: audreyroygreenfeld.png

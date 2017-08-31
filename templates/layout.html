@@ -2,7 +2,8 @@
 {%- set t_place = transbag('translate', this.alt, 'place') -%}
 {%- set t_date = transbag('translate', this.alt, 'date') -%}
 {%- set t_description = transbag('translate', this.alt, 'description') -%}
-
+{%- set t_footer_contact = transbag('translate', this.alt, 'footer_contact') -%}
+{%- set t_footer_copyright = transbag('translate', this.alt, 'footer_copyright') -%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -105,12 +106,12 @@
             <div class="col-md-12">
               <div class="social-icons-container">
                 <!-- | <a href="https://www.twitter.com/pyconcolombia" target="blank">Code of Conduct</a> | -->
-                <p>| Copyright © 2017 Python Colombia. All Rights Reserved. | <a href="mailto:hello@pycon.co">Contact us</a> |</p>
+                <p>{{ t_footer_copyright }} | <a href="mailto:hello@pycon.co">{{ t_footer_contact }}</a></p>
                 <br>
-                <a href="https://www.twitter.com/pyconcolombia" target="blank"><div class="social-icon social-twitter"></div></a>
-                <a href="https://www.facebook.com/pyconcolombia" target="blank"><div class="social-icon social-facebook"></div></a>
-                <!--<a href="https://www.twitter.com/pyconcolombia"><div class="social-icon social-instagram"></div></a>-->
-                <a href="https://www.medium.com/@pyconcolombia" target="blank"><div class="social-icon social-medium"></div></a>
+                <a href="https://www.twitter.com/pyconcolombia" target="blank"><div class="social-icon icon-twitter"></div></a>
+                <a href="https://www.facebook.com/pyconcolombia" target="blank"><div class="social-icon icon-facebook"></div></a>
+                <!--<a href="https://www.twitter.com/pyconcolombia"><div class="social-icon icon-instagram"></div></a>-->
+                <a href="https://www.medium.com/@pyconcolombia" target="blank"><div class="social-icon icon-medium"></div></a>
               </div>
             </div>
           </div>

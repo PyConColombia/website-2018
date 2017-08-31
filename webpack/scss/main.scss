@@ -3,10 +3,10 @@
 @import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 /* html tags styling */
+
 body {
   font-family: 'Maven Pro', 'Helvetica', 'Arial', sans-serif;
 }
-
 
 @include selection {
   color: white;
@@ -94,7 +94,6 @@ body {
 
 }
 
-
 footer-content {
   margin-top: 100px;
   margin-bottom: 50px;
@@ -147,7 +146,6 @@ footer-content {
   }
 }
 
-
 .header-content .date {
   color: #fff;
   font-size: 23px;
@@ -166,7 +164,8 @@ footer-content {
   color: #fff;
 }
 
-.social-icons-container .social-icon {
+/* Icons */
+.social-icon {
   background: center center no-repeat;
   background-size: contain;
   display: inline-block;
@@ -175,36 +174,21 @@ footer-content {
   width: 28px;
 }
 
-
-
-
-.social-icons-container .social-icon.social-twitter {
+.icon-twitter {
   background-image: url("/static/images/social-twitter.svg");
 }
 
-.social-icons-container .social-icon.social-facebook {
+.icon-facebook {
   background-image: url("/static/images/social-facebook.svg");
 }
 
-.social-icons-container .social-icon.social-instagram {
+.icon-instagram {
   background-image: url("/static/images/social-instagram.svg");
 }
 
-.social-icons-container .social-icon.social-medium {
+.icon-medium {
   background-image: url("/static/images/social-medium.svg");
 }
-
-
-
-
-.subscribe-content {
-  background: #00dbcf;
-  background: -moz-linear-gradient(-45deg, #00dbcf 0%, #6b59ef 100%);
-  background: -webkit-linear-gradient(-45deg, #00dbcf 0%, #6b59ef 100%);
-  background: linear-gradient(135deg, #00dbcf 0%, #6b59ef 100%);
-/*background-attachment fixed*/
-}
-
 
 .subscribe-content .background-content:after {
 /*background-attachment fixed*/
@@ -223,7 +207,7 @@ footer-content {
   color: #fff;
   font-size: 37px;
   font-weight: 400;
-  margin: 0 auto 70px;
+  margin: 0 auto 35px;
   text-align: center;
 }
 
@@ -231,7 +215,7 @@ footer-content {
   color: #382092;
   font-size: 37px;
   font-weight: 400;
-  margin: 0 auto 70px;
+  margin: 0 auto 35px;
   text-align: center;
 }
 
@@ -339,6 +323,7 @@ input {
 */
 
 
+/* Speakers */
 $default-transition-duration: 0.5s;
 
 .speaker {
@@ -373,23 +358,17 @@ $default-transition-duration: 0.5s;
 
 .speaker-social{
   position: absolute; 
-  top: 200px;
+  top: 220px;
   width: 100%; 
   text-align: center;
-  
-  a {
-    color: #000;
-  &:hover {
-    color:#400e89;
-  }
-  }
+
 }
 
 .speaker-details {
   color:#fff;
   position: absolute; 
   text-shadow: 0.1em 0.1em 0.2em black;
-  top: 230px;
+  top: 235px;
   left: 0; 
   width: 100%; 
   magin: auto;
@@ -397,34 +376,12 @@ $default-transition-duration: 0.5s;
   pointer-events:none;
 }
 
-.icon-social {
-  color: #ff0;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-}
 
-.icon-social-twitter {
-  color: #f00;
-  width: 40px;
-  height: 40px;
-  background: center center no-repeat;
-  background-image: url("/static/images/social-twitter.svg");
+.mini-logo {
+  background: url("/static/images/logo-mini.svg") center center no-repeat;
   background-size: contain;
-  display: inline-block;
-  
-
+  height: 80px;
+  width: 80px;
+  display: table;
+  margin:auto;
 }
-
-.social-icons-container .social-icon.social-facebook {
-  background-image: url("/static/images/social-facebook.svg");
-}
-
-.social-icons-container .social-icon.social-instagram {
-  background-image: url("/static/images/social-instagram.svg");
-}
-
-.social-icons-container .social-icon.social-medium {
-  background-image: url("/static/images/social-medium.svg");
-}
-

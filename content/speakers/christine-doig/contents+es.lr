@@ -1,12 +1,8 @@
-id: christine-doig
+employer: Anacoda, Inc
 ---
 github_handle: chdoig
 ---
-keynote: yes
----
-last_name: Doig Cardet
----
-name: Christine
+image: chdoig.jpg
 ---
 information:
 
@@ -20,12 +16,14 @@ Speaker and trainer at many Open Source conferences, including PyCon, EuroPython
 
 M.S. in Industrial Engineering from the Polytechnic University of Catalonia in Barcelona. Master Thesis at RWTH Aachen, Germany. Lived in three different countries (U.S., Spain and Germany) and proficient in four languages (English, Spanish, Catalan and German). Love traveling and movies.
 ---
+keynote: yes
+---
+last_name: Doig Cardet
+---
+name: Christine
+---
+position: Científica de Datos
+---
 summary: Senior Data Scientist @AnacondaInc. Python, R, Open Source, Education, Travel, Indie Films. DREAMER.
 ---
 twitter_handle: ch_doig
----
-image: chdoig.jpg
----
-employer: Anacoda, Inc
----
-position: Data Scientist
