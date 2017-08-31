@@ -1,6 +1,138 @@
 {% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
 
-{% block body %}
-{% include '_mailchimp.html' %}
-{% endblock body %}
+        {% block banner_text %}
+        <div class="section-container">
+          <div class="row">
+            <div class="col-md-offset-0 col-md-12 col-sm-offset-0 col-sm-12 col-xs-offset-0 col-xs-12">
+              <div class="logo"></div>
+            </div>
+            <div class="col-md-12">
+              <div class="date">{{ t_place }}<br>{{ t_date }}</div>
+            </div>
+          </div>
+        </div>
+        {% endblock %}
+
+{% block content %}
+      <!-- Keynote Speakers Section -->
+      <div class="container-fluid keynote-section">
+        <div class="section-container">        
+          <div class="row">
+            <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+              {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote) %}
+              <h1 class="section-title-light">Keynote Speakers</h1>
+              <div class="row">            
+                {% for speaker in speakers %}
+                <div class="col-md-6">
+                  <div class="speaker">
+                    {% if speaker.image %}
+                    <img class="speaker-image" src="{{speaker|url}}/{{ speaker.image }}" />
+                    {% endif %}
+                    <div class="speaker-social">
+                      <a href="https://www.twitter.com/{{ speaker.twitter_handle }}" target="blank"><div class="icon-social-twitter"></div></a>
+                    </div>
+                    <div class="speaker-details">
+                      <h3>{{ speaker.name }} {{ speaker.last_name }}</h3>
+                      <h5>{{ speaker.position }} at {{ speaker.employer }}</h5>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Speakers & Workshops Section -->
+      <div class="container-fluid light-section">
+        <div class="section-container">        
+          <div class="row">          
+            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+              <h1 class="section-title">Speakers & Workshops</h1>
+              <div class="mini-logo"></div>
+              <h2 class="text-center">Tell us what is your conference or workshop about</h2>
+              <p class="text-center">We know the spekaers are key to the success of a conference</p>
+              <div class="mini-logo"></div>
+              <h2 class="text-center">What do speakers get?</h2>
+              <ul>
+                <li>Full conference pass</li>
+                <li>The opportunity to impact the lives of over a hundred developers</li>
+                <li>1 additional free conference ticket</li>
+                <li>Speakers dinner and excellent time in the city</li>
+                <li>Possibility to apply for flights and accommodation aid based on available budget</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location Section -->
+      <div class="container-fluid dark-section">
+        <div class="section-container">
+          <div class="row">
+            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+              <div class="row">
+                <div class="col-md-12">
+                    <h1 class="section-title">Venue & Location</h1>
+                </div>
+                <div class="col-md-6">
+                    <h2>Universidad EAFIT</h2>
+                    <p>Some building</p>
+                    <br>
+                    <h4>Address</h4>
+                    <p>Medellin, Colombia</p>
+                    <br>
+                </div>
+                <div class="col-md-6">
+                  <br>
+                  <div class="map-container">
+                    <div id="map">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subscribe Section -->
+      <div class="container-fluid light-section">
+        <div class="section-container">
+          <div class="row">
+            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+              {% include '_mailchimp.html' %}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endblock %}      
+
+    {% block footer_scripts %}
+    <script>
+      function initMap() {
+        var eafit = {lat: 6.200305, lng: -75.578563};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: eafit,
+          zoomControl: true,
+          mapTypeControl: false,
+          scaleControl: false,
+          streetViewControl: false,
+          rotateControl: false,
+          fullscreenControl: false,
+        });
+        var marker = new google.maps.Marker({
+          position: eafit,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZ9l3uCiqVBn6egBt-aJQGbBaVRQDuGNA&callback=initMap">
+    </script>
+   {% endblock %}
