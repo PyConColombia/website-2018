@@ -70,10 +70,10 @@
                 <div class="col-md-6">
                   <div class="speaker">
                     {% if speaker.image %}
-                    <img class="speaker-image" src="/speakers/{{ speaker._id }}/{{ speaker.image }}" />
+                    <img class="speaker-image" id="speaker-image-link-{{ loop.index }}" src="/speakers/{{ speaker._id }}/{{ speaker.image }}" />
                     {% endif %}
                     <div class="speaker-social">
-                      <a href="https://www.twitter.com/{{ speaker.twitter_handle }}" target="blank"><div class="social-icon icon-twitter"></div></a>
+                      <a id="link-{{ loop.index }}" class="social-hover" href="https://www.twitter.com/{{ speaker.twitter_handle }}" target="blank"><div class="social-icon icon-twitter"></div></a>
                     </div>
                     <div class="speaker-details">
                       <p>{{ speaker.name }} {{ speaker.last_name }}</p>
@@ -158,4 +158,16 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZ9l3uCiqVBn6egBt-aJQGbBaVRQDuGNA&callback=initMap">
     </script>
-   {% endblock %}
+
+    <script>
+    $( "a.social-hover" ).hover(
+      function() {
+        $("#speaker-image-" + this.id).toggleClass("hovered");
+      },
+      function() {
+        $("#speaker-image-" + this.id).toggleClass("hovered");
+      }
+    );
+    </script>
+{% endblock %}
+   

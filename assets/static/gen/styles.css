@@ -6137,6 +6137,13 @@ input {
     /* Safari 6.0 - 9.0 */
     filter: grayscale(0%); }
 
+.hovered {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%); }
+
 .speaker-social {
   position: absolute;
   top: 200px;

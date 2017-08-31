@@ -365,6 +365,12 @@ $default-transition-duration: 0.5s;
   }
 }
 
+.hovered {
+  @include transition-duration($default-transition-duration);
+  @include filter-grayscale(0%)
+}
+
+
 .speaker-social {
   position: absolute; 
   top: 200px;
