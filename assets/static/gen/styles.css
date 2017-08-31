@@ -5878,10 +5878,6 @@ body {
   background: -webkit-radial-gradient(center, ellipse cover, #222 0%, #111 100%);
   background: radial-gradient(ellipse at center, #222 0%, #111 100%); }
 
-.section-container {
-  padding-top: 100px;
-  padding-bottom: 100px; }
-
 .header-content .background-content {
   padding-top: 50px; }
   .header-content .background-content:after {
@@ -6070,13 +6066,16 @@ div.mce_inline_error {
 input {
   outline: none; }
 
-/*
-.background-content {
+.section-container {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.stars {
   overflow: hidden;
-  position: relative;
-}
-.background-content:after,
-.background-content:before {
+  position: relative; }
+
+.stars:after,
+.stars:before {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6086,20 +6085,18 @@ input {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 0;
-}
+  z-index: 99; }
 
-
-
-/
-.background-content:after {
+.stars:after {
   background-image: url("/static/images/plus-background-blue.svg");
-}
-.background-content:before {
-  background-image: url("/images/plus-background-white.svg");
-}
+  mix-blend-mode: color-dodge;
+  transform: rotate(-5deg); }
 
-*/
+.stars:before {
+  background-image: url("/images/plus-background-white.svg");
+  mix-blend-mode: color-dodge;
+  transform: rotate(10deg); }
+
 /* Speakers */
 .speaker {
   border: 4px solid #2bb6da;
@@ -6136,6 +6133,13 @@ input {
     -webkit-filter: grayscale(0%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(0%); }
+
+.hovered {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%); }
 
 .speaker-social {
   position: absolute;
