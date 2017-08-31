@@ -72,3 +72,14 @@
   ::-ms-selection { @content; }
   ::-webkit-selection { @content; }  // For Webkit
 }
+
+@mixin filter-grayscale($percent) {
+  -webkit-filter: grayscale($percent); /* Safari 6.0 - 9.0 */
+  filter: grayscale($percent);
+}
+
+
+@mixin transition-duration($duration) {
+  transition-duration: $duration;
+  -webkit-transition-duration: $duration; /* Safari */
+}

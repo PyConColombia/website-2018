@@ -1,29 +1,124 @@
-<!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/css/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — pyconcolombia</title>
-<body>
-  <header>
-    <h1>pyconcolombia</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/projects', 'Projects'],
-          ['/about', 'About']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </header>
-  <div class="page">
-    {% block body %}{% endblock %}
-  </div>
-  <footer>
-    &copy; Copyright 2017 by Gonzalo Pena-Castellanos.
-  </footer>
-</body>
+{%- from "macros/translation.html" import transbag -%}
+{%- set t_place = transbag('translate', this.alt, 'place') -%}
+{%- set t_date = transbag('translate', this.alt, 'date') -%}
+{%- set t_description = transbag('translate', this.alt, 'description') -%}
+{%- set t_footer_contact = transbag('translate', this.alt, 'footer_contact') -%}
+{%- set t_footer_copyright = transbag('translate', this.alt, 'footer_copyright') -%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="{{ t_description }}">
+    <meta property="og:site_name" content="PyCon Colombia"/>
+    <meta property="og:title" content="PyCon Colombia | {{ t_date }} | {{ t_place }}"/>
+    <meta property="og:description"content="{{ t_description }}"/>
+    <meta property="og:image" content="https://www.pycon.co/static/images/opimage.png">
+    <meta property="og:url" content="https://www.pycon.co/">
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@pyconcolombia">
+    <meta name="twitter:title" content="PyCon Colombia | {{ t_date }} | {{ t_place }}">
+    <meta name="twitter:description" content="{{ t_description }}">
+    <meta name="twitter:image" content="https://www.pycon.co/static/images/opimage.png">
+
+    <title>PyCon Colombia | {{ t_date }} | {{ t_place }}</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/static/favicon/android-icon-192x192.png">
+    <link rel="manifest" href="/static/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/static/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/gen/styles.css">
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/a2d4f0e306.js"></script>
+
+    <!-- Google analytics -->
+    {% include '_googleanalytics.html' %}
+
+    {% block header_scripts %}{% endblock %}
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <img src="/static/images/graph-big-left.png" class="vector-img big-left">
+      <img src="/static/images/graph-big-right.png" class="vector-img big-right">
+      <img src="/static/images/graph-small-left.png" class="vector-img small-left">
+      <img src="/static/images/graph-small-right.png" class="vector-img small-right">
+
+      <div class="container-fluid header-content">
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="{{ '/'|url(alt=this.alt) }}">PyCon Colombia</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                {% if this.alt == 'en' %}
+                <li><a href="{{ '.'|url(alt='es') }}">Español</a></li>
+                {% else %}
+                <li><a href="{{ '.'|url(alt='en') }}">English</a></li>        
+                {% endif %}
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        {% block banner_text %}
+        {% endblock %}
+      </div>
+
+      {% block content %}{% endblock %}
+
+      <!-- Footer Section -->
+      <footer>
+        <div class="container-fluid black-section">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="social-icons-container">
+                <!-- | <a href="https://www.twitter.com/pyconcolombia" target="blank">Code of Conduct</a> | -->
+                <p>{{ t_footer_copyright }} | <a href="mailto:hello@pycon.co">{{ t_footer_contact }}</a></p>
+                <br>
+                <a href="https://www.twitter.com/pyconcolombia" target="blank"><div class="social-icon icon-twitter"></div></a>
+                <a href="https://www.facebook.com/pyconcolombia" target="blank"><div class="social-icon icon-facebook"></div></a>
+                <!--<a href="https://www.twitter.com/pyconcolombia"><div class="social-icon icon-instagram"></div></a>-->
+                <a href="https://www.medium.com/@pyconcolombia" target="blank"><div class="social-icon icon-medium"></div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <img class="hidden" src="/static/images/opimage.jpg" />
+    </div>
+    {% block footer_scripts %}{% endblock %}
+  </body>
+</html>
