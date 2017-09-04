@@ -10,6 +10,10 @@
 {%- set t_speakers_3 = transbag('translate', this.alt, 'speakers_3') -%}
 {%- set t_speakers_4 = transbag('translate', this.alt, 'speakers_4') -%}
 {%- set t_speakers_5 = transbag('translate', this.alt, 'speakers_5') -%}
+{%- set t_apply_talk = transbag('translate', this.alt, 'apply_talk') -%}
+{%- set t_apply_workshop = transbag('translate', this.alt, 'apply_workshop') -%}
+
+{%- set event = site.get('/event', alt=this.alt) -%}
 
 {% extends "layout.html" %}
 
@@ -29,7 +33,7 @@
 {% block content %}
       <!-- Speakers & Workshops Section -->
       <div class="container-fluid light-section">
-        <div class="section-container stars">        
+        <div class="section-container">        
           <div class="row">          
             <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
               <h1 class="section-title">{{ t_speakers_workshops }}</h1>
@@ -51,6 +55,21 @@
                     <li>{{ t_speakers_4 }}</li>
                     <li>{{ t_speakers_5 }}</li>
                   </ul>
+                </div>
+              </div>
+              <br />
+              <div class="row">  
+                <div class="col-md-6">
+                  <a href="https://www.papercall.io/pycon-colombia-2018" class="btn btn-success btn-lg btn-block center-block">
+                    {{ t_apply_talk }} &nbsp;<i class="fa fa-bullhorn fa-1x"></i>
+                  </a>
+                  <br />
+                </div>
+                <div class="col-md-6">
+                  <a href="https://www.papercall.io/pycon-colombia-2018-workshop" class="btn btn-danger btn-lg btn-block center-block">
+                    {{ t_apply_workshop }} &nbsp;<i class="fa fa-suitcase fa-1x"></i>
+                  </a>
+                  <br />
                 </div>
               </div>
             </div>
@@ -100,11 +119,11 @@
                     <h1 class="section-title">{{ t_venue_location }}</h1>
                 </div>
                 <div class="col-md-6">
-                    <h2>Universidad EAFIT</h2>
-                    <p>Edificio X y Z</p>
+                    <h2>{{ event.name }}</h2>
+                    <p>{{ event.rooms }}</p>
                     <br>
-                    <h4>Cra. 49</h4>
-                    <p>{{ t_place }}</p>
+                    <h4>{{ event.address }}</h4>
+                    <p>{{ event.location }}</p>
                     <br>
                 </div>
                 <div class="col-md-6">
@@ -138,7 +157,7 @@
     {% block footer_scripts %}
     <script>
       function initMap() {
-        var eafit = {lat: 6.200305, lng: -75.578563};
+        var eafit = {lat: {{ event.latitude }}, lng: {{ event.longitude }} };
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: eafit,
