@@ -4,6 +4,7 @@
 {%- set t_description = transbag('translate', this.alt, 'description') -%}
 {%- set t_footer_contact = transbag('translate', this.alt, 'footer_contact') -%}
 {%- set t_footer_copyright = transbag('translate', this.alt, 'footer_copyright') -%}
+{%- set t_code_of_conduct = transbag('translate', this.alt, 'code_of_conduct') -%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -105,8 +106,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="social-icons-container">
-                <!-- | <a href="https://www.twitter.com/pyconcolombia" target="blank">Code of Conduct</a> | -->
-                <p>{{ t_footer_copyright }} | <a href="mailto:hello@pycon.co">hello@pycon.co</a></p>
+                <p>{{ t_footer_copyright }} | <a href="{{ '/code-of-conduct'|url(alt=this.alt) }}">{{ t_code_of_conduct }}</a> | <a href="mailto:hello@pycon.co">hello@pycon.co</a></p>
                 <br>
                 <a href="https://www.twitter.com/pyconcolombia" target="blank"><div class="social-icon icon-twitter"></div></a>
                 <a href="https://www.facebook.com/pyconcolombia" target="blank"><div class="social-icon icon-facebook"></div></a>
