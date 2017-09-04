@@ -81,7 +81,7 @@
       <div class="container-fluid keynote-section">
         <div class="section-container">        
           <div class="row">
-            <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+        <div class="container">
               {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote) %}
               <h1 class="section-title-light">{{ t_keynote_speakers }}</h1>
               <div class="row">            
