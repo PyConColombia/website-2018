@@ -1,8 +1,8 @@
-_model: talks
+_slug: ponencias
 ---
 _template: page.html
 ---
-title: Talks & Workshops
+title: Ponencias y Talleres
 ---
 body:
 

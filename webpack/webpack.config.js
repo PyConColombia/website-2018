@@ -23,27 +23,28 @@ module.exports = {
   },
   module: {
    rules: [
-      {
-       test: /\.css$/,
-       use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
-        })
-      },
+    {
+      test: /\.(woff(2)?|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,    //to support @font-face rule 
+      loader: "url-loader",
+      query:{
+        limit:'10000',
+        name:'[name].[ext]',
+        outputPath:'fonts/'
+        //the fonts will be emmited to public/assets/fonts/ folder 
+        //the fonts will be put in the DOM <style> tag as eg. @font-face{ src:url(assets/fonts/font.ttf); } 
+      }
+    },
+    {
+      test: /\.css$/,
+      loaders: ["style-loader","css-loader"]
+    },
+
       {
        test: /\.scss$/,
        use: ExtractTextPlugin.extract({
           fallback: "style-loader",
           use: "css-loader!sass-loader"
         })
-      },
-      {
-       test: /\.(woff2?|ttf|eot|svg|png|jpe?g|gif)$/,
-       use: [
-         {
-           loader: 'file',
-         }
-        ]
       },
       {
         test: /\.jsx$/,
