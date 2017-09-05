@@ -206,6 +206,14 @@ footer-content {
   background-image: url("/static/images/social-medium.svg");
 }
 
+.icon-github {
+  background-image: url("/static/images/social-github.svg");
+}
+
+.icon-website {
+  background-image: url("/static/images/social-website.svg");
+}
+
 .subscribe-content .background-content:after {
 /*background-attachment fixed*/
   mix-blend-mode: color-dodge;
@@ -489,6 +497,11 @@ $default-transition-duration: 0.5s;
 
 }
 @media (min-width: 767px) and (max-width: 992px ) {
+
+.banner-image {
+    max-height: 400px;
+}
+
 .section-venue {
   text-align:center;
 }
@@ -507,6 +520,11 @@ $default-transition-duration: 0.5s;
 }
 @media (min-width: 992px ) {
   
+  
+  .banner-image {
+    max-height: 500px;
+}
+
   .carousel-inner > .item.next,
   .carousel-inner > .item.active.right {
       left: 0;
@@ -520,4 +538,38 @@ $default-transition-duration: 0.5s;
       transform: translate3d(-25%, 0, 0);
   }
   
+}
+
+
+
+.banner {
+    overflow: hidden;
+    position: relative;
+    margin: 0 -30px;
+}
+
+.banner img {
+    position: relative;
+    margin: -10% auto;/* virtualy height needed turn don to zero */
+    width: 100%;
+    height:auto;
+    vertical-align:middle;
+    mix-blend-mode: luminosity;
+}
+
+.banner-image {
+    display:block;
+    overflow:hidden;
+}
+
+.banner-text {
+  color:#fff;
+  position: absolute; 
+  text-shadow: 0.1em 0.1em 0.2em black;
+  bottom: 60px;
+  left: 0; 
+  width: 100%; 
+  magin: auto;
+  text-align: center;
+  pointer-events:none;
 }

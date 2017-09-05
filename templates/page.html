@@ -1,16 +1,14 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block banner_text %}
-<div class="section-container stars">
-  <div class="row">
-    <div class="col-md-offset-0 col-md-12 col-sm-offset-0 col-sm-12 col-xs-offset-0 col-xs-12">
-      <div class="logo-{{ this.alt }}"></div>
-    </div>
-    <div class="col-md-12">
-      <div class="text-center">
-        <h2>{{ this.title }}</h2>
+<div class="container-fluid">
+  <div class="banner">
+    <div class="banner-image">
+      <img src="/{{ this._id }}/{{ this.banner }}" class="banner"/>
+      <div class="banner-text">
+        <h1>{{ this.title }}</h1>
       </div>
-    </div>
+  </div>
   </div>
 </div>
 {% endblock %}
