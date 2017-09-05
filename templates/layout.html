@@ -5,6 +5,16 @@
 {%- set t_footer_contact = transbag('translate', this.alt, 'footer_contact') -%}
 {%- set t_footer_copyright = transbag('translate', this.alt, 'footer_copyright') -%}
 {%- set t_code_of_conduct = transbag('translate', this.alt, 'code_of_conduct') -%}
+
+{%- macro menu_item(identifier) -%}
+  {% set identifier_url = '/' + identifier %}
+  {% set trans_url = identifier_url|url(alt=this.alt) %}
+  {% set this_is_child = this.is_child_of(identifier_url) %}
+  <li class="{% if this_is_child %}active{% endif %}">
+    <a class="nav-link" href="{{ trans_url }}">{{ transbag('menu', this.alt, identifier) }}</a>
+  </li>
+{%- endmacro -%}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -80,10 +90,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="{{ '/'|url(alt=this.alt) }}">PyCon Colombia</a>
+              <ul class="nav navbar-nav">
+                <li class="{% if this|url == './' or this|url == '../es/' %}active{% endif %}"><a class="navnavbar-nav navbar-brand" href="{{ '/'|url(alt=this.alt) }}">PyCon Colombia</a></li>
+              </ul>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                {{ menu_item('venue') }}
+                {{ menu_item('speakers') }}
+                {{ menu_item('talks') }}
+                {{ menu_item('sponsors') }}
+                {{ menu_item('volunteers') }}
+              </ul>
               <ul class="nav navbar-nav navbar-right">
                 {% if this.alt == 'en' %}
                 <li><a href="{{ '.'|url(alt='es') }}">Español</a></li>

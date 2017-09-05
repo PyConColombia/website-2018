@@ -13,7 +13,8 @@
 {%- set t_apply_talk = transbag('translate', this.alt, 'apply_talk') -%}
 {%- set t_apply_workshop = transbag('translate', this.alt, 'apply_workshop') -%}
 {%- set t_sponsors = transbag('translate', this.alt, 'sponsors') -%}
-
+{%- set t_more_info = transbag('translate', this.alt, 'more_info') -%}
+{%- set t_apply_sponsor = transbag('translate', this.alt, 'apply_sponsor') -%}
 {%- set event = site.get('/event', alt=this.alt) -%}
 
 {% extends "layout.html" %}
@@ -134,8 +135,16 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <a href="{{ '/venue'|url(alt=this.alt) }}" class="btn btn-danger btn-lg btn-block center-block">
+                    {{ t_more_info }}
+                  </a>
+                </div>
               </div>
-              <br />
               <br />
               <br />
             </div>
@@ -153,6 +162,13 @@
               <div class="row">            
                 {% for sponsor in sponsors %}
                 {% endfor %}
+              </div>
+              <div class="row">            
+                <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8">
+                  <a href="{{ '/sponsors'|url(alt=this.alt) }}" class="btn btn-success btn-lg btn-block center-block">
+                    {{ t_apply_sponsor }}!
+                  </a>
+                </div>
               </div>
             </div>
           </div>
