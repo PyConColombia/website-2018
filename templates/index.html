@@ -12,6 +12,7 @@
 {%- set t_speakers_5 = transbag('translate', this.alt, 'speakers_5') -%}
 {%- set t_apply_talk = transbag('translate', this.alt, 'apply_talk') -%}
 {%- set t_apply_workshop = transbag('translate', this.alt, 'apply_workshop') -%}
+{%- set t_sponsors = transbag('translate', this.alt, 'sponsors') -%}
 
 {%- set event = site.get('/event', alt=this.alt) -%}
 
@@ -21,7 +22,7 @@
         <div class="section-container stars">
           <div class="row">
             <div class="col-md-offset-0 col-md-12 col-sm-offset-0 col-sm-12 col-xs-offset-0 col-xs-12">
-              <div class="logo"></div>
+              <div class="logo-{{ this.alt }}"></div>
             </div>
             <div class="col-md-12">
               <div class="date">{{ t_place }}<br>{{ t_date }}</div>
@@ -102,7 +103,7 @@
                     </div>
                   </div>
                 </div>
-              {% endfor %}
+                {% endfor %}
               </div>
             </div>
           </div>
@@ -137,6 +138,22 @@
               <br />
               <br />
               <br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sponsors Section -->
+      <div class="container-fluid keynote-section">
+        <div class="section-container">        
+          <div class="row">
+            <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+              {% set speakers = site.query('/sponsors', alt=this.alt) %}
+              <h1 class="section-title-light">{{ t_sponsors }}</h1>
+              <div class="row">            
+                {% for sponsor in sponsors %}
+                {% endfor %}
+              </div>
             </div>
           </div>
         </div>

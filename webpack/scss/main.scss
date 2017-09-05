@@ -78,14 +78,24 @@ body {
     }
   }
 
-  .logo {
-    background: url("/static/images/logo.svg") center center no-repeat;
+  .logo-en {
+    background: url("/static/images/logo_plain.svg") center center no-repeat;
     background-size: contain;
     height: 220px;
     margin: 0 auto 57px;
     width: 485px;
     width: 100%;
   }
+
+  .logo-es {
+    background: url("/static/images/logo_plain_es.svg") center center no-repeat;
+    background-size: contain;
+    height: 220px;
+    margin: 0 auto 57px;
+    width: 485px;
+    width: 100%;
+  }
+
 
 }
 
