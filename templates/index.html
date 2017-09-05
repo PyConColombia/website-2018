@@ -15,7 +15,7 @@
 {%- set t_sponsors = transbag('translate', this.alt, 'sponsors') -%}
 {%- set t_more_info = transbag('translate', this.alt, 'more_info') -%}
 {%- set t_apply_sponsor = transbag('translate', this.alt, 'apply_sponsor') -%}
-{%- set event = site.get('/event', alt=this.alt) -%}
+{%- set event = site.get('/venue', alt=this.alt) -%}
 
 {% extends "layout.html" %}
 
@@ -68,7 +68,7 @@
                   <br />
                 </div>
                 <div class="col-md-6">
-                  <a href="https://www.papercall.io/pycon-colombia-2018-workshop" class="btn btn-danger btn-lg btn-block center-block">
+                  <a href="https://www.papercall.io/pycon-colombia-2018-workshops" class="btn btn-danger btn-lg btn-block center-block">
                     {{ t_apply_workshop }} &nbsp;<i class="fa fa-suitcase fa-1x"></i>
                   </a>
                   <br />
@@ -120,7 +120,7 @@
                 <div class="col-md-12">
                     <h1 class="section-title">{{ t_venue_location }}</h1>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 section-venue">
                     <h2>{{ event.name }}</h2>
                     <p>{{ event.rooms }}</p>
                     <br>
@@ -155,21 +155,43 @@
       <!-- Sponsors Section -->
       <div class="container-fluid keynote-section">
         <div class="section-container">        
-          <div class="row">
-            <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
-              {% set speakers = site.query('/sponsors', alt=this.alt) %}
-              <h1 class="section-title-light">{{ t_sponsors }}</h1>
-              <div class="row">            
+          {% set sponsors = site.query('/sponsors', alt=this.alt) %}
+          <h1 class="section-title-light">{{ t_sponsors }}</h1>
+          <div class="container"/>
+            <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="sponsors-carousel">
+              <div class="carousel-inner">
                 {% for sponsor in sponsors %}
+                <div class="item {% if loop.index == 2 %}active{% endif %}">
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="center-sponsor">
+                      <a href="{{ sponsor.web }}" target="blank">
+                        <div>
+                          <img src="/sponsors/{{ sponsor._id }}/{{ sponsor.image }}" class="img-responsive">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 {% endfor %}
               </div>
-              <div class="row">            
-                <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8">
-                  <a href="{{ '/sponsors'|url(alt=this.alt) }}" class="btn btn-success btn-lg btn-block center-block">
-                    {{ t_apply_sponsor }}!
-                  </a>
-                </div>
-              </div>
+              <a class="left carousel-control" href="#sponsors-carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+              <a class="right carousel-control" href="#sponsors-carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10">
+            
+          <div class="row">
+            <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-offset-0 col-xs-12">
+              <a href="{{ '/sponsors'|url(alt=this.alt) }}" class="btn btn-success btn-lg btn-block     center-block">
+                {{ t_apply_sponsor }}!
+              </a>
+            </div>
+          </div>
             </div>
           </div>
         </div>
@@ -221,5 +243,24 @@
       }
     );
     </script>
+    
+    <script>
+$('.carousel[data-type="multi"] .item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+
+  for (var i=0;i<2;i++) {
+    next=next.next();
+    if (!next.length) {
+    	next = $(this).siblings(':first');
+  	}
+    
+    next.children(':first-child').clone().appendTo($(this));
+  }
+});
+</script>
 {% endblock %}
    

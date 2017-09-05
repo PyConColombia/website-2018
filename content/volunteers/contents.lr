@@ -1,8 +1,6 @@
-_model: talks
+_model: page
 ---
-_template: page.html
----
-title: Talks & Workshops
+title: Volunteers
 ---
 body:
 

@@ -1,8 +1,6 @@
-_model: talks
+title: Voluntarios
 ---
-_template: page.html
----
-title: Talks & Workshops
+_slug: voluntarios
 ---
 body:
 
