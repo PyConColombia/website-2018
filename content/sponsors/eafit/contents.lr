@@ -1,3 +1,5 @@
 name: EAFIT
 ---
 image: eafit.png
+---
+web: http://www.eafit.edu.co/
