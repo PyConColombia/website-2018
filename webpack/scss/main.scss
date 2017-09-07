@@ -447,6 +447,22 @@ $default-transition-duration: 0.5s;
       }
   }
 }
+
+.list-check{
+  list-style: none;
+  margin-left: 0;
+  padding-left: 10px;
+  li {
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+
+  li:before {
+    content: "✔️";
+    padding-right: 5px;
+  }
+}
+
 /* Sponsors carousel */
 .carousel-inner { margin: auto; width: 90%; }
 .carousel-control 	 { width:  4%; }
