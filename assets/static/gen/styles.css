@@ -6167,11 +6167,11 @@ input {
   text-align: center; }
 
 .speaker-details {
-  color: #fff;
+  color: #382092;
+  font-weight: bold;
   position: relative;
-  text-shadow: 0.1em 0.1em 0.2em black;
+  text-shadow: 0.1em 0.1em 0.2em gray;
   width: 100%;
-  magin: auto;
   text-align: center;
   pointer-events: none; }
 
@@ -6183,22 +6183,31 @@ input {
   display: table;
   margin: 5% auto; }
 
-.transparent-background, .speaker-btn {
+.transparent-background {
   border: 2px solid #fff;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.7);
   color: #410d89;
   padding: 2% 4%; }
 
-.speaker-btn {
+.speaker-btn, .talk-btn, .workshop-btn {
+  border-radius: 25px;
   font-size: 3em;
   text-align: center;
   padding: 2%; }
-  .speaker-btn a {
-    color: #410d89;
+  .speaker-btn a, .talk-btn a, .workshop-btn a {
+    color: #fff;
     text-decoration: none; }
-    .speaker-btn a:hover {
-      color: #00dbcf; }
+
+.talk-btn {
+  background-color: #382092; }
+  .talk-btn:hover {
+    background-color: #281768; }
+
+.workshop-btn {
+  background-color: #00dbcf; }
+  .workshop-btn:hover {
+    background-color: #00a89f; }
 
 .list-check {
   list-style: none;
