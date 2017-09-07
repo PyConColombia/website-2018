@@ -407,11 +407,11 @@ $default-transition-duration: 0.5s;
 }
 
 .speaker-details {
-  color:#fff;
+  color:#382092;
+  font-weight: bold;
   position: relative;
-  text-shadow: 0.1em 0.1em 0.2em black;
+  text-shadow: 0.1em 0.1em 0.2em gray;
   width: 100%; 
-  magin: auto;
   text-align: center;
   pointer-events:none;
 }
