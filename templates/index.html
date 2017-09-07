@@ -88,7 +88,7 @@
               <h1 class="section-title-light">{{ t_keynote_speakers }}</h1>
               <div class="row">            
                 {% for speaker in speakers %}
-                <div class="col-md-6">
+                <div class="col-sm-6 col-md-4">
                   <div class="speaker">
                     {% if speaker.image %}
                     <img class="speaker-image" id="speaker-image-link-{{ loop.index }}" src="/speakers/{{ speaker._id }}/{{ speaker.image }}" />
