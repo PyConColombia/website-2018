@@ -434,7 +434,18 @@ $default-transition-duration: 0.5s;
   padding: 2%;
 }
 
-
+.speaker-btn{
+  @extend .transparent-background;
+  font-size: 3em;
+  text-align: center;
+  a {
+    color: #410d89;
+    text-decoration:none;
+      &:hover {
+        color: #00dbcf;
+      }
+  }
+}
 /* Sponsors carousel */
 .carousel-inner { margin: auto; width: 90%; }
 .carousel-control 	 { width:  4%; }
