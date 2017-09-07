@@ -356,7 +356,6 @@ input {
 $default-transition-duration: 0.5s;
 
 .speaker {
-  border: 4px solid #2bb6da;
   position: relative; 
   max-width: 324px;
   height: auto;
@@ -373,11 +372,12 @@ $default-transition-duration: 0.5s;
 
   &:hover {
     @include transition-duration($default-transition-duration);
-    border: 4px solid #400e89;
   }
 }
 
 .speaker-image {
+  @extend .img-circle;
+  border: 4px solid #2bb6da;
   position: relative; 
   display: block;
   max-width: 100%;
@@ -386,6 +386,7 @@ $default-transition-duration: 0.5s;
   @include transition-duration($default-transition-duration);
 
   &:hover {
+    border: 4px solid #400e89;
     @include transition-duration($default-transition-duration);
     @include filter-grayscale(0%)
   }
@@ -399,7 +400,7 @@ $default-transition-duration: 0.5s;
 
 .speaker-social {
   position: absolute; 
-  top: 200px;
+  bottom: 100px;
   width: 100%; 
   text-align: center;
 
@@ -407,10 +408,8 @@ $default-transition-duration: 0.5s;
 
 .speaker-details {
   color:#fff;
-  position: absolute; 
+  position: relative;
   text-shadow: 0.1em 0.1em 0.2em black;
-  top: 220px;
-  left: 0; 
   width: 100%; 
   magin: auto;
   text-align: center;
