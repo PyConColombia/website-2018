@@ -435,16 +435,29 @@ $default-transition-duration: 0.5s;
 }
 
 .speaker-btn{
-  @extend .transparent-background;
+  border-radius: 25px;
   font-size: 3em;
   text-align: center;
   padding: 2%;
   a {
-    color: #410d89;
+    color: #fff;
     text-decoration:none;
-      &:hover {
-        color: #00dbcf;
-      }
+  }
+}
+
+.talk-btn{
+  @extend .speaker-btn;
+  background-color: $brand-success;
+  &:hover{
+    background-color: darken($brand-success, 10%);
+  }
+}
+
+.workshop-btn{
+  @extend .speaker-btn;
+  background-color: $brand-primary;
+    &:hover{
+    background-color: darken($brand-primary, 10%);
   }
 }
 
