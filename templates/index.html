@@ -4,6 +4,7 @@
 {%- set t_venue_location = transbag('translate', this.alt, 'venue_location') -%}
 {%- set t_speakers_workshops = transbag('translate', this.alt, 'speakers_workshops') -%}
 {%- set t_tell_us = transbag('translate', this.alt, 'tell_us') -%}
+{%- set t_we_know = transbag('translate', this.alt, 'we_know') -%}
 {%- set t_what_speakers = transbag('translate', this.alt, 'what_speakers') -%}
 {%- set t_speakers_1 = transbag('translate', this.alt, 'speakers_1') -%}
 {%- set t_speakers_2 = transbag('translate', this.alt, 'speakers_2') -%}
@@ -39,39 +40,52 @@
           <div class="row">          
             <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
               <h1 class="section-title">{{ t_speakers_workshops }}</h1>
+              <div class="transparent-background">
+                <h2 class="text-center">{{ t_tell_us }}</h2>
+                <p class="text-center">{{ t_we_know }}</p>
+              </div>
               <div class="mini-logo"></div>
-              <h2 class="text-center">{{ t_tell_us }}</h2>
-              <p class="text-center">{{ t_we_know }}</p>
-              <div class="mini-logo"></div>
-              <h2 class="text-center">{{ t_what_speakers }}</h2>
-              <div class="row">  
-                <div class="col-md-6">
-                  <ul>
-                    <li>{{ t_speakers_1 }}</li>
-                    <li>{{ t_speakers_2 }}</li>
-                    <li>{{ t_speakers_3 }}</li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <ul>
-                    <li>{{ t_speakers_4 }}</li>
-                    <li>{{ t_speakers_5 }}</li>
-                  </ul>
+              <div class="transparent-background">
+                <h2 class="text-center">{{ t_what_speakers }}</h2>
+                <div class="row">
+                  <div class="col-md-6 list-check">
+                    <ul class="list-check">
+                      <li>{{ t_speakers_1 }}</li>
+                      <li>{{ t_speakers_2 }}</li>
+                      <li>{{ t_speakers_3 }}</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="list-check">
+                      <li>{{ t_speakers_4 }}</li>
+                      <li>{{ t_speakers_5 }}</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <br />
               <div class="row">  
                 <div class="col-md-6">
-                  <a href="https://www.papercall.io/pycon-colombia-2018" class="btn btn-success btn-lg btn-block center-block">
-                    {{ t_apply_talk }} &nbsp;<i class="fa fa-bullhorn fa-1x"></i>
-                  </a>
-                  <br />
+                  <div class="mini-logo"></div>
+                  <div class="talk-btn">
+                    <a href="https://www.papercall.io/pycon-colombia-2018">
+                      <i class="fa fa-id-badge  fa-lg"></i>
+                      <div>
+                        {{ t_apply_talk }}
+                      </div>
+                    </a>
+                  </div>
                 </div>
                 <div class="col-md-6">
-                  <a href="https://www.papercall.io/pycon-colombia-2018-workshops" class="btn btn-danger btn-lg btn-block center-block">
-                    {{ t_apply_workshop }} &nbsp;<i class="fa fa-suitcase fa-1x"></i>
-                  </a>
-                  <br />
+                  <div class="mini-logo"></div>
+                  <div class="workshop-btn">
+                    <a href="https://www.papercall.io/pycon-colombia-2018-workshops">
+                      <i class="fa fa-wrench fa-lg"></i>
+                      <div>
+                        {{ t_apply_workshop }}
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -88,7 +102,7 @@
               <h1 class="section-title-light">{{ t_keynote_speakers }}</h1>
               <div class="row">            
                 {% for speaker in speakers %}
-                <div class="col-md-6">
+                <div class="col-sm-6 col-md-4">
                   <div class="speaker">
                     {% if speaker.image %}
                     <img class="speaker-image" id="speaker-image-link-{{ loop.index }}" src="/speakers/{{ speaker._id }}/{{ speaker.image }}" />
