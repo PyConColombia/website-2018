@@ -5,3 +5,5 @@ name: Sistemas Hidráulicos y Sanitarios
 image: sihsa.png
 ---
 web: http://sihsa.co/en
+---
+confirmed: true
