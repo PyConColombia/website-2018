@@ -410,7 +410,6 @@ $default-transition-duration: 0.5s;
   color:#382092;
   font-weight: bold;
   position: relative;
-  text-shadow: 0.1em 0.1em 0.2em gray;
   width: 100%; 
   text-align: center;
   pointer-events:none;
@@ -438,24 +437,30 @@ $default-transition-duration: 0.5s;
   border-radius: 25px;
   font-size: 1.8em;
   text-align: center;
-  padding: 7%;
+  padding: 5%;
   a {
     color: #fff;
     text-decoration:none;
   }
 }
 
-.talk-btn{
+.talk-btn {
   @extend .speaker-btn;
+
   background-color: $brand-success;
+  min-height: 6em;
+
   &:hover{
     background-color: darken($brand-success, 10%);
   }
+  
 }
 
-.workshop-btn{
+.workshop-btn {
   @extend .speaker-btn;
+
   background-color: $brand-primary;
+
     &:hover{
     background-color: darken($brand-primary, 10%);
   }

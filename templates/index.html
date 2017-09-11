@@ -69,8 +69,10 @@
                   <div class="mini-logo"></div>
                   <div class="talk-btn">
                     <a href="https://www.papercall.io/pycon-colombia-2018">
-                      <i class="fa fa-id-badge  fa-lg"></i>
+                      <p></p>
+                      <i class="fa fa-id-badge fa-lg"></i>
                       <div>
+                        <p></p>
                         {{ t_apply_talk }}
                       </div>
                     </a>
@@ -78,10 +80,12 @@
                 </div>
                 <div class="col-md-6">
                   <div class="mini-logo"></div>
-                  <div class="workshop-btn">
+                  <div class="talk-btn">
                     <a href="https://www.papercall.io/pycon-colombia-2018-workshops">
+                      <p></p>
                       <i class="fa fa-wrench fa-lg"></i>
                       <div>
+                        <p></p>
                         {{ t_apply_workshop }}
                       </div>
                     </a>
@@ -267,6 +271,19 @@
     );
     </script>
     
+
+   <script>
+$( document ).ready(function() {
+    var heights = $(".adjust-height").map(function() {
+        return $(this).height();
+    }).get(),
+
+    maxHeight = Math.max.apply(null, heights);
+
+    $(".adjust-height").height(maxHeight);
+});
+    </script>
+
     <script>
 $('.carousel[data-type="multi"] .item').each(function(){
   var next = $(this).next();
