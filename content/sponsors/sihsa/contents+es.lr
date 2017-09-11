@@ -1,5 +1,7 @@
-image: sihsa.png
+image: sihsa-inverse.svg
 ---
 name: Sistemas Hidráulicos y Sanitarios
 ---
 web: http://sihsa.co/es
+---
+confirmed: true
