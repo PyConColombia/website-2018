@@ -6194,13 +6194,14 @@ input {
   border-radius: 25px;
   font-size: 1.8em;
   text-align: center;
-  padding: 7%; }
+  padding: 5%; }
   .speaker-btn a, .talk-btn a, .workshop-btn a {
     color: #fff;
     text-decoration: none; }
 
 .talk-btn {
-  background-color: #382092; }
+  background-color: #382092;
+  min-height: 6em; }
   .talk-btn:hover {
     background-color: #281768; }
 
