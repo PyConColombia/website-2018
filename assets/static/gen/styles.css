@@ -6217,7 +6217,8 @@ input {
     padding-left: 1em;
     text-indent: -1em; }
   .list-check li:before {
-    content: "\2714\FE0F";
+    font-family: 'FontAwesome';
+    content: '\F05D';
     padding-right: 5px; }
 
 /* Sponsors carousel */
