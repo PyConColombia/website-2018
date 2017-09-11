@@ -6192,9 +6192,9 @@ input {
 
 .speaker-btn, .talk-btn, .workshop-btn {
   border-radius: 25px;
-  font-size: 3em;
+  font-size: 1.8em;
   text-align: center;
-  padding: 2%; }
+  padding: 7%; }
   .speaker-btn a, .talk-btn a, .workshop-btn a {
     color: #fff;
     text-decoration: none; }
@@ -6235,7 +6235,7 @@ input {
 .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
   margin-top: -10px;
   margin-left: -10px;
-  color: #444; }
+  color: #fff; }
 
 .carousel-inner div a {
   display: table;

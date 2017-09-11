@@ -97,6 +97,7 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            {#
               <ul class="nav navbar-nav">
                 {{ menu_item('venue') }}
                 {{ menu_item('speakers') }}
@@ -104,6 +105,7 @@
                 {{ menu_item('sponsors') }}
                 {{ menu_item('volunteers') }}
               </ul>
+              #}
               <ul class="nav navbar-nav navbar-right">
                 {% if this.alt == 'en' %}
                 <li><a href="{{ '.'|url(alt='es') }}">Español</a></li>
