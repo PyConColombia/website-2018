@@ -476,7 +476,8 @@ $default-transition-duration: 0.5s;
   }
 
   li:before {
-    content: "✔️";
+    font-family: 'FontAwesome';
+    content: '\f05d';
     padding-right: 5px;
   }
 }
