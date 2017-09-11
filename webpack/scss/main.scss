@@ -426,7 +426,7 @@ $default-transition-duration: 0.5s;
   margin: 5% auto;
 }
 
-.transparent-background{
+.transparent-background {
   border: 2px solid #fff;
   border-radius: 25px;
   background-color: rgba(255,255,255,0.7);
@@ -434,11 +434,11 @@ $default-transition-duration: 0.5s;
   padding: 2% 4%;
 }
 
-.speaker-btn{
+.speaker-btn {
   border-radius: 25px;
-  font-size: 3em;
+  font-size: 1.8em;
   text-align: center;
-  padding: 2%;
+  padding: 7%;
   a {
     color: #fff;
     text-decoration:none;
@@ -487,7 +487,7 @@ $default-transition-duration: 0.5s;
 .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
   margin-top:-10px;
   margin-left: -10px;
-  color: #444;
+  color: #fff;
 }
 
 .carousel-inner {

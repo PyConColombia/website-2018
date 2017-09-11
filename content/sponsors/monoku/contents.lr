@@ -1,7 +1,7 @@
 name: Monoku
 ---
-image: monoku.png
+image: monoku-inverse.svg
 ---
 web: https://monoku.com/
 ---
-confirmed: false
+confirmed: yes

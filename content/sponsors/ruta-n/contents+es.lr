@@ -1,6 +1,6 @@
 category: venue
 ---
-image: ruta-n.svg
+image: ruta-n-inverse.svg
 ---
 information:
 
@@ -17,3 +17,5 @@ name: Ruta N
 summary: SOMOS EL CENTRO DE INNOVACIÓN Y NEGOCIOS DE MEDELLÍN
 ---
 web: http://www.rutanmedellin.org/es
+---
+confirmed: true
