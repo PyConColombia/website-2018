@@ -176,7 +176,7 @@ footer-content {
   margin-bottom: 50px;
   text-align: center;
   position: relative;
-  z-index: 1;
+  z-index: 100;
   color: #fff;
 }
 
@@ -212,6 +212,10 @@ footer-content {
 
 .icon-website {
   background-image: url("/static/images/social-website.svg");
+}
+
+.icon-gitter {
+  background-image: url("/static/images/social-gitter.svg");
 }
 
 .subscribe-content .background-content:after {
@@ -637,20 +641,22 @@ $default-transition-duration: 0.5s;
   }
 
 }
+
 .gitter-custom-button {
   font-size: 14px;
   font-weight: 600;
-  border-color: #000;
+  border-color: #fff;
   border-width: 1px;
   border-style: solid;
   border-radius: 20px 20px 0px 0px;
   border-bottom-width: 0px;
-  background-color: lighten(#28aadb, 0%);
+  //#28aadb
+  background-color: darken(#03e3ff, 5%);
   color: #fff;
   min-width: 130px;
 
   &:hover {
-    background-color: lighten(#28aadb, 5%);
+    background-color: darken(#03e3ff, 0%);
   }
 
   position: fixed;

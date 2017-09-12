@@ -15,7 +15,9 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         #00dbcf;
+//#03e3ff
+//#00dbcf
+$brand-primary:         #03e3ff;
 $brand-success:         #382092 !default;
 $brand-info:            #00dbcf !default;
 $brand-warning:         #00dbcf !default;
