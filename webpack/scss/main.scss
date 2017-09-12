@@ -628,3 +628,34 @@ $default-transition-duration: 0.5s;
   text-align: center;
   pointer-events:none;
 }
+
+/* Gitter styles */
+@media (max-width: 767px) {
+
+  .gitter-custom-button {
+    display: none;
+  }
+
+}
+.gitter-custom-button {
+  font-size: 14px;
+  font-weight: 600;
+  border-color: #000;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 20px 20px 0px 0px;
+  border-bottom-width: 0px;
+  background-color: lighten(#28aadb, 0%);
+  color: #fff;
+  min-width: 130px;
+
+  &:hover {
+    background-color: lighten(#28aadb, 5%);
+  }
+
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  padding: 15px;
+  z-index: 100;
+}
