@@ -144,9 +144,10 @@
           <div class="container"/>
             <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="sponsors-carousel">
               <div class="carousel-inner">
+                {% for i in range(2) %}
                 {% for sponsor in sponsors %}
                   {% if sponsor.confirmed %}
-                <div class="item {% if loop.index == 2 %}active{% endif %}">
+                <div class="item{% if loop.index == 1 and i == 0 %} active{% endif %}">
                   <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="center-sponsor">
                       <a href="{{ sponsor.web }}" target="blank">
@@ -158,6 +159,7 @@
                   </div>
                 </div>
                   {% endif %}
+                {% endfor %}
                 {% endfor %}
               </div>
               <a class="left carousel-control" href="#sponsors-carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
