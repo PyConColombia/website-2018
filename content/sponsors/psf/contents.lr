@@ -1,0 +1,7 @@
+name: Python Software Foundation
+---
+web: https://www.python.org/psf/
+---
+image: psf-inverse.svg
+---
+confirmed: yes

@@ -1,0 +1,44 @@
+address: Calle 67 Nº 52-20
+---
+date_begin: 2018-02-09
+---
+date_end: 2018-02-11
+---
+location: Medellín, Colombia
+---
+name: Ruta-N
+---
+rooms: 2 Piso. Torre A
+---
+latitude: 6.264812
+---
+longitude: -75.566538
+---
+_slug: lugar
+---
+_template: page.html
+---
+title: Lugar del evento
+---
+body:
+
+## Medellín
+
+<br />
+
+Medellín es una ciudad para experimentar con todos sus sentidos, ya que hay muchas razones que la convierten en un destino turístico de primera en América del Sur. Conocida como la Ciudad de la Eterna Primavera, la ciudad disfruta durante todo el año de un clima y temperatura como de primavera, además de ser un cálido y rico centro cultural.
+
+La ciudad es también la ciudad natal de muchos artistas de renombre mundial, pintores y esculturas, incluyendo Fernando Botero, cuyas obras embellecen muchos parques y plazas alrededor de la ciudad.
+
+Medellín se destaca como un importante centro de negocios, moda y comercio internacional, así como un centro para simposios permanentes y reuniones diplomáticas.
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+---
+image: medellin.jpg
+---
+banner: medellin.jpg

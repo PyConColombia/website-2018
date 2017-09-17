@@ -2,6 +2,10 @@
 name = pyconcolombia
 url = http://pycon.co
 
+[packages]
+lektor-webpack-support = 0.3
+lektor-markdown-header-anchors = 0.1
+
 [alternatives.en]
 name = English
 primary = yes
