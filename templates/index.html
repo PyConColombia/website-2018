@@ -195,13 +195,12 @@
                 </div>
                 <div class="col-md-6 section-venue">
                     <br>
-                    <h2>{{ event.location }}</h2>
-                    <!-- <h2>{{ event.name }}</h2>
+                    <h2>{{ event.name }}</h2>
                     <p>{{ event.rooms }}</p>
                     <br>
                     <h4>{{ event.address }}</h4>
                     <p>{{ event.location }}</p>
-                    <br> -->
+                    <br>
                 </div>
                 <div class="col-md-6">
                   <br>
@@ -211,14 +210,13 @@
                   </div>
                 </div>
                 <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
-                  {#
                   <br />
                   <br />
                   <br />
                   <br />
                   <a href="{{ '/venue'|url(alt=this.alt) }}" class="btn btn-danger btn-lg btn-block center-block">
                     {{ t_more_info }}
-                  </a>#}
+                  </a>
                 </div>
               </div>
               <br />
@@ -245,7 +243,7 @@
       function initMap() {
         var eafit = {lat: {{ event.latitude }}, lng: {{ event.longitude }} };
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
+          zoom: 11,
           center: eafit,
           zoomControl: true,
           mapTypeControl: false,
