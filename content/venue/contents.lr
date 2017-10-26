@@ -1,4 +1,4 @@
-name: Ruta-N
+name: Universidad Eafit
 ---
 location: Medellín, Colombia
 ---
@@ -6,13 +6,13 @@ date_begin: 2018-02-09
 ---
 date_end: 2018-02-11
 ---
-rooms: Block A. Second Floor
+rooms: 
 ---
-address: Calle 67 Nº 52-20
+address: Carrera 49
 ---
-latitude: 6.264812
+latitude: 6.200896
 ---
-longitude: -75.566538
+longitude: -75.578624
 ---
 title: Venue
 ---

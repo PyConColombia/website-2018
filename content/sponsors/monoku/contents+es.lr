@@ -4,4 +4,8 @@ name: Monoku
 ---
 web: https://monoku.com/
 ---
-confirmed: no
+confirmed: yes
+---
+category: gold
+---
+twitter_handle: monoku
