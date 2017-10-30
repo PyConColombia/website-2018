@@ -119,7 +119,11 @@
                     <div class="speaker-details">
                       <p>{{ speaker.name }} {{ speaker.last_name }}</p>
                       <div class="speaker-job">
+                        {% if speaker.display_summary %}
+                        <h5>{{ speaker.summary }}</h5>
+                        {% else%}
                         <h5>{{ speaker.position }} {{ t_speaker_at }} {{ speaker.employer }}</h5>
+                        {% endif %}
                       </div>
                     </div>
                   </div>
