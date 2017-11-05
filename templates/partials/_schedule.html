@@ -36,7 +36,8 @@
       </div>
       <div class="talk-details row col-sm-9">
         <div class="room-schedule">
-        {{ talk.room }}
+        {% set room = site.query('/rooms', alt=this.alt).get(talk.room) %}
+        {{ room.name }}
         </div>
         <div class="speaker-schedule">
           {% for speaker in talk.authors %}
