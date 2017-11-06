@@ -1,29 +1,34 @@
 {%- from "/macros/translation.html" import transbag -%}
 {%- set t_agenda_text = transbag('translate', this.alt, 'agenda_text') -%}
 
-{%- set dates = site.query('/dates').order_by('date') -%}
+{% set dates = [] %}
+{% for i in range((this.date_end - this.date_start).days + 1) %}
+  {% set a = this.date_start.fromordinal(this.date_start.toordinal() + i) %}
+  {% if dates.insert(i,a) %}{% endif %}
+{% endfor %}
+
 
 <h2 class="text-center">{{ t_agenda_text }}</h2>
 <h3 class="text-center">
-{{- dates.all()[0].date.day }}th - {{ dates.all()[-1].date.day }}th {{ dates.all()[0].date.strftime('%B') -}} {#- 9th - 11th February -#}
+{{- this.date_start.day }}th - {{ this.date_end.day }}th {{ this.date_start.strftime('%B') -}} {#- 9th - 11th February -#}
 </h3>
 
 <ul class="nav center-nav nav-schedule" role="tablist" id="schedule-tabs">
 {% for date in dates %}
   <li class="nav-item{% if loop.index == 1 %} active{% endif %}">
-    <a class="nav-link" data-toggle="pill" href="#{{ date.date.strftime('%Y-%m-%d') }}" aria-controls="{{ date.date.strftime('%Y-%m-%d') }}" role="tab">
-    {{- date.date.strftime('%A %d') }}th</a> {#- Friday 9th #}
+    <a class="nav-link" data-toggle="pill" href="#{{ date.strftime('%Y-%m-%d') }}" aria-controls="{{ date.strftime('%Y-%m-%d') }}" role="tab">
+    {{- date.strftime('%A %d') }}th</a> {#- Friday 9th #}
   </li>
 {%- endfor %}
 </ul>
-
 <div class="tab-content text-center">
 {% for date in dates %}
-  <div class="tab-pane tab-schedule{% if loop.index == 1 %} active{% endif %}" id="{{ date.date.strftime('%Y-%m-%d') }}" role="tabpanel">
-  {# Complex expressions doent work in filter() #}
-  {% set start = date.date %}
-  {% set end = date.date_end %}
-  {% set talks = site.query('/talks', alt=this.alt).filter((F.datetime >= start) and (F.datetime <= end )) %}
+  <div class="tab-pane tab-schedule{% if loop.index == 1 %} active{% endif %}" id="{{ date.strftime('%Y-%m-%d') }}" role="tabpanel">
+  {# Complex expressions doent work in filter() so date should be converted to datetime #}
+  {% set start = this.datetime.combine(date, this.datetime.min.time().replace(tzinfo=this.datetime.tzinfo)) %}
+  {% set end = this.datetime.combine(date, this.datetime.max.time().replace(tzinfo=this.datetime.tzinfo)) %}
+
+  {% set talks = site.query('/talks', alt=this.alt).filter(F.datetime >= start).filter(F.datetime <= end) %}
   {% for talk in talks.order_by('datetime') %}
     <div class="item-schedule row">
       <div class="time-schedule col-sm-3">
