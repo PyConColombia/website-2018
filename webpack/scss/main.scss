@@ -697,12 +697,12 @@ $default-transition-duration: 0.5s;
       color: white;
       padding: 5px 40px;
       &:hover{
-        background-color: rgba(255,255,255, 0.8);
+        background-color: rgba(255,255,255, 0.7);
         color: #382092;
       }
     }
     &.active{
-      background-color: rgba(255,255,255, 0.8);
+      background-color: rgba(255,255,255, 0.7);
       a{
         color: #382092;
       }
@@ -765,5 +765,31 @@ $default-transition-duration: 0.5s;
         font-size:  0.7em;
       }
     }
+  }
+}
+
+.event-item-schedule{
+  font-size: 30px;
+  background-color: rgba(255,255,255, 0.7);
+  color: #382092;
+  border: 3px solid white;
+  border-radius: 15px;
+  padding: 20px 0px;
+  @media (min-width: 768px) {
+      margin: 0 30px;
+  }
+  .event-details {
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+    .fa {
+      display: inline-block;
+    }
+    .event-name{
+      display: inline-block;
+    }
+  }
+  .time-schedule {
+
   }
 }
