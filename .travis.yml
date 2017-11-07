@@ -9,7 +9,7 @@ install:
 # Uncomment when new Lektor package is available
 # - "pip install Lektor"
   - "pip install git+https://github.com/lektor/lektor#egg=Lektor"
-script: "lektor build"
+script: "lektor build -f webpack"
 deploy:
   - provider: script
     script: "lektor deploy staging"
