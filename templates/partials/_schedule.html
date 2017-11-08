@@ -32,14 +32,14 @@
   {% for talk in talks.order_by('datetime') %}
     {% if talk._model == 'schedule' %}
     <div class="event-item-schedule row">
+      <div class="time-schedule col-sm-3">
+        {{- talk.datetime.strftime('%H:%M') -}}
+      </div>
       <div class="event-details col-sm-9">
         <i class="fa fa-{{talk.icon}} fa-lg"></i>
         <div class="event-name">
           {{ talk.name }}
         </div>
-      </div>
-      <div class="time-schedule col-sm-3">
-        {{- talk.datetime.strftime('%H:%M') -}}
       </div>
     </div>
     {% else %}
