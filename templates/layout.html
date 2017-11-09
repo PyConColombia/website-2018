@@ -6,6 +6,7 @@
 {%- set t_footer_copyright = transbag('translate', this.alt, 'footer_copyright') -%}
 {%- set t_code_of_conduct = transbag('translate', this.alt, 'code_of_conduct') -%}
 {%- set t_open_chat = transbag('translate', this.alt, 'open_chat') -%}
+{%- set t_made_with = transbag('translate', this.alt, 'made_with') -%}
 
 {%- macro menu_item(identifier) -%}
   {% set identifier_url = '/' + identifier %}
@@ -130,6 +131,12 @@
           <div class="row">
             <div class="col-md-12">
               <div class="social-icons-container">
+                {% set made_list = t_made_with.split('-') %}
+                <p>{{ made_list[0] }}  <i class="fa fa-heart"></i>  {{ made_list[1] }}
+                  <a href="https://www.python.org/" title="Python" target="blank">Python</a>
+                   {{ made_list[2] }}
+                   <a href="https://getlektor.com/" title="Lektor" target="blank">Lektor</a>
+                 </p>
                 <p>{{ t_footer_copyright }} | <a href="{{ '/code-of-conduct'|url(alt=this.alt) }}">{{ t_code_of_conduct }}</a> | <a href="mailto:hello@pycon.co">hello@pycon.co</a></p>
                 <br>
                 <a href="https://www.twitter.com/pyconcolombia" title="Twitter" target="blank"><div class="social-icon icon-twitter"></div></a>
