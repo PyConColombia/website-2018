@@ -1,14 +1,14 @@
-address: Calle 67 Nº 52-20
+name: Universidad Eafit
 ---
 location: Medellín, Colombia
 ---
-name: Ruta-N
+rooms:
 ---
-rooms: 2 Piso. Torre A
+address: Carrera 49 Nº 7 Sur-50
 ---
-latitude: 6.264812
+latitude: 6.200896
 ---
-longitude: -75.566538
+longitude: -75.578624
 ---
 _slug: lugar
 ---
