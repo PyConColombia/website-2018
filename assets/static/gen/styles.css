@@ -5910,12 +5910,45 @@ body {
   width: 485px;
   width: 100%; }
 
-.header-content .ticket {
-  background: url("/static/images/ticket.svg") center center no-repeat;
-  background-size: contain;
-  height: 160px;
-  margin: 0 auto 57px;
-  width: 100%; }
+.header-content .ticket-wrapper {
+  vertical-align: middle;
+  text-align: center;
+  margin-bottom: 57px; }
+  .header-content .ticket-wrapper a {
+    height: 0; }
+  .header-content .ticket-wrapper .ticket {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 140px;
+    width: 365px;
+    display: inline-block; }
+    .header-content .ticket-wrapper .ticket.ticket-en {
+      background-image: url("/static/images/ticket.svg"); }
+    .header-content .ticket-wrapper .ticket.ticket-es {
+      background-image: url("/static/images/ticket-es.svg"); }
+    .header-content .ticket-wrapper .ticket:hover {
+      animation-duration: 1s;
+      animation-name: shake; }
+    @media screen and (max-width: 768px) {
+      .header-content .ticket-wrapper .ticket {
+        width: 100%; } }
+  .header-content .ticket-wrapper .atom {
+    background: url("/static/images/atom.svg") center center no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 30px;
+    display: inline-block; }
+    @media screen and (max-width: 768px) {
+      .header-content .ticket-wrapper .atom {
+        display: none; } }
+
+@keyframes shake {
+  20%, 60% {
+    transform: rotate(-5deg); }
+  40%, 80% {
+    transform: rotate(5deg); } }
 
 footer-content {
   margin-top: 100px;
