@@ -104,7 +104,12 @@ body {
   }
 
   .ticket{
-    background: url("/static/images/ticket.svg") center center no-repeat;
+    &.ticket-en{
+      background: url("/static/images/ticket.svg") center center no-repeat;
+    }
+    &.ticket-es{
+      background: url("/static/images/ticket-es.svg") center center no-repeat;
+    }
     background-size: contain;
     height: 160px;
     margin: 0 auto 57px;
