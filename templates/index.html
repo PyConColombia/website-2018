@@ -17,6 +17,7 @@
 {%- set t_more_info = transbag('translate', this.alt, 'more_info') -%}
 {%- set t_apply_sponsor = transbag('translate', this.alt, 'apply_sponsor') -%}
 {%- set t_sponsor_text = transbag('translate', this.alt, 'sponsor_text') -%}
+{%- set t_ticket_text = transbag('translate', this.alt, 'tickets') -%}
 {%- set event = site.get('/venue', alt=this.alt) -%}
 
 {% extends "layout.html" %}
@@ -32,7 +33,7 @@
             </div>
             {% if 'tickets' in this.sections %}
               <div class="col-md-12">
-              <a href="{{ this.tickets_link }}" title="Tickets" target="blank"><div class="ticket ticket-{{ this.alt }}"></div></a>
+              <a href="{{ this.tickets_link }}" title="{{ t_ticket_text }}" target="blank"><div class="ticket ticket-{{ this.alt }}"></div></a>
               </div>
             {% endif %}
           </div>
