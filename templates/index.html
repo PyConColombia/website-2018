@@ -30,11 +30,17 @@
             <div class="col-md-12">
               <div class="date">{{ t_place }}<br>{{ t_date }}</div>
             </div>
+            {% if 'tickets' in this.sections %}
+              <div class="col-md-12">
+              <a href="{{ this.tickets_link }}" title="Tickets" target="blank"><div class="ticket"></div></a>
+              </div>
+            {% endif %}
           </div>
         </div>
         {% endblock %}
 
 {% block content %}
+    {% if 'speakers-call' in this.sections %}
       <!-- Speakers & Workshops Section -->
       <div class="container-fluid light-section">
         <div class="section-container">        
@@ -96,6 +102,7 @@
           </div>
         </div>
       </div>
+    {% endif %}
 
       <!-- Keynote Speakers Section -->
       <div class="container-fluid keynote-section">
@@ -188,6 +195,19 @@
         </div>
       </div>
 
+    {% if 'schedule' in this.sections %}
+      <!-- Schedule Section -->
+      <div class="container-fluid light-section">
+        <div class="section-container">
+          <div class="row">
+            <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
+              {% include 'partials/_schedule.html' %}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
       <!-- Location Section -->
       <div class="container-fluid dark-section">
         <div class="section-container">
@@ -235,7 +255,7 @@
         <div class="section-container">
           <div class="row">
             <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
-              {% include '_mailchimp.html' %}
+              {% include 'partials/_mailchimp.html' %}
             </div>
           </div>
         </div>
