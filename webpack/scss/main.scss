@@ -112,14 +112,16 @@ body {
     }
     .ticket{
       &.ticket-en{
-        background: url("/static/images/ticket.svg") center center no-repeat;
+        background-image: url("/static/images/ticket.svg");
       }
       &.ticket-es{
-        background: url("/static/images/ticket-es.svg") center center no-repeat;
+        background-image: url("/static/images/ticket-es.svg");
       }
       background-size: contain;
-      height: 160px;
-      width: 417px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 140px;
+      width: 365px;
       display:inline-block;
       &:hover{
         animation-duration: 1s;
@@ -134,7 +136,7 @@ body {
       background-size: contain;
       height: 80px;
       width: 80px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       display: inline-block;
       @media screen and (max-width: 768px) {
         display: none;
