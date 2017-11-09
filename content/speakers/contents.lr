@@ -1,7 +1,5 @@
 _model: speakers
 ---
-_template: page.html
----
 body:
 
 <br />
