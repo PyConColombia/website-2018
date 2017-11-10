@@ -1,8 +1,17 @@
 {% macro render_speaker_social(speaker, index=1) %}
   <div id="link-{{ index }}" class="speaker-social">
-    <a id="link-{{ index }}" class="social-hover" href="https://www.twitter.com/{{ speaker.twitter_handle }}" target="blank"><div class="social-icon icon-twitter"></div></a>
-    <a id="link-{{ index }}" class="social-hover" href="{{ speaker.web }}" target="blank"><div class="social-icon icon-website"></div></a>
-    <a id="link-{{ index }}" class="social-hover" href="https://www.github.com/{{ speaker.github_handle }}" target="blank"><div class="social-icon icon-github"></div></a>
+    {% if speaker.twitter_handle %}
+      <a id="link-{{ index }}" class="social-hover" href="https://www.twitter.com/{{ speaker.twitter_handle }}" target="blank"><div class="social-icon icon-twitter"></div></a>
+    {% endif %}
+    {% if speaker.web %}
+      <a id="link-{{ index }}" class="social-hover" href="{{ speaker.web }}" target="blank"><div class="social-icon icon-website"></div></a>
+    {% endif %}
+    {% if speaker.github_handle %}
+      <a id="link-{{ index }}" class="social-hover" href="https://www.github.com/{{ speaker.github_handle }}" target="blank"><div class="social-icon icon-github"></div></a>
+    {% endif %}
+    {% if speaker.facebook_handle %}
+      <a id="link-{{ index }}" class="social-hover" href="https://www.facebook.com/{{ speaker.facebook_handle }}" target="blank"><div class="social-icon icon-facebook"></div></a>
+    {% endif %}
   </div>
 {% endmacro %}
 
