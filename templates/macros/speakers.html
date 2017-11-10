@@ -1,19 +1,23 @@
 {% macro render_speaker(speaker, index) %}
+{%- set complete_name = speaker.name + " " + speaker.last_name -%}
+
   <div class="speaker">
-    <img class="speaker-image" id="speaker-image-link-{{ index }}" src=
+    <a href="{{ speaker | url }}" title="{{ complete_name }}"">
+    <img class="speaker-image" id="speaker-image-link-{{ index }}" alt="{{ complete_name }}" src=
     {%- if speaker.image -%}
       "/speakers/{{ speaker._id }}/{{ speaker.image }}"
     {%- else -%}
       "/static/images/empty-photo.svg"
     {%- endif -%}
      />
+     </a>
     <div id="link-{{ index }}" class="speaker-social">
       <a id="link-{{ index }}" class="social-hover" href="https://www.twitter.com/{{ speaker.twitter_handle }}" target="blank"><div class="social-icon icon-twitter"></div></a>
       <a id="link-{{ index }}" class="social-hover" href="{{ speaker.web }}" target="blank"><div class="social-icon icon-website"></div></a>
       <a id="link-{{ index }}" class="social-hover" href="https://www.github.com/{{ speaker.github_handle }}" target="blank"><div class="social-icon icon-github"></div></a>
     </div>
     <div class="speaker-details">
-      <p>{{ speaker.name }} {{ speaker.last_name }}</p>
+      <p>{{ complete_name }}</p>
       <div class="speaker-job">
         {% if speaker.display_summary %}
         <h5>{{ speaker.summary }}</h5>
