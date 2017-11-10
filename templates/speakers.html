@@ -1,4 +1,26 @@
+{%- from "macros/speakers.html" import render_speaker -%}
+{%- from "macros/translation.html" import transbag -%}
+{%- set t_keynote_speakers = transbag('translate', this.alt, 'keynote_speakers') -%}
+{%- set t_speakers = transbag('translate', this.alt, 'speakers') -%}
 {% extends "page.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
+  {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote) %}
+  <h1 class="section-title-light">{{ t_keynote_speakers }}</h1>
+  <div class="row">
+    {% for speaker in speakers %}
+    <div class="col-sm-4 col-md-3">
+      {{ render_speaker(speaker, loop.index) }}
+    </div>
+    {% endfor %}
+  </div>
+  {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote != True) %}
+  <h1 class="section-title-light">{{ t_speakers }}</h1>
+  <div class="row">
+    {% for speaker in speakers %}
+    <div class="col-sm-4 col-md-3">
+      {{ render_speaker(speaker, loop.index) }}
+    </div>
+    {% endfor %}
+  </div>
 {% endblock %}
