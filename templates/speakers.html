@@ -5,7 +5,7 @@
 {% extends "page.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote) %}
+  {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote).filter(F.publish) %}
   <h1 class="section-title-light">{{ t_keynote_speakers }}</h1>
   <div class="row">
     {% for speaker in speakers %}
@@ -14,7 +14,7 @@
     </div>
     {% endfor %}
   </div>
-  {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote != True) %}
+  {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote != True).filter(F.publish) %}
   <h1 class="section-title-light">{{ t_speakers }}</h1>
   <div class="row">
     {% for speaker in speakers %}

@@ -126,7 +126,7 @@
         <div class="section-container">        
           <div class="row">
         <div class="container">
-              {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote) %}
+              {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote).filter(F.publish) %}
               <h1 class="section-title-light">{{ t_keynote_speakers }}</h1>
               <div class="row">            
                 {% for speaker in speakers %}
