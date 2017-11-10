@@ -1,4 +1,5 @@
 {%- from "macros/translation.html" import transbag -%}
+{%- from "macros/speakers.html" import render_speaker -%}
 {%- set t_keynote_speakers = transbag('translate', this.alt, 'keynote_speakers') -%}
 {%- set t_speaker_at = transbag('translate', this.alt, 'speaker_at') -%}
 {%- set t_venue_location = transbag('translate', this.alt, 'venue_location') -%}
@@ -130,26 +131,7 @@
               <div class="row">            
                 {% for speaker in speakers %}
                 <div class="col-sm-6 col-md-4">
-                  <div class="speaker">
-                    {% if speaker.image %}
-                    <img class="speaker-image" id="speaker-image-link-{{ loop.index }}" src="/speakers/{{ speaker._id }}/{{ speaker.image }}" />
-                    {% endif %}
-                    <div id="link-{{ loop.index }}" class="speaker-social">
-                      <a id="link-{{ loop.index }}" class="social-hover" href="https://www.twitter.com/{{ speaker.twitter_handle }}" target="blank"><div class="social-icon icon-twitter"></div></a>
-                      <a id="link-{{ loop.index }}" class="social-hover" href="{{ speaker.web }}" target="blank"><div class="social-icon icon-website"></div></a>
-                      <a id="link-{{ loop.index }}" class="social-hover" href="https://www.github.com/{{ speaker.github_handle }}" target="blank"><div class="social-icon icon-github"></div></a>
-                    </div>
-                    <div class="speaker-details">
-                      <p>{{ speaker.name }} {{ speaker.last_name }}</p>
-                      <div class="speaker-job">
-                        {% if speaker.display_summary %}
-                        <h5>{{ speaker.summary }}</h5>
-                        {% else%}
-                        <h5>{{ speaker.position }} {{ t_speaker_at }} {{ speaker.employer }}</h5>
-                        {% endif %}
-                      </div>
-                    </div>
-                  </div>
+                  {{ render_speaker(speaker, loop.index) }}
                 </div>
                 {% endfor %}
               </div>
