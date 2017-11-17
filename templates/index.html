@@ -17,7 +17,12 @@
 {%- set t_more_info = transbag('translate', this.alt, 'more_info') -%}
 {%- set t_apply_sponsor = transbag('translate', this.alt, 'apply_sponsor') -%}
 {%- set t_sponsor_text = transbag('translate', this.alt, 'sponsor_text') -%}
-{%- set t_ticket_text = transbag('translate', this.alt, 'tickets') -%}
+{%- set t_count_weeks = transbag('translate', this.alt, 'count_weeks') -%}
+{%- set t_count_days = transbag('translate', this.alt, 'count_days') -%}
+{%- set t_count_hours = transbag('translate', this.alt, 'count_hours') -%}
+{%- set t_count_minutes = transbag('translate', this.alt, 'count_minutes') -%}
+{%- set t_count_seconds = transbag('translate', this.alt, 'count_seconds') -%}
+{%- set t_tickets_available = transbag('translate', this.alt, 'tickets_available') -%}
 {%- set event = site.get('/venue', alt=this.alt) -%}
 
 {% extends "layout.html" %}
@@ -39,7 +44,7 @@
               </div>
             {% else %}
             <div class="col-md-12 text-center">
-              <h2>Tickets available in</h2>
+              <h2>{{ t_tickets_available }}</h2>
               <br>
               <div class="main-example">
                 <div class="countdown-container" id="main-example"></div>
@@ -352,7 +357,7 @@ $('.carousel[data-type="multi"] .item').each(function(){
 </script>
 <script type="text/javascript">
   $(window).on('load', function() {
-    var labels = ['weeks', 'days', 'hours', 'minutes', 'seconds'],
+    var labels = ['{{ t_count_weeks }}', '{{ t_count_days }}', '{{ t_count_hours }}', '{{ t_count_minutes }}', '{{ t_count_seconds }}'],
       nextYear = moment.tz("2017-11-19 20:00", "America/Bogota");
       template = _.template($('#main-example-template').html()),
       currDate = '00:00:00:00:00',
