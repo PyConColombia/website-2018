@@ -70,7 +70,7 @@ body {
 
 .header-content {
   .background-content {
-    padding-top: 50px;
+    padding-top: 20px;
 
     &:after {
       /*background-attachment fixed*/
@@ -89,7 +89,7 @@ body {
     background: url("/static/images/logo_plain.svg") center center no-repeat;
     background-size: contain;
     height: 220px;
-    margin: 0 auto 57px;
+    margin-bottom: 30px;
     width: 485px;
     width: 100%;
   }
@@ -98,7 +98,7 @@ body {
     background: url("/static/images/logo_plain_es.svg") center center no-repeat;
     background-size: contain;
     height: 220px;
-    margin: 0 auto 57px;
+    margin-bottom: 30px;
     width: 485px;
     width: 100%;
   }
@@ -215,7 +215,7 @@ footer-content {
   font-size: 23px;
   font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -366,6 +366,10 @@ input {
   outline: none;
 }
 
+.section-container-main {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
 
 .section-container {
   padding-top: 100px;
@@ -585,6 +589,11 @@ $default-transition-duration: 0.5s;
 }
 
 @media (max-width: 767px) {
+
+.section-container-main {
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
 
 .section-venue {
   text-align:center;
