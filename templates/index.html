@@ -37,13 +37,12 @@
               <div class="date">{{ t_place }}<br>{{ t_date }}</div>
             </div>
             {% if 'tickets' in this.sections %}
-              <div class="col-md-12 ticket-wrapper">
+            <div class="col-md-12 ticket-wrapper hidden" id="ticket-div">
               <div class="atom"></div>
               <a href="{{ this.tickets_link }}" title="{{ t_ticket_text }}" target="blank"><div class="ticket ticket-{{ this.alt }}"></div></a>
               <div class="atom"></div>
               </div>
-            {% else %}
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center" id="countdown-div">
               <h2>{{ t_tickets_available }}</h2>
               <br>
               <div class="main-example">
@@ -419,6 +418,10 @@ $('.carousel[data-type="multi"] .item').each(function(){
         });
       }
     });
+  });
+  $(window).on('finish.countdown', function(event) {
+    $('#countdown-div').addClass('hidden');
+    $('#ticket-div').removeClass('hidden');
   });
 </script>
 {% endblock %}
