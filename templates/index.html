@@ -17,6 +17,12 @@
 {%- set t_more_info = transbag('translate', this.alt, 'more_info') -%}
 {%- set t_apply_sponsor = transbag('translate', this.alt, 'apply_sponsor') -%}
 {%- set t_sponsor_text = transbag('translate', this.alt, 'sponsor_text') -%}
+{%- set t_count_weeks = transbag('translate', this.alt, 'count_weeks') -%}
+{%- set t_count_days = transbag('translate', this.alt, 'count_days') -%}
+{%- set t_count_hours = transbag('translate', this.alt, 'count_hours') -%}
+{%- set t_count_minutes = transbag('translate', this.alt, 'count_minutes') -%}
+{%- set t_count_seconds = transbag('translate', this.alt, 'count_seconds') -%}
+{%- set t_tickets_available = transbag('translate', this.alt, 'tickets_available') -%}
 {%- set event = site.get('/venue', alt=this.alt) -%}
 
 {% extends "layout.html" %}
@@ -30,11 +36,27 @@
             <div class="col-md-12">
               <div class="date">{{ t_place }}<br>{{ t_date }}</div>
             </div>
+            {% if 'tickets' in this.sections %}
+            <div class="col-md-12 ticket-wrapper hidden" id="ticket-div">
+              <div class="atom"></div>
+              <a href="{{ this.tickets_link }}" title="{{ t_ticket_text }}" target="blank"><div class="ticket ticket-{{ this.alt }}"></div></a>
+              <div class="atom"></div>
+              </div>
+            <div class="col-md-12 text-center" id="countdown-div">
+              <h2>{{ t_tickets_available }}</h2>
+              <br>
+              <div class="main-example">
+                <div class="countdown-container" id="main-example"></div>
+                <br>
+              </div>
+            </div>
+            {% endif %}
           </div>
         </div>
         {% endblock %}
 
 {% block content %}
+    {% if 'speakers-call' in this.sections %}
       <!-- Speakers & Workshops Section -->
       <div class="container-fluid light-section">
         <div class="section-container">        
@@ -96,6 +118,7 @@
           </div>
         </div>
       </div>
+    {% endif %}
 
       <!-- Keynote Speakers Section -->
       <div class="container-fluid keynote-section">
@@ -188,6 +211,19 @@
         </div>
       </div>
 
+    {% if 'schedule' in this.sections %}
+      <!-- Schedule Section -->
+      <div class="container-fluid light-section">
+        <div class="section-container">
+          <div class="row">
+            <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
+              {% include 'partials/_schedule.html' %}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
       <!-- Location Section -->
       <div class="container-fluid dark-section">
         <div class="section-container">
@@ -235,7 +271,7 @@
         <div class="section-container">
           <div class="row">
             <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
-              {% include '_mailchimp.html' %}
+              {% include 'partials/_mailchimp.html' %}
             </div>
           </div>
         </div>
@@ -247,7 +283,7 @@
       function initMap() {
         var eafit = {lat: {{ event.latitude }}, lng: {{ event.longitude }} };
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 11,
+          zoom: 15,
           center: eafit,
           zoomControl: true,
           mapTypeControl: false,
@@ -307,6 +343,86 @@ $('.carousel[data-type="multi"] .item').each(function(){
     next.children(':first-child').clone().appendTo($(this));
   }
 });
+</script>
+
+<script type="text/template" id="main-example-template">
+<div class="time <%= label %>">
+  <span class="count curr top"><%= curr %></span>
+  <span class="count next top"><%= next %></span>
+  <span class="count next bottom"><%= next %></span>
+  <span class="count curr bottom"><%= curr %></span>
+  <span class="label"><%= label.length < 6 ? label : label.substr(0, 3)  %></span>
+</div>
+</script>
+<script type="text/javascript">
+  $(window).on('load', function() {
+    var labels = ['{{ t_count_days }}', '{{ t_count_hours }}', '{{ t_count_minutes }}', '{{ t_count_seconds }}'],
+      nextYear = moment.tz("2017-11-19 20:00", "America/Bogota");
+      template = _.template($('#main-example-template').html()),
+      currDate = '00:00:00:00:00',
+      nextDate = '00:00:00:00:00',
+      parser = /([0-9]{2})/gi,
+      $example = $('#main-example');
+    // Parse countdown string to an object
+    function strfobj(str) {
+      var parsed = str.match(parser),
+        obj = {};
+      labels.forEach(function(label, i) {
+        obj[label] = parsed[i]
+      });
+      return obj;
+    }
+    // Return the time components that diffs
+    function diff(obj1, obj2) {
+      var diff = [];
+      labels.forEach(function(key) {
+        if (obj1[key] !== obj2[key]) {
+          diff.push(key);
+        }
+      });
+      return diff;
+    }
+    // Build the layout
+    var initData = strfobj(currDate);
+    labels.forEach(function(label, i) {
+      $example.append(template({
+        curr: initData[label],
+        next: initData[label],
+        label: label
+      }));
+    });
+    // Starts the countdown
+    $example.countdown(nextYear.toDate(), function(event) {
+      var newDate = event.strftime('%d:%H:%M:%S'),
+        data;
+      if (newDate !== nextDate) {
+        currDate = nextDate;
+        nextDate = newDate;
+        // Setup the data
+        data = {
+          'curr': strfobj(currDate),
+          'next': strfobj(nextDate)
+        };
+        // Apply the new values to each node that changed
+        diff(data.curr, data.next).forEach(function(label) {
+          var selector = '.%s'.replace(/%s/, label),
+              $node = $example.find(selector);
+          // Update the node
+          $node.removeClass('flip');
+          $node.find('.curr').text(data.curr[label]);
+          $node.find('.next').text(data.next[label]);
+          // Wait for a repaint to then flip
+          _.delay(function($node) {
+            $node.addClass('flip');
+          }, 50, $node);
+        });
+      }
+    });
+  });
+  $(window).on('finish.countdown', function(event) {
+    $('#countdown-div').addClass('hidden');
+    $('#ticket-div').removeClass('hidden');
+  });
 </script>
 {% endblock %}
    

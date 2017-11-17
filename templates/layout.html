@@ -6,6 +6,7 @@
 {%- set t_footer_copyright = transbag('translate', this.alt, 'footer_copyright') -%}
 {%- set t_code_of_conduct = transbag('translate', this.alt, 'code_of_conduct') -%}
 {%- set t_open_chat = transbag('translate', this.alt, 'open_chat') -%}
+{%- set t_made_with = transbag('translate', this.alt, 'made_with') -%}
 
 {%- macro menu_item(identifier) -%}
   {% set identifier_url = '/' + identifier %}
@@ -26,7 +27,7 @@
     <meta name="description" content="{{ t_description }}">
     <meta property="og:site_name" content="PyCon Colombia"/>
     <meta property="og:title" content="PyCon Colombia | {{ t_date }} | {{ t_place }}"/>
-    <meta property="og:description"content="{{ t_description }}"/>
+    <meta property="og:description" content="{{ t_description }}"/>
     <meta property="og:image" content="https://www.pycon.co/static/images/opimage.png">
     <meta property="og:url" content="https://www.pycon.co/">
     <meta property="og:type" content="website"/>
@@ -59,6 +60,7 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald">
 
     <!-- CSS -->
     <link rel="stylesheet" href="/static/gen/styles.css">
@@ -67,9 +69,16 @@
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/a2d4f0e306.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <!-- Include MomentJS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.14/moment-timezone-with-data-2012-2022.min.js"></script>
+    <!-- Include project main library -->
+    <script src="{{ '/static/gen/app.js'|asseturl }}"></script>
+    <script src="{{ '/static/gen/jquery.countdown.js'|asseturl }}"></script>
 
     <!-- Google analytics -->
-    {% include '_googleanalytics.html' %}
+    {% include 'partials/_googleanalytics.html' %}
 
     {% block header_scripts %}{% endblock %}
   </head>
@@ -130,6 +139,12 @@
           <div class="row">
             <div class="col-md-12">
               <div class="social-icons-container">
+                {% set made_list = t_made_with.split('-') %}
+                <p>{{ made_list[0] }}  <i class="fa fa-heart"></i>  {{ made_list[1] }}
+                  <a href="https://www.python.org/" title="Python" target="blank">Python</a>
+                   {{ made_list[2] }}
+                   <a href="https://getlektor.com/" title="Lektor" target="blank">Lektor</a>
+                 </p>
                 <p>{{ t_footer_copyright }} | <a href="{{ '/code-of-conduct'|url(alt=this.alt) }}">{{ t_code_of_conduct }}</a> | <a href="mailto:hello@pycon.co">hello@pycon.co</a></p>
                 <br>
                 <a href="https://www.twitter.com/pyconcolombia" title="Twitter" target="blank"><div class="social-icon icon-twitter"></div></a>

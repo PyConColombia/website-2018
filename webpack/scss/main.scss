@@ -103,7 +103,55 @@ body {
     width: 100%;
   }
 
+  .ticket-wrapper {
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 57px;
+    a{
+      height: 0;
+    }
+    .ticket{
+      &.ticket-en{
+        background-image: url("/static/images/ticket.svg");
+      }
+      &.ticket-es{
+        background-image: url("/static/images/ticket-es.svg");
+      }
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 140px;
+      width: 365px;
+      display:inline-block;
+      &:hover{
+        animation-duration: 1s;
+        animation-name: shake;
+      }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    .atom{
+      background: url("/static/images/atom.svg") center center no-repeat;
+      background-size: contain;
+      height: 80px;
+      width: 80px;
+      margin-bottom: 30px;
+      display: inline-block;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}
 
+@keyframes shake {
+  20%, 60% {
+    transform: rotate(-5deg);
+  }
+  40%, 80% {
+    transform: rotate(5deg);
+  }
 }
 
 footer-content {
@@ -341,6 +389,7 @@ input {
   right: 0;
   top: 0;
   z-index: 99;
+  pointer-events: none;
 }
 
 
@@ -664,4 +713,319 @@ $default-transition-duration: 0.5s;
   right: 10px;
   padding: 15px;
   z-index: 100;
+}
+
+// Center Navbar for schedule pills
+.center-nav {
+  @extend .nav;
+}
+
+@media (min-width: 768px) {
+  .center-nav{
+    text-align: center;
+    .nav-item {
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+    }
+  }
+}
+
+// Schedule
+
+.nav-schedule{
+  font-size: 0; // trick to remove space between elements
+  margin-top: 20px;
+  text-align: center;
+  .nav-item{
+    font-size: 16px;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    a{
+      color: white;
+      padding: 5px 40px;
+      &:hover{
+        background-color: rgba(255,255,255, 0.7);
+        color: #382092;
+      }
+    }
+    &.active{
+      background-color: rgba(255,255,255, 0.7);
+      a{
+        color: #382092;
+      }
+    }
+    @media (min-width: 768px) {
+      border-radius: 0;
+      border-left: none;  //remove duplicated borders
+       &:first-child {
+        border-left: 3px solid white;
+        border-radius: 20px 0 0 20px;
+        a{
+          border-radius: 20px 0 0 20px;
+        }
+      }
+      &:last-child {
+        a {
+          border-radius: 0 20px 20px 0;
+        }
+        border-radius: 0 20px 20px 0;
+      }
+    }
+  }
+}
+
+.tab-schedule {
+  padding: 10px;
+  @media (min-width: 768px) {
+    padding: 10px 35px;
+  }
+}
+
+.item-schedule {
+  font-size: 25px;
+  border-bottom: 1px solid white;
+  padding: 20px 0px;
+
+  .time-schedule {
+    vertical-align: top;
+    @media (min-width: 768px) {
+      text-align: right;
+      margin-right: 10px;
+    }
+    .hour {
+      font-weight: bold;
+    }
+    .minutes{
+      font-size: 0.6em;
+    }
+  }
+  .talk-details {
+    text-align: left;
+    .room-schedule {
+      font-size: 0.6em;
+    }
+    .speaker-schedule {
+      .speaker-name {
+        font-weight: bold;
+      }
+      .speaker-country{
+        font-size:  0.7em;
+      }
+    }
+  }
+}
+
+.event-item-schedule{
+  font-size: 30px;
+  background-color: rgba(255,255,255, 0.7);
+  color: #382092;
+  border: 3px solid white;
+  border-radius: 15px;
+  padding: 20px 0px;
+  @media (min-width: 768px) {
+      margin: 0 30px;
+  }
+  .event-details {
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+    .fa {
+      display: inline-block;
+    }
+    .event-name{
+      display: inline-block;
+    }
+  }
+  .time-schedule {
+
+  }
+}
+
+
+// Animation Countdown
+/**
+ * Main module
+ */
+main a,
+main a:link,
+main a:visited {
+  color: #777;
+  text-decoration: underline;
+}
+main a:hover,
+main a:active,
+main a:visited:hover {
+  color: #000;
+  text-decoration: underline;
+}
+main article {
+  padding: 1em;
+}
+main [class*="pure-u-"]:first-child article {
+  padding-left: 0;
+}
+main [class*="pure-u-"]:last-child article {
+  padding-right: 0;
+}
+@media screen and (max-width: 48em) {
+  main article {
+    padding: 0 !important;
+  }
+}
+.main-example {
+  margin: 0 auto;
+  width: 355px;
+  font-size: 1.4em;
+  line-height:0px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.main-example .countdown-container {
+  height: 130px;
+}
+.main-example .time {
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  height: 95px;
+  width: 65px;
+
+  -webkit-perspective: 479px;
+  -moz-perspective: 479px;
+  -ms-perspective: 479px;
+  -o-perspective: 479px;
+  perspective: 479px;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.main-example .count {
+  background: #202020;
+  color: #f8f8f8;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.0em;
+  line-height: 2.4em;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  top: 0;
+  width: 100%;
+
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+
+  -webkit-transform-style: flat;
+  -moz-transform-style: flat;
+  -ms-transform-style: flat;
+  -o-transform-style: flat;
+  transform-style: flat;
+}
+.main-example .count.top {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-radius: 5px 5px 0 0;
+  height: 50%;
+
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+.main-example .count.bottom {
+  background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -webkit-linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -moz-linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -ms-linear-gradient(rgba(255,255,255,0.1), transparent);
+  background-image: -o-linear-gradient(rgba(255,255,255,0.1), transparent);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-radius: 0 0 5px 5px;
+  line-height: 0;
+  height: 50%;
+  top: 50%;
+
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+.main-example .count.next {
+}
+.main-example .label {
+  font-size: normal;
+  margin-top: 5px;
+  display: block;
+  position: absolute;
+  top: 95px;
+  width: 100%;
+}
+/* Animation start */
+.main-example .count.curr.top {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  z-index: 3;
+}
+.main-example .count.next.bottom {
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  z-index: 2;
+}
+/* Animation end */
+.main-example .flip .count.curr.top {
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+.main-example .flip .count.next.bottom {
+  -webkit-transition: all 250ms ease-in-out 250ms;
+  -moz-transition: all 250ms ease-in-out 250ms;
+  -ms-transition: all 250ms ease-in-out 250ms;
+  -o-transition: all 250ms ease-in-out 250ms;
+  transition: all 250ms ease-in-out 250ms;
+
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
 }

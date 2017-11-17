@@ -1,14 +1,10 @@
-name: Universidad Eafit
+name: Universidad EAFIT
 ---
 location: Medellín, Colombia
 ---
-date_begin: 2018-02-09
----
-date_end: 2018-02-11
----
 rooms: 
 ---
-address: Carrera 49
+address: Carrera 49 Nº 7 Sur-50
 ---
 latitude: 6.200896
 ---
@@ -22,20 +18,19 @@ _template: page.html
 ---
 body:
 
+## Medellín
+
 <br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+
+Medellín is a city to experience with all your senses, as there are many reasons that make it a top tourist destination in South America. Known as _"La ciudad de la Eterna Primavera"_ (the City of Eternal Spring), the city enjoys throughout the year an sprint-like climate and temperature, as well as being a warm and rich cultural center.
+
+The city is also hometown of many world-renowned artists, painters and sculptures, including Fernando Botero, whose works embellish many parks and squares around the city.
+
+ Medellín is often referred to as the “Cultural Center of Colombia”. There are almost 40 museums (e.g. Museum of Modern Art and an interactive museum called Parque Explora”) in the city, along with multiple theatres and even a planetarium and the largest freshwater aquarium in South America[[1]](#1)
+
+Medellín stands out as an important center for business, fashion and international trade, as well as a center for permanent symposiums and diplomatic meetings.
+
+<a name="1"></a>[1] http://blog.hallocasa.com/20-insights-about-launching-a-company-in-medellin-colombia
 
 ---
 banner: medellin.jpg
