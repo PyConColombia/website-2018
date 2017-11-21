@@ -4,4 +4,6 @@ web: https://www.python.org/psf/
 ---
 image: psf-inverse.svg
 ---
+category: gold
+---
 confirmed: yes
