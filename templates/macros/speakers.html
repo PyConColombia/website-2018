@@ -1,15 +1,19 @@
 {% macro render_speaker_social(speaker, index=1, floating=True) %}
   <div id="link-{{ index }}" class="speaker-social{% if floating %} floating{% endif %}">
+    {%- set counter = 0 -%}
     {% if speaker.twitter_handle %}
       <a id="link-{{ index }}" class="social-hover" href="https://www.twitter.com/{{ speaker.twitter_handle }}" target="blank"><div class="social-icon icon-twitter"></div></a>
+      {% set counter =  counter +1 %}
     {% endif %}
     {% if speaker.web %}
       <a id="link-{{ index }}" class="social-hover" href="{{ speaker.web }}" target="blank"><div class="social-icon icon-website"></div></a>
+      {% set counter =  counter + 1 %}
     {% endif %}
     {% if speaker.github_handle %}
       <a id="link-{{ index }}" class="social-hover" href="https://www.github.com/{{ speaker.github_handle }}" target="blank"><div class="social-icon icon-github"></div></a>
+      {% set counter =  counter + 1 %}
     {% endif %}
-    {% if speaker.facebook_handle %}
+    {% if speaker.facebook_handle and counter > 3 and not floating %}
       <a id="link-{{ index }}" class="social-hover" href="https://www.facebook.com/{{ speaker.facebook_handle }}" target="blank"><div class="social-icon icon-facebook"></div></a>
     {% endif %}
   </div>
