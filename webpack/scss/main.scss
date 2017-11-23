@@ -433,6 +433,14 @@ $default-transition-duration: 0.5s;
   }
 }
 
+.light-section {
+  .speaker-image{
+    border-color: gray;
+    &:hover {
+     border-color: white;
+    }
+  }
+}
 .speaker-image {
   @extend .img-circle;
   border: 4px solid #2bb6da;
