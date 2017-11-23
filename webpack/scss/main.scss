@@ -440,7 +440,7 @@ $default-transition-duration: 0.5s;
   }
 }
 .speaker-image {
-  @extend .img-circle;
+  @extend .rounded-circle;
   border: 4px solid #2bb6da;
   position: relative; 
   display: block;
