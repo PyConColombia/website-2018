@@ -458,6 +458,10 @@ $default-transition-duration: 0.5s;
   }
 }
 
+.speaker-info {
+  padding: 20px 5px;
+}
+
 .hovered {
   @include transition-duration($default-transition-duration);
   @include filter-grayscale(0%)
