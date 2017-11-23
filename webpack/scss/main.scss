@@ -516,11 +516,11 @@ $default-transition-duration: 0.5s;
 .talk-btn {
   @extend .speaker-btn;
 
-  background-color: $brand-success;
+  background-color: theme-color("success");
   min-height: 6em;
 
   &:hover{
-    background-color: darken($brand-success, 10%);
+    background-color: darken(theme-color("success"), 10%);
   }
   
 }
@@ -528,10 +528,10 @@ $default-transition-duration: 0.5s;
 .workshop-btn {
   @extend .speaker-btn;
 
-  background-color: $brand-primary;
+  background-color: theme-color("primary");
 
     &:hover{
-    background-color: darken($brand-primary, 10%);
+    background-color: darken(theme-color("primary"), 10%);
   }
 }
 
