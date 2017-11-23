@@ -456,11 +456,12 @@ $default-transition-duration: 0.5s;
 
 
 .speaker-social {
-  position: absolute; 
-  bottom: 100px;
   width: 100%; 
   text-align: center;
-
+  &.floating{
+    position: absolute;
+    bottom: 100px;
+  }
 }
 
 .speaker-details {

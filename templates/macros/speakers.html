@@ -1,5 +1,5 @@
-{% macro render_speaker_social(speaker, index=1) %}
-  <div id="link-{{ index }}" class="speaker-social">
+{% macro render_speaker_social(speaker, index=1, floating=True) %}
+  <div id="link-{{ index }}" class="speaker-social{% if floating %} floating{% endif %}">
     {% if speaker.twitter_handle %}
       <a id="link-{{ index }}" class="social-hover" href="https://www.twitter.com/{{ speaker.twitter_handle }}" target="blank"><div class="social-icon icon-twitter"></div></a>
     {% endif %}
