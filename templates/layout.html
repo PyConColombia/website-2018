@@ -60,13 +60,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="{{ '/static/gen/styles.css' | asseturl }}">
 
-    <!-- Include project main library -->
-    <script src="{{ '/static/gen/app.js'|asseturl }}"></script>
-
-    <!-- Google analytics -->
-    {% include 'partials/_googleanalytics.html' %}
-
-    {% block header_scripts %}{% endblock %}
   </head>
   <body>
     <div class="body-wrapper">
@@ -144,6 +137,13 @@
       </footer>
       <img class="hidden" src="/static/images/opimage.jpg" />
     </div>
+
+    <!-- Include project main library -->
+    <script src="{{ '/static/gen/app.js'|asseturl }}"></script>
+
+    <!-- Google analytics -->
+    {% include 'partials/_googleanalytics.html' %}
+
     <script>
       ((window.gitter = {}).chat = {}).options = {
         room: 'PyConColombia/Lobby',
