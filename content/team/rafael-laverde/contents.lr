@@ -1,9 +1,19 @@
 id: rafael-laverde
 ---
-last_name: Laverde
----
 name: Rafael
+---
+last_name: Laverde
 ---
 publish: yes
 ---
 category: Collaborator
+---
+image: rafael-laverde.png
+---
+github_handle: rlaverde
+---
+twitter_handle: rafa_laverde
+---
+web: https://rlaverde.me
+---
+summary: Software Developer, Pythonist, Software Libre Advocate.
