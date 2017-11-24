@@ -557,6 +557,24 @@ $default-transition-duration: 0.5s;
 }
 .sponsors {
   text-align: center;
+  .sponsors-title{
+    text-align: center;
+    &.sponsors-title-diamond {
+      text-shadow: 0 0 2em #51b4e5;
+    }
+    &.sponsors-title-gold {
+      color: #eeb734;
+    }
+    &.sponsors-title-bronze {
+      color: #8c6f34;
+    }
+    &.sponsors-title-startup {
+      color: #4c7986;
+    }
+  }
+  .sponsor-invitation-text {
+    font-size: 18px;
+  }
 }
 .sponsor {
   display: inline-block;
