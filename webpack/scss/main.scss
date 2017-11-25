@@ -13,6 +13,7 @@
 
 body {
   font-family: 'Maven Pro', 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px;
 }
 
 @include selection {
@@ -432,6 +433,14 @@ $default-transition-duration: 0.5s;
   }
 }
 
+.light-section {
+  .speaker-image{
+    border-color: gray;
+    &:hover {
+     border-color: white;
+    }
+  }
+}
 .speaker-image {
   @extend .img-circle;
   border: 4px solid #2bb6da;
@@ -449,6 +458,10 @@ $default-transition-duration: 0.5s;
   }
 }
 
+.speaker-info {
+  padding: 20px 5px;
+}
+
 .hovered {
   @include transition-duration($default-transition-duration);
   @include filter-grayscale(0%)
@@ -456,11 +469,12 @@ $default-transition-duration: 0.5s;
 
 
 .speaker-social {
-  position: absolute; 
-  bottom: 100px;
   width: 100%; 
   text-align: center;
-
+  &.floating{
+    position: absolute;
+    bottom: 100px;
+  }
 }
 
 .speaker-details {

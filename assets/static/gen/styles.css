@@ -5821,7 +5821,8 @@ button.close {
 
 /* html tags styling */
 body {
-  font-family: 'Maven Pro', 'Helvetica', 'Arial', sans-serif; }
+  font-family: 'Maven Pro', 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px; }
 
 ::selection {
   color: white;
@@ -6182,6 +6183,11 @@ input {
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s; }
 
+.light-section .speaker-image {
+  border-color: gray; }
+  .light-section .speaker-image:hover {
+    border-color: white; }
+
 .speaker-image {
   border: 4px solid #2bb6da;
   position: relative;
@@ -6201,6 +6207,9 @@ input {
     /* Safari 6.0 - 9.0 */
     filter: grayscale(0%); }
 
+.speaker-info {
+  padding: 20px 5px; }
+
 .hovered {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
@@ -6209,10 +6218,11 @@ input {
   filter: grayscale(0%); }
 
 .speaker-social {
-  position: absolute;
-  bottom: 100px;
   width: 100%;
   text-align: center; }
+  .speaker-social.floating {
+    position: absolute;
+    bottom: 100px; }
 
 .speaker-details {
   color: #382092;

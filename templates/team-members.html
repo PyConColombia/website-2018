@@ -1,9 +1,14 @@
-{% extends "layout.html" %}
+{%- from "macros/team_members.html" import render_team_member -%}
+{% extends "page.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-   <div>
-  {% for child in this.pagination.items %}
-    <p>{{ child.name }} {{ child.last_name }}</p>
+  <div class="row">
+  {% for category in ['Organizer', 'Co-Organizer', 'Collaborator', 'Volunteer', 'Ambassor']%}
+    {% for child in this.pagination.items.filter(F.category==category) %}
+      <div class="col-sm-4 col-md-3">
+        {{ render_team_member(child, loop.index) }}
+      </div>
+    {% endfor %}
   {% endfor %}
-  <div>
+  </div>
 {% endblock %}

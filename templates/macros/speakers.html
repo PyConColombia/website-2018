@@ -1,0 +1,53 @@
+{% macro render_speaker_social(speaker, index=1, floating=True) %}
+  <div id="link-{{ index }}" class="speaker-social{% if floating %} floating{% endif %}">
+    {%- set counter = 0 -%}
+    {% if speaker.twitter_handle %}
+      <a id="link-{{ index }}" class="social-hover" href="https://www.twitter.com/{{ speaker.twitter_handle }}" target="blank"><div class="social-icon icon-twitter"></div></a>
+      {% set counter =  counter +1 %}
+    {% endif %}
+    {% if speaker.web %}
+      <a id="link-{{ index }}" class="social-hover" href="{{ speaker.web }}" target="blank"><div class="social-icon icon-website"></div></a>
+      {% set counter =  counter + 1 %}
+    {% endif %}
+    {% if speaker.github_handle %}
+      <a id="link-{{ index }}" class="social-hover" href="https://www.github.com/{{ speaker.github_handle }}" target="blank"><div class="social-icon icon-github"></div></a>
+      {% set counter =  counter + 1 %}
+    {% endif %}
+    {% if speaker.facebook_handle and counter > 3 and not floating %}
+      <a id="link-{{ index }}" class="social-hover" href="https://www.facebook.com/{{ speaker.facebook_handle }}" target="blank"><div class="social-icon icon-facebook"></div></a>
+    {% endif %}
+  </div>
+{% endmacro %}
+
+{% macro render_speaker_info(speaker) %}
+  <div class="speaker-details">
+    <p>{{ speaker.name }} {{speaker.last_name }}</p>
+    <div class="speaker-job">
+      {% if speaker.display_summary %}
+      <h5>{{ speaker.summary }}</h5>
+      {% else%}
+      <h5>{{ speaker.position }} {{ t_speaker_at }} {{ speaker.employer }}</h5>
+      {% endif %}
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro render_speaker(speaker, index=1, details=True) %}
+{%- set complete_name = speaker.name + " " + speaker.last_name -%}
+
+  <div class="speaker">
+    <a href="{{ speaker | url }}" title="{{ complete_name }}"">
+    <img class="speaker-image" id="speaker-image-link-{{ index }}" alt="{{ complete_name }}" src=
+    {%- if speaker.image -%}
+      "/speakers/{{ speaker._id }}/{{ speaker.image }}"
+    {%- else -%}
+      "/static/images/empty-photo.svg"
+    {%- endif -%}
+     />
+     </a>
+    {% if details -%}
+      {{ render_speaker_social(speaker, index) }}
+      {{ render_speaker_info(speaker) }}
+    {%- endif %}
+  </div>
+{% endmacro %}

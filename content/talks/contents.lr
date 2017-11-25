@@ -1,7 +1,5 @@
 _model: talks
 ---
-_template: page.html
----
 title: Talks & Workshops
 ---
 body:
