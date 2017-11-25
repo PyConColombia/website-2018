@@ -8,8 +8,8 @@ module.exports = {
     'styles': './scss/main.scss'
   },
   output: {
-    path: path.dirname(__dirname) + '/assets/static/gen',
-    publicPath: './static',
+    path: path.dirname(__dirname) + '/assets/static/gen/',
+    publicPath: './static/gen/',
     filename: '[name].js'
   },
   devtool: '#cheap-module-source-map',
