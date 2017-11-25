@@ -1,6 +1,6 @@
 # PyCon Colombia 2018 website
 
-This site is currently a minimal Flask app serving a single template.
+This is the repository for the pycon 2018 website at [pycon.co](https://pycon.co/), built using [lektor](https://www.getlektor.com)
 
 # Workflow
 
@@ -14,40 +14,31 @@ After test have been carried out by the QA Team, the changes from `develop`
 will be merged in `production` and deployed gh-pages via Lektor to http://pycon.co
 and http://2018.pycon.co
 
-# Run locally (Unix)
+# Run locally
 
-## Using Pip and virtualenv
+## Install Lektor
 
-### First install
-
+Running installation script:
 ```
-$ python -m venv venv
-$ venv/bin/activate
-$ pip install -r requirements.txt
+$ curl -sf https://www.getlektor.com/install.sh | sh
 ```
 
-### Usage
-
+Using pip:
 ```
-$ venv/bin/activate
-$ FLASK_APP=app.py python -m flask run
+$ pip install -U Lektor
 ```
 
+### Run server and make changes
 
-## Using conda
-
-
-### First install
+To run local server:
 
 ```
-$ conda create -n pycon2018 python=3.6 --file requirements.txt
-$ source activate pycon2018
-$ FLASK_APP=app.py python -m flask run
+$ lektor server
 ```
 
-### Usage
+If you also want to update the webpack files, you need `npm` installed
+and then run it like this:
 
 ```
-$ source activate pycon2018
-$ FLASK_APP=app.py python -m flask run
+$ lektor server -f webpack
 ```
