@@ -1,13 +1,16 @@
 @import "mixins";
-@import "variables";
-@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import '~bootstrap/scss/functions';
+@import "variables"; //bootstrap config
+@import "~bootstrap/scss/bootstrap";
 
+// Font awesome
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome.scss";
 
-@font-face {
-    font-family: 'Glyphicons Halflings';
-    src: url('/static/gen/fonts/glyphicons-halflings-regular.eot');
-    src: url('/static/gen/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/static/gen/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/static/gen/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/static/gen/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
-}
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
 
 /* html tags styling */
 
@@ -442,7 +445,7 @@ $default-transition-duration: 0.5s;
   }
 }
 .speaker-image {
-  @extend .img-circle;
+  @extend .rounded-circle;
   border: 4px solid #2bb6da;
   position: relative; 
   display: block;
@@ -518,11 +521,11 @@ $default-transition-duration: 0.5s;
 .talk-btn {
   @extend .speaker-btn;
 
-  background-color: $brand-success;
+  background-color: theme-color("success");
   min-height: 6em;
 
   &:hover{
-    background-color: darken($brand-success, 10%);
+    background-color: darken(theme-color("success"), 10%);
   }
   
 }
@@ -530,10 +533,10 @@ $default-transition-duration: 0.5s;
 .workshop-btn {
   @extend .speaker-btn;
 
-  background-color: $brand-primary;
+  background-color: theme-color("primary");
 
     &:hover{
-    background-color: darken($brand-primary, 10%);
+    background-color: darken(theme-color("primary"), 10%);
   }
 }
 

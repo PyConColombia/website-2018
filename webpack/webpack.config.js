@@ -1,7 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
 var autoprefixer = require('autoprefixer');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -9,8 +8,8 @@ module.exports = {
     'styles': './scss/main.scss'
   },
   output: {
-    path: path.dirname(__dirname) + '/assets/static/gen',
-    publicPath: '/static',
+    path: path.dirname(__dirname) + '/assets/static/gen/',
+    publicPath: './static/gen/',
     filename: '[name].js'
   },
   devtool: '#cheap-module-source-map',
@@ -35,17 +34,25 @@ module.exports = {
       }
     },
     {
-      test: /\.css$/,
-      loaders: ["style-loader","css-loader"]
+      test: /\.(scss)$/,
+      use: [{
+        loader: 'style-loader', // inject CSS to page
+      }, {
+        loader: 'css-loader', // translates CSS into CommonJS modules
+      }, {
+        loader: 'postcss-loader', // Run post css actions
+        options: {
+          plugins: function () { // post css plugins, can be exported to postcss.config.js
+            return [
+              require('precss'),
+              require('autoprefixer')
+            ];
+          }
+        }
+      }, {
+        loader: 'sass-loader' // compiles SASS to CSS
+      }]
     },
-
-      {
-       test: /\.scss$/,
-       use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader!sass-loader"
-        })
-      },
       {
         test: /\.jsx$/,
         loader: "babel-loader", // Do not use "use" here
@@ -53,12 +60,11 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('styles.css', {
-      allChunks: true
-    }),
     new webpack.ProvidePlugin({
         $: "jquery",
-        jQuery: "jquery"
+        jQuery: "jquery",
+        'window.jQuery': 'jquery',
+        Popper: ['popper.js', 'default'],
     }),
     new webpack.optimize.UglifyJsPlugin()
   ],
