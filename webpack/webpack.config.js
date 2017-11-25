@@ -1,7 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
 var autoprefixer = require('autoprefixer');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -61,9 +60,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('styles.css', {
-      allChunks: true
-    }),
     new webpack.ProvidePlugin({
         $: "jquery",
         jQuery: "jquery",
