@@ -6,11 +6,7 @@
 {%- set t_invitation_sponsor_text = transbag('translate', this.alt, 'invitation_sponsor_text') -%}
 
 <h1 class="text-center" style="color:white;">{{ t_sponsors }}</h1>
-<div class="row">
-  <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-offset-0 col-xs-12">
     <h3 class="text-center" >{{ t_sponsor_text }}</h3>
-  </div>
-</div>
 <div class="container sponsors"/>
     {% for category in ["diamond", "gold", "bronze", "startup"] %}
       {%- set t_category = transbag('translate', this.alt, category) -%}
@@ -38,9 +34,9 @@
 <br />
 <br />
 <div class="row">
-  <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10">
+  <div class="col-md-6 col-sm-6 col-xs-10 mx-auto">
     <div class="row">
-      <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-offset-0 col-xs-12">
+      <div class="col-md-8 col-sm-10 col-xs-12 mx-auto">
         <a href="{{ '/sponsors'|url(alt=this.alt) }}" class="btn btn-success btn-lg btn-block     center-block">
           {{ t_apply_sponsor }}!
         </a>

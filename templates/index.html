@@ -28,19 +28,19 @@
         {% block banner_text %}
         <div class="section-container-main stars">
           <div class="row">
-            <div class="col-md-offset-0 col-md-12 col-sm-offset-0 col-sm-12 col-xs-offset-0 col-xs-12">
+            <div class="col-12">
               <div class="logo-{{ this.alt }}"></div>
             </div>
-            <div class="col-md-12">
+            <div class="col-12">
               <div class="date">{{ t_place }}<br>{{ t_date }}</div>
             </div>
             {% if 'tickets' in this.sections %}
-            <div hidden class="col-md-12 ticket-wrapper" id="ticket-div">
+            <div hidden class="col-12 ticket-wrapper" id="ticket-div">
               <div class="atom"></div>
               <a href="{{ this.tickets_link }}" title="{{ t_ticket_text }}" target="blank"><div class="ticket ticket-{{ this.alt }}"></div></a>
               <div class="atom"></div>
               </div>
-            <div class="col-md-12 text-center" id="countdown-div">
+            <div class="col-12 text-center" id="countdown-div">
               <h2>{{ t_tickets_available }}</h2>
               <br>
               <div class="main-example">
@@ -59,7 +59,7 @@
       <div class="container-fluid light-section">
         <div class="section-container">        
           <div class="row">          
-            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <div class="col-md-6 col-sm-8 col-xs-10 mx-auto">
               <h1 class="section-title">{{ t_speakers_workshops }}</h1>
               <div class="transparent-background">
                 <h2 class="text-center">{{ t_tell_us }}</h2>
@@ -149,7 +149,7 @@
       <div class="container-fluid light-section">
         <div class="section-container">
           <div class="row">
-            <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
+            <div class="col-md-6 col-xs-10 mx-auto">
               {% include 'partials/_schedule.html' %}
             </div>
           </div>
@@ -161,7 +161,7 @@
       <div class="container-fluid dark-section">
         <div class="section-container">
           <div class="row">
-            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <div class="col-md-6 col-sm-8 col-xs-10 mx-auto">
               <div class="row">
                 <div class="col-md-12">
                     <h1 class="section-title">{{ t_venue_location }}</h1>
@@ -182,7 +182,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+                <div class="col-md-6 col-sm-8 col-xs-10 mx-auto">
                   <br />
                   <br />
                   <br />
@@ -203,7 +203,7 @@
       <div class="container-fluid light-section">
         <div class="section-container">
           <div class="row">
-            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <div class="col-md-6 col-sm-8 col-xs-10 mx-auto">
               {% include 'partials/_mailchimp.html' %}
             </div>
           </div>
