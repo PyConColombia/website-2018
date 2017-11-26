@@ -429,11 +429,6 @@ $default-transition-duration: 0.5s;
   margin-right: auto;
   @include transition-duration($default-transition-duration);
 
-  p {
-    padding-top: 10px;
-    font-size: 1.5em;
-  }
-
   &:hover {
     @include transition-duration($default-transition-duration);
   }
@@ -490,6 +485,13 @@ $default-transition-duration: 0.5s;
   width: 100%; 
   text-align: center;
   pointer-events:none;
+  .speaker-name{
+    padding-top: 10px;
+    font-size: 1.5em;
+  }
+  .speaker-job{
+    font-size: 1em;
+  }
 }
 
 
