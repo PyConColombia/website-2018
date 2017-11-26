@@ -6,7 +6,7 @@
 {%- set t_invitation_sponsor_text = transbag('translate', this.alt, 'invitation_sponsor_text') -%}
 
 <h1 class="text-center" style="color:white;">{{ t_sponsors }}</h1>
-    <h3 class="text-center" >{{ t_sponsor_text }}</h3>
+    <p class="text-center" >{{ t_sponsor_text }}</p>
 <div class="container sponsors"/>
     {% for category in ["diamond", "gold", "bronze", "startup"] %}
       {%- set t_category = transbag('translate', this.alt, category) -%}
