@@ -407,7 +407,7 @@ input {
   transform: rotate(-5deg);
 }
 .stars:before {
-  background-image: url("/images/plus-background-white.svg");
+  background-image: url("/static/images/plus-background-white.svg");
   mix-blend-mode: color-dodge;
   transform: rotate(10deg);
 }
