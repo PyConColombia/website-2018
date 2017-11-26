@@ -10,7 +10,7 @@ module.exports = {
   },
   output: {
     path: path.dirname(__dirname) + '/assets/static/gen/',
-    publicPath: './static/gen/',
+    publicPath: './',
     filename: '[name].js'
   },
   devtool: '#cheap-module-source-map',
