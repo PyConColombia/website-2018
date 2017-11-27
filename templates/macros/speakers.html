@@ -21,12 +21,12 @@
 
 {% macro render_speaker_info(speaker) %}
   <div class="speaker-details">
-    <p>{{ speaker.name }} {{speaker.last_name }}</p>
+    <div class="speaker-name">{{ speaker.name }} {{speaker.last_name }}</div>
     <div class="speaker-job">
       {% if speaker.display_summary %}
-      <h5>{{ speaker.summary }}</h5>
+      {{ speaker.summary }}
       {% else%}
-      <h5>{{ speaker.position }} {{ t_speaker_at }} {{ speaker.employer }}</h5>
+      {{ speaker.position }} {{ t_speaker_at }} {{ speaker.employer }}
       {% endif %}
     </div>
   </div>

@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var autoprefixer = require('autoprefixer');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -9,7 +10,7 @@ module.exports = {
   },
   output: {
     path: path.dirname(__dirname) + '/assets/static/gen/',
-    publicPath: './static/gen/',
+    publicPath: './',
     filename: '[name].js'
   },
   devtool: '#cheap-module-source-map',
@@ -35,9 +36,9 @@ module.exports = {
     },
     {
       test: /\.(scss)$/,
+      use: ExtractTextPlugin.extract({
+        fallback: "style-loader",
       use: [{
-        loader: 'style-loader', // inject CSS to page
-      }, {
         loader: 'css-loader', // translates CSS into CommonJS modules
       }, {
         loader: 'postcss-loader', // Run post css actions
@@ -52,6 +53,7 @@ module.exports = {
       }, {
         loader: 'sass-loader' // compiles SASS to CSS
       }]
+    })
     },
       {
         test: /\.jsx$/,
@@ -60,6 +62,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new ExtractTextPlugin('styles.css', {
+      allChunks: true
+    }),
     new webpack.ProvidePlugin({
         $: "jquery",
         jQuery: "jquery",
