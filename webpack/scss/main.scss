@@ -560,21 +560,30 @@ $default-transition-duration: 0.5s;
     padding-right: 5px;
   }
 }
+
+.sponsors-text{
+  text-align: center;
+  font-size: 1.2em;
+}
 .sponsors {
   text-align: center;
+  .sponsors-category{
+    padding: 3em 0;
+  }
   .sponsors-title{
     text-align: center;
+    margin-bottom: 0.7em;
     &.sponsors-title-diamond {
-      text-shadow: 0 0 2em #51b4e5;
+      //color: #51b4e5;
     }
     &.sponsors-title-gold {
-      color: #eeb734;
+      //color: #eeb734;
     }
     &.sponsors-title-bronze {
-      color: #8c6f34;
+      //color: #8c6f34;
     }
     &.sponsors-title-startup {
-      color: #4c7986;
+      //color: #4c7986;
     }
   }
   .sponsor-invitation-text {
@@ -586,19 +595,16 @@ $default-transition-duration: 0.5s;
   max-width: 100%;
   height: auto;
   &.sponsor-diamond{
-    width:400px;
+    height:150px;
   }
   &.sponsor-gold{
-    width:350px;
-  }
-  &.sponsor-silver{
-    width:500px;
+    height:100px;
   }
   &.sponsor-bronce{
-    width:250px;
+    height:50px;
   }
   &.sponsor-startup{
-    width:200px;
+    height:30px;
   }
   a {
     display:table;
