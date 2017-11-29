@@ -441,6 +441,9 @@ $default-transition-duration: 0.5s;
      border-color: white;
     }
   }
+  a {
+    color: white;
+  }
 }
 .speaker-image {
   @extend .rounded-circle;
