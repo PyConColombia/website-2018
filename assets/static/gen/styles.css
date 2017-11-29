@@ -7389,6 +7389,25 @@ input {
     font-size: 1.5em; }
 .speaker-details .speaker-job {
     font-size: 1em; }
+.accepted-speakers {
+  margin-top: 5em; }
+.accepted-speakers .atom-python {
+    background: url("/static/images/atom-python.svg") center center no-repeat;
+    background-size: contain;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: -80px;
+    right: -40px; }
+.accepted-speakers .atom-python:first-child {
+      height: 120px;
+      width: 120px;
+      top: -60px;
+      left: -60px; }
+@media screen and (max-width: 768px) {
+      .accepted-speakers .atom-python {
+        display: none; } }
 .mini-logo {
   background: url("/static/images/mini-hexa.svg") center center no-repeat;
   background-size: contain;
