@@ -496,7 +496,10 @@ $default-transition-duration: 0.5s;
 
 
 .accepted-speakers{
-  margin-top: 5em;
+  margin: 5em 0;
+  a {
+      margin-top: 2em;
+  }
   .atom-python{
     background: url("/static/images/atom-python.svg") center center no-repeat;
     background-size: contain;
