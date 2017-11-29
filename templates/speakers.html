@@ -3,6 +3,7 @@
 {%- set t_keynote_speakers = transbag('translate', this.alt, 'keynote_speakers') -%}
 {%- set t_speakers = transbag('translate', this.alt, 'speakers') -%}
 {% extends "page.html" %}
+{%- set t_accepted_speakers_button = transbag('translate', this.alt, 'accepted_speakers_button') -%}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
   {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote).filter(F.publish) %}
@@ -17,10 +18,18 @@
   {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote != True).filter(F.publish) %}
   <h1 class="section-title-light">{{ t_speakers }}</h1>
   <div class="row">
+    {% if speakers %}
     {% for speaker in speakers %}
     <div class="col-sm-4 col-md-3">
       {{ render_speaker(speaker, loop.index) }}
     </div>
     {% endfor %}
+    {% else %}
+    <div class="col mx-auto text-center">
+      <a href="{{ site.get('/', alt=this.alt).accepted_speakers_link }}" target="blank" class="btn btn-success btn-lg centerer-block text">
+        {{ t_accepted_speakers_button }}
+      </a>
+    </div>
+    {% endif %}
   </div>
 {% endblock %}

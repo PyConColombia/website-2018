@@ -14,6 +14,8 @@
 {%- set t_speakers_5 = transbag('translate', this.alt, 'speakers_5') -%}
 {%- set t_apply_talk = transbag('translate', this.alt, 'apply_talk') -%}
 {%- set t_apply_workshop = transbag('translate', this.alt, 'apply_workshop') -%}
+{%- set t_accepted_speakers_title = transbag('translate', this.alt, 'accepted_speakers_title') -%}
+{%- set t_accepted_speakers_button = transbag('translate', this.alt, 'accepted_speakers_button') -%}
 {%- set t_more_info = transbag('translate', this.alt, 'more_info') -%}
 {%- set t_count_weeks = transbag('translate', this.alt, 'count_weeks') -%}
 {%- set t_count_days = transbag('translate', this.alt, 'count_days') -%}
@@ -134,6 +136,20 @@
               </div>
             </div>
           </div>
+          {% if 'link-accepted-speakers' in this.sections %}
+          <div class="row accepted-speakers">
+            <div class="col-md-6 col-sm-8 col-xs-10 mx-auto text-center">
+            <div class="atom-python"></div>
+            <div class="atom-python"></div>
+              <h1 class="section-title-light">{{ t_accepted_speakers_title }}</h1>
+
+              <a href="{{ this.accepted_speakers_link }}" target="blank" class="btn btn-success btn-lg centerer-block text">
+                    {{ t_accepted_speakers_button }}
+              </a>
+            </div>
+          </div>
+          {% endif %}
+        </div>
         </div>
       </div>
 
