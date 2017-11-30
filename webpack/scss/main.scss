@@ -441,6 +441,9 @@ $default-transition-duration: 0.5s;
      border-color: white;
     }
   }
+  a {
+    color: white;
+  }
 }
 .speaker-image {
   @extend .rounded-circle;
@@ -496,26 +499,9 @@ $default-transition-duration: 0.5s;
 
 
 .accepted-speakers{
-  margin-top: 5em;
-  .atom-python{
-    background: url("/static/images/atom-python.svg") center center no-repeat;
-    background-size: contain;
-    height: 80px;
-    width: 80px;
-    margin-bottom: 30px;
-    position: absolute;
-    bottom: -80px;
-    right: -40px;
-    &:first-child{
-      height: 120px;
-      width: 120px;
-      top:-60px;
-      left: -60px;
-    }
-
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
+  margin: 5em 0;
+  a {
+      margin-top: 2em;
   }
 }
 
