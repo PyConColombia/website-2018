@@ -1,6 +1,6 @@
 id: javier-daza
 ---
-category: Colaborador
+category: Collaborator
 ---
 last_name: Daza Comas
 ---
@@ -23,3 +23,5 @@ summary: Helping others is my passion, it's what makes me wake up every day and 
 information:
 
 I am a person who is willing to help others, diligent, proactive, responsible, persevering, recursive, willing to face new challenges. I posses skills in team management, assertiveness, training in computer tools and conflict management. I am self-taught by nature, and thus, I like to learn something new every day.
+---
+sort_key: 70
