@@ -4,9 +4,10 @@
 {% block body %}
   <div class="row">
   {% for category in ['Organizer', 'Co-Organizer', 'Collaborator', 'Volunteer', 'Ambassor']%}
-    {% for child in this.pagination.items.filter(F.category==category) %}
+    {% set members = site.query('/team', alt=this.alt).filter(F.category==category).filter(F.publish) %}
+    {% for member in members %}
       <div class="col-sm-4 col-md-3">
-        {{ render_team_member(child, loop.index) }}
+        {{ render_team_member(member, loop.index) }}
       </div>
     {% endfor %}
   {% endfor %}
