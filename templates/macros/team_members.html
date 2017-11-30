@@ -17,8 +17,10 @@
       {{ render_speaker_social(member, index) }}
     <div class="speaker-details">
       <div class="speaker-name">{{ complete_name }}</div>
-      <div class="speaker-job">
-        <h5>{{ member.category }}</h5>
+      <div class="speaker-job">{{ member.category }}
+      {% if member.responsibility %}
+        ({{ member.responsibility }})
+      {% endif %}
       </div>
     </div>
     {%- endif -%}
