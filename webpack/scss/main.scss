@@ -503,26 +503,6 @@ $default-transition-duration: 0.5s;
   a {
       margin-top: 2em;
   }
-  .atom-python{
-    background: url("/static/images/atom-python.svg") center center no-repeat;
-    background-size: contain;
-    height: 80px;
-    width: 80px;
-    margin-bottom: 30px;
-    position: absolute;
-    bottom: -80px;
-    right: -40px;
-    &:first-child{
-      height: 120px;
-      width: 120px;
-      top:-60px;
-      left: -60px;
-    }
-
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
-  }
 }
 
 .mini-logo {
