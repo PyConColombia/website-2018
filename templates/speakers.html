@@ -10,7 +10,7 @@
   <h1 class="section-title-light">{{ t_keynote_speakers }}</h1>
   <div class="row">
     {% for speaker in speakers %}
-    <div class="col-sm-4 col-md-3">
+    <div class="col-12 col-sm-6 col-lg-4">
       {{ render_speaker(speaker, loop.index) }}
     </div>
     {% endfor %}
@@ -20,7 +20,7 @@
   <div class="row">
     {% if speakers %}
     {% for speaker in speakers %}
-    <div class="col-sm-4 col-md-3">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
       {{ render_speaker(speaker, loop.index) }}
     </div>
     {% endfor %}
