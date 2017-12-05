@@ -27,3 +27,5 @@ summary: Water Resources. Sustainable development. Open Source. Python. Spyder d
 image: gonzalo-pena-castellanos.jpg
 ---
 sort_key: 20
+---
+publish: yes
