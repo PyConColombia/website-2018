@@ -1,6 +1,7 @@
 {%- from "macros/speakers.html" import render_speaker_social -%}
+{%- from "macros/translation.html" import transbag -%}
 
-{% macro render_team_member(member, index=1) %}
+{% macro render_team_member(member, index=1, details=True, alt="en") %}
 {%- set complete_name = member.name + " " + member.last_name -%}
 
   <div class="speaker">
@@ -13,12 +14,18 @@
     {%- endif -%}
      />
      </a>
-    {{ render_speaker_social(member, index) }}
+    {%- if details -%}
+    <div class="speaker-details-wrapper">
+      {{ render_speaker_social(member, index) }}
     <div class="speaker-details">
-      <p>{{ complete_name }}</p>
-      <div class="speaker-job">
-        <h5>{{ member.category }}</h5>
+      <div class="speaker-name">{{ complete_name }}</div>
+      <div class="speaker-job">{{ transbag('translate', alt, member.category) }}
+      {% if member.responsibility %}
+        ({{ member.responsibility }})
+      {% endif %}
       </div>
     </div>
+    </div>
+    {%- endif -%}
   </div>
 {% endmacro %}

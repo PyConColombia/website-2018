@@ -472,12 +472,16 @@ $default-transition-duration: 0.5s;
 }
 
 
+.speaker-details-wrapper {
+  position: relative;
+}
+
 .speaker-social {
   width: 100%; 
   text-align: center;
   &.floating{
     position: absolute;
-    bottom: 100px;
+    top: -60px;
   }
 }
 

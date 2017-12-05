@@ -46,8 +46,10 @@
      />
      </a>
     {% if details -%}
+    <div class="speaker-details-wrapper">
       {{ render_speaker_social(speaker, index) }}
       {{ render_speaker_info(speaker) }}
+    </div>
     {%- endif %}
   </div>
 {% endmacro %}

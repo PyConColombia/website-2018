@@ -1,11 +1,31 @@
 id: carlos-andres-sierra
 ---
-category: Co-Organizer
----
-email:
-
-jerarquia04@gmail.com 
+name: Carlos Andrés
 ---
 last_name: Sierra
 ---
-name: Carlos Andrés
+publish: yes
+---
+category: Co-Organizer
+---
+image: carlos-andres-sierra.jpg
+---
+github_handle: EngAndres
+---
+twitter_handle: casierrav_alife
+---
+facebook_handle: AndresSierraAL
+---
+email: carlos.andres.sierra.v@gmail.com
+---
+web: http://www.alife.unal.edu.co/index.php/members/carlos-sierra/
+---
+summary: M.Sc. on Computer Engineering
+---
+information:
+
+Computer Engineer, M.Sc. of Computer Engineering, PhD. student of Computer Engineering. Assistant Professor focused on Artificial Intelligence and Mathematical Optimization.
+---
+sort_key: 40
+---
+responsibility: Speakers

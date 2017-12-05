@@ -7373,12 +7373,14 @@ input {
   -webkit-filter: grayscale(0%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(0%); }
+.speaker-details-wrapper {
+  position: relative; }
 .speaker-social {
   width: 100%;
   text-align: center; }
 .speaker-social.floating {
     position: absolute;
-    bottom: 100px; }
+    top: -60px; }
 .speaker-details {
   color: #382092;
   font-weight: bold;
