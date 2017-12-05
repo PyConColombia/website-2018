@@ -1,4 +1,5 @@
 {%- from "macros/translation.html" import transbag -%}
+{%- from "macros/speakers.html" import render_speaker -%}
 {%- set t_keynote_speakers = transbag('translate', this.alt, 'keynote_speakers') -%}
 {%- set t_speaker_at = transbag('translate', this.alt, 'speaker_at') -%}
 {%- set t_venue_location = transbag('translate', this.alt, 'venue_location') -%}
@@ -13,10 +14,9 @@
 {%- set t_speakers_5 = transbag('translate', this.alt, 'speakers_5') -%}
 {%- set t_apply_talk = transbag('translate', this.alt, 'apply_talk') -%}
 {%- set t_apply_workshop = transbag('translate', this.alt, 'apply_workshop') -%}
-{%- set t_sponsors = transbag('translate', this.alt, 'sponsors') -%}
+{%- set t_accepted_speakers_title = transbag('translate', this.alt, 'accepted_speakers_title') -%}
+{%- set t_accepted_speakers_button = transbag('translate', this.alt, 'accepted_speakers_button') -%}
 {%- set t_more_info = transbag('translate', this.alt, 'more_info') -%}
-{%- set t_apply_sponsor = transbag('translate', this.alt, 'apply_sponsor') -%}
-{%- set t_sponsor_text = transbag('translate', this.alt, 'sponsor_text') -%}
 {%- set t_count_weeks = transbag('translate', this.alt, 'count_weeks') -%}
 {%- set t_count_days = transbag('translate', this.alt, 'count_days') -%}
 {%- set t_count_hours = transbag('translate', this.alt, 'count_hours') -%}
@@ -30,19 +30,19 @@
         {% block banner_text %}
         <div class="section-container-main stars">
           <div class="row">
-            <div class="col-md-offset-0 col-md-12 col-sm-offset-0 col-sm-12 col-xs-offset-0 col-xs-12">
+            <div class="col-12">
               <div class="logo-{{ this.alt }}"></div>
             </div>
-            <div class="col-md-12">
+            <div class="col-12">
               <div class="date">{{ t_place }}<br>{{ t_date }}</div>
             </div>
             {% if 'tickets' in this.sections %}
-            <div class="col-md-12 ticket-wrapper hidden" id="ticket-div">
+            <div hidden class="col-12 ticket-wrapper" id="ticket-div">
               <div class="atom"></div>
               <a href="{{ this.tickets_link }}" title="{{ t_ticket_text }}" target="blank"><div class="ticket ticket-{{ this.alt }}"></div></a>
               <div class="atom"></div>
               </div>
-            <div class="col-md-12 text-center" id="countdown-div">
+            <div class="col-12 text-center" id="countdown-div">
               <h2>{{ t_tickets_available }}</h2>
               <br>
               <div class="main-example">
@@ -61,7 +61,7 @@
       <div class="container-fluid light-section">
         <div class="section-container">        
           <div class="row">          
-            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <div class="col-md-6 col-sm-8 col-xs-10 mx-auto">
               <h1 class="section-title">{{ t_speakers_workshops }}</h1>
               <div class="transparent-background">
                 <h2 class="text-center">{{ t_tell_us }}</h2>
@@ -125,89 +125,36 @@
         <div class="section-container">        
           <div class="row">
         <div class="container">
-              {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote) %}
+              {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote).filter(F.publish) %}
               <h1 class="section-title-light">{{ t_keynote_speakers }}</h1>
               <div class="row">            
                 {% for speaker in speakers %}
-                <div class="col-sm-6 col-md-4">
-                  <div class="speaker">
-                    {% if speaker.image %}
-                    <img class="speaker-image" id="speaker-image-link-{{ loop.index }}" src="/speakers/{{ speaker._id }}/{{ speaker.image }}" />
-                    {% endif %}
-                    <div id="link-{{ loop.index }}" class="speaker-social">
-                      <a id="link-{{ loop.index }}" class="social-hover" href="https://www.twitter.com/{{ speaker.twitter_handle }}" target="blank"><div class="social-icon icon-twitter"></div></a>
-                      <a id="link-{{ loop.index }}" class="social-hover" href="{{ speaker.web }}" target="blank"><div class="social-icon icon-website"></div></a>
-                      <a id="link-{{ loop.index }}" class="social-hover" href="https://www.github.com/{{ speaker.github_handle }}" target="blank"><div class="social-icon icon-github"></div></a>
-                    </div>
-                    <div class="speaker-details">
-                      <p>{{ speaker.name }} {{ speaker.last_name }}</p>
-                      <div class="speaker-job">
-                        {% if speaker.display_summary %}
-                        <h5>{{ speaker.summary }}</h5>
-                        {% else%}
-                        <h5>{{ speaker.position }} {{ t_speaker_at }} {{ speaker.employer }}</h5>
-                        {% endif %}
-                      </div>
-                    </div>
-                  </div>
+                <div class="col-md-6 col-lg-4">
+                  {{ render_speaker(speaker, loop.index) }}
                 </div>
                 {% endfor %}
               </div>
             </div>
           </div>
+          {% if 'link-accepted-speakers' in this.sections %}
+          <div class="row accepted-speakers">
+            <div class="col-md-6 col-sm-8 col-xs-10 mx-auto text-center">
+              <h1 class="section-title-light">{{ t_accepted_speakers_title }}</h1>
+
+              <a href="{{ this.accepted_speakers_link }}" target="blank" class="btn btn-success btn-lg centerer-block text">
+                    {{ t_accepted_speakers_button }}
+              </a>
+            </div>
+          </div>
+          {% endif %}
+        </div>
         </div>
       </div>
 
       <!-- Sponsors Section -->
       <div class="container-fluid light-section">
         <div class="section-container">        
-          {% set sponsors = site.query('/sponsors', alt=this.alt) %}
-          <h1 class="text-center" style="color:white;">{{ t_sponsors }}</h1>
-          <div class="row">
-            <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-offset-0 col-xs-12">
-              <h3 class="text-center" >{{ t_sponsor_text }}</h3>
-            </div>
-          </div>
-          <div class="container"/>
-            <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="sponsors-carousel">
-              <div class="carousel-inner">
-                {% for i in range(2) %}
-                {% for sponsor in sponsors %}
-                  {% if sponsor.confirmed %}
-                <div class="item{% if loop.index == 1 and i == 0 %} active{% endif %}">
-                  <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="center-sponsor">
-                      <a href="{{ sponsor.web }}" target="blank">
-                        <div>
-                          <img src="/sponsors/{{ sponsor._id }}/{{ sponsor.image }}" class="img-responsive">
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                  {% endif %}
-                {% endfor %}
-                {% endfor %}
-              </div>
-              <a class="left carousel-control" href="#sponsors-carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-              <a class="right carousel-control" href="#sponsors-carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-            </div>
-          </div>
-{#          <br />
-          <br />
-          <br />
-          <br />
-          <div class="row">
-            <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10">
-              <div class="row">
-                <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-offset-0 col-xs-12">
-                  <a href="{{ '/sponsors'|url(alt=this.alt) }}" class="btn btn-success btn-lg btn-block     center-block">
-                    {{ t_apply_sponsor }}!
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>#}
+          {% include 'partials/_sponsors.html' %}
         </div>
       </div>
 
@@ -216,7 +163,7 @@
       <div class="container-fluid light-section">
         <div class="section-container">
           <div class="row">
-            <div class="col-md-offset-3 col-md-6 col-xs-offset-1 col-xs-10">
+            <div class="col-md-6 col-xs-10 mx-auto">
               {% include 'partials/_schedule.html' %}
             </div>
           </div>
@@ -228,7 +175,7 @@
       <div class="container-fluid dark-section">
         <div class="section-container">
           <div class="row">
-            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <div class="col-md-6 col-sm-8 col-xs-10 mx-auto">
               <div class="row">
                 <div class="col-md-12">
                     <h1 class="section-title">{{ t_venue_location }}</h1>
@@ -249,12 +196,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+                <div class="col-md-6 col-sm-8 col-xs-10 mx-auto">
                   <br />
                   <br />
                   <br />
                   <br />
-                  <a href="{{ '/venue'|url(alt=this.alt) }}" class="btn btn-danger btn-lg btn-block center-block">
+                  <a href="{{ '/venue'|url(alt=this.alt) }}" class="btn btn-secondary btn-lg btn-block center-block">
                     {{ t_more_info }}
                   </a>
                 </div>
@@ -270,7 +217,7 @@
       <div class="container-fluid light-section">
         <div class="section-container">
           <div class="row">
-            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">
+            <div class="col-md-6 col-sm-8 col-xs-10 mx-auto">
               {% include 'partials/_mailchimp.html' %}
             </div>
           </div>
@@ -420,8 +367,8 @@ $('.carousel[data-type="multi"] .item').each(function(){
     });
   });
   $(window).on('finish.countdown', function(event) {
-    $('#countdown-div').addClass('hidden');
-    $('#ticket-div').removeClass('hidden');
+    $('#countdown-div').attr('hidden', true);
+    $('#ticket-div').attr('hidden', false);
   });
 </script>
 {% endblock %}

@@ -1,9 +1,15 @@
-{% extends "layout.html" %}
+{%- from "macros/team_members.html" import render_team_member -%}
+{% extends "page.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-   <div>
-  {% for child in this.pagination.items %}
-    <p>{{ child.name }} {{ child.last_name }}</p>
+  <div class="row">
+  {% for category in ['Organizer', 'Co-Organizer', 'Collaborator', 'Volunteer', 'Ambassor']%}
+    {% set members = site.query('/team', alt=this.alt).filter(F.category==category).filter(F.publish) %}
+    {% for member in members %}
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        {{ render_team_member(member, loop.index, alt=this.alt) }}
+      </div>
+    {% endfor %}
   {% endfor %}
-  <div>
+  </div>
 {% endblock %}
