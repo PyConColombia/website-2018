@@ -8,7 +8,7 @@ publish: yes
 ---
 category: Collaborator
 ---
-image: manuel-kaufmann.png
+image: manuel-kaufmann.jpg
 ---
 github_handle: humitos
 ---
@@ -20,9 +20,11 @@ web: https://elblogdehumitos.com
 ---
 email: humitos@gmail.com
 ---
+description: Argentina en Python
+---
 information:
 
-Restless and fussy driver with routes, GPS and maps. Computers programmer and member of the (Python Argentina)[http://python.org.ar/] community since 2006. Juggler and half unicyclist. Frustrated teacher and in active recovery. He is “humitos”.
+Founder of Argentina in Python. Nowadays, I'm working as developer at Read the Docs.
 ---
 sort_key: 35
 ---
