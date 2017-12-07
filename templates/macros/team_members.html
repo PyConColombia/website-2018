@@ -19,7 +19,10 @@
       {{ render_speaker_social(member, index) }}
     <div class="speaker-details">
       <div class="speaker-name">{{ complete_name }}</div>
-      <div class="speaker-job">{{ transbag('translate', alt, member.category) }}
+      <div class="speaker-job">
+      {%- if member.category in ['Organizer', 'Co-Organizer'] -%}
+        {{ transbag('translate', alt, member.category) }}
+      {%- endif -%}
       {% if member.responsibility %}
         ({{ member.responsibility }})
       {% endif %}
