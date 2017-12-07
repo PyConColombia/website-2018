@@ -1,0 +1,31 @@
+id: manuel-kaufmann
+---
+name: Manuel
+---
+last_name: Kaufmann
+---
+publish: yes
+---
+category: Collaborator
+---
+image: manuel-kaufmann.jpg
+---
+github_handle: humitos
+---
+twitter_handle: reydelhumo
+---
+facebook_handle: kaufmann.manuel
+---
+web: https://elblogdehumitos.com
+---
+email: humitos@gmail.com
+---
+description: Argentina en Python
+---
+information:
+
+Founder of Argentina in Python. Nowadays, I'm working as developer at Read the Docs.
+---
+sort_key: 35
+---
+responsibility: Python Software Foundation
