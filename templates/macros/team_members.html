@@ -8,7 +8,7 @@
     <a href="{{ member | url }}" title="{{ complete_name }}">
     <img class="speaker-image" id="speaker-image-link-{{ index }}" alt="{{ complete_name }}" src=
     {%- if member.image -%}
-      "/team/{{ member._id }}/{{ member.image }}"
+      "{{ member.attachments.get(member.image).thumbnail(400)|url }}"
     {%- else -%}
       "/static/images/empty-photo.svg"
     {%- endif -%}
