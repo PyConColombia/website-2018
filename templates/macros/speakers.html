@@ -39,7 +39,7 @@
     <a href="{{ speaker | url }}" title="{{ complete_name }}"">
     <img class="speaker-image" id="speaker-image-link-{{ index }}" alt="{{ complete_name }}" src=
     {%- if speaker.image -%}
-      "/speakers/{{ speaker._id }}/{{ speaker.image }}"
+      {{ speaker.attachments.get(speaker.image).thumbnail(400)|url }}
     {%- else -%}
       "/static/images/empty-photo.svg"
     {%- endif -%}

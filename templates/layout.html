@@ -37,7 +37,7 @@
     <meta name="twitter:description" content="{{ t_description }}">
     <meta name="twitter:image" content="https://www.pycon.co/static/images/opimage.png">
 
-    <title>PyCon Colombia | {{ t_date }} | {{ t_place }}</title>
+    <title>{% if this.title %}{{ this.title }} &middot; {% endif %}PyCon Colombia | {{ t_date }} | {{ t_place }}</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/static/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/static/favicon/apple-icon-60x60.png">

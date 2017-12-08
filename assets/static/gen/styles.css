@@ -7486,6 +7486,9 @@ input {
         max-height: 150px;
         margin: auto auto;
         max-width: 80%; }
+.team-title {
+  text-align: center;
+  margin: 1.2em 0; }
 @media (max-width: 767px) {
   .section-container-main {
     padding-top: 10px;
