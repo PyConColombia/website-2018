@@ -39,7 +39,8 @@
     <a href="{{ speaker | url }}" title="{{ complete_name }}"">
     <img class="speaker-image" id="speaker-image-link-{{ index }}" alt="{{ complete_name }}" src=
     {%- if speaker.image -%}
-      {{ speaker.attachments.get(speaker.image).thumbnail(400)|url }}
+      {# No cambiar esto es necesario para que lektor funcione bien con las alternativas #}
+      "/speakers/{{ speaker._id }}/{{ speaker.image }}"
     {%- else -%}
       "/static/images/empty-photo.svg"
     {%- endif -%}
