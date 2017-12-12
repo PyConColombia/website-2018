@@ -1,6 +1,7 @@
 [project]
 name = pyconcolombia
 url = http://pycon.co
+url_style = absolute
 
 [packages]
 lektor-webpack-support = 0.3
