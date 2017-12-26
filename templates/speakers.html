@@ -9,8 +9,24 @@
   {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote).filter(F.publish) %}
   <h1 class="section-title-light">{{ t_keynote_speakers }}</h1>
   <div class="row">
+    {%- set items_per_row = 3 -%}
+    {%- set grid_max_cols = 12 -%}
+    {%- set last_row_items = speakers.count() % items_per_row -%}
     {% for speaker in speakers %}
-    <div class="col-12 col-sm-6 col-lg-4">
+    {%-  set row = ((loop.index - 1)/items_per_row)|int -%}
+    {# Only affect the first item of the last row #}
+    {%   if last_row_items and loop.index > speakers.count() - last_row_items %}
+    {%     if last_row_items == 1 %}
+    <div class="col-md-3 col-lg-4">
+    {# empty column #}
+    </div>
+    {%     else %}
+    <div class="col-md-0 col-lg-2">
+    {# empty column #}
+    </div>  
+    {%     endif %}
+    {%   endif %}
+    <div class="col-sm-6 col-lg-4">
       {{ render_speaker(speaker, loop.index) }}
     </div>
     {% endfor %}
