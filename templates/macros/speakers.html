@@ -1,3 +1,5 @@
+{%- from "macros/translation.html" import transbag -%}
+
 {% macro render_speaker_social(speaker, index=1, floating=True) %}
   <div id="link-{{ index }}" class="speaker-social{% if floating %} floating{% endif %}">
     {%- set counter = 0 -%}
@@ -20,6 +22,7 @@
 {% endmacro %}
 
 {% macro render_speaker_info(speaker) %}
+ {%- set t_speaker_at = transbag('translate', speaker.alt, 'speaker_at') -%}
   <div class="speaker-details">
     <div class="speaker-name">{{ speaker.name }} {{speaker.last_name }}</div>
     <div class="speaker-job">

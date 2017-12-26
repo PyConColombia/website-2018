@@ -1,7 +1,6 @@
 {%- from "macros/translation.html" import transbag -%}
 {%- from "macros/speakers.html" import render_speaker -%}
 {%- set t_keynote_speakers = transbag('translate', this.alt, 'keynote_speakers') -%}
-{%- set t_speaker_at = transbag('translate', this.alt, 'speaker_at') -%}
 {%- set t_venue_location = transbag('translate', this.alt, 'venue_location') -%}
 {%- set t_speakers_workshops = transbag('translate', this.alt, 'speakers_workshops') -%}
 {%- set t_tell_us = transbag('translate', this.alt, 'tell_us') -%}
@@ -126,9 +125,25 @@
           <div class="row">
         <div class="container">
               {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote).filter(F.publish) %}
+              {%- set items_per_row = 3 -%}
+              {%- set grid_max_cols = 12 -%}
+              {%- set last_row_items = speakers.count() % items_per_row -%}
               <h1 class="section-title-light">{{ t_keynote_speakers }}</h1>
               <div class="row">            
                 {% for speaker in speakers %}
+                {%- set row = ((loop.index - 1)/items_per_row)|int -%}
+                {# Only affect the first item of the last row #}
+                {% if last_row_items and loop.index > speakers.count() - last_row_items %}
+                {%   if last_row_items == 1 %}
+                <div class="col-md-3 col-lg-4">
+                {# empty column #}
+                </div>
+                {%   else %}
+                <div class="col-md-0 col-lg-2">
+                {# empty column #}
+                </div>  
+                {%   endif %}
+                {% endif %}
                 <div class="col-md-6 col-lg-4">
                   {{ render_speaker(speaker, loop.index) }}
                 </div>
