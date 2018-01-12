@@ -1,0 +1,11 @@
+name: Ansible & Terraform: Move faster, break fewer things!
+---
+language: en
+---
+summary: Intro level talk about using Ansible and Terraform together. These tools allow you to provision cloud resources such as Virtual Servers or CDN and to set up your servers with whatever software is needed. This allows to treat infrastructure as code, a cornerstone of DevOps.
+---
+type: talk
+---
+authors: ezequiel-golub
+---
+_hidden: yes

@@ -1,0 +1,11 @@
+_slug: construye-un-potente-sitio-web-estatico-con-lektor
+---
+authors: rafael-laverde
+---
+language: en
+---
+name: Construye un potente sitio web estático con Lektor
+---
+summary: La creación de sitios web simples, como un blog o un sitio web personal no requiere una experiencia interactiva; al usar un generador de sitios estáticos como Lektor se puede lograr la misma funcionalidad, sin preocuparse por actualizaciones, seguridad, rendimiento o costo; y despliega tu sitio gratis en Github Pages.
+---
+type: workshop

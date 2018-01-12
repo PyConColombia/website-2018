@@ -6,9 +6,9 @@ image: danielroygreenfeld.jpg
 ---
 information:
 
-I work for Cartwheel Web, a consulting firm. From 2005 to 2010 I worked for NASA for just over five amazing years. Between those jobs I've worked for Eventbrite and leading open source consulting firms such as Revsys and Eldarion. I also co-wrote the Two Scoops of Django: Best Practices for Django books.
+Trabajo para Cartwheel Web, una empresa de consultoría. De 2005 a 2010 trabajé para la NASA durante poco más de cinco maravillosos años. Entre esos trabajos trabajé para Eventbrite y firmas líderes de consultoría de código abierto como Revysys y Eldarion. También co-escribí Two Scoops of Django: Best Practices for Django books.
 
-Specialties: Python, Django, JavaScript, JQuery, PostgreSQL, Celery, Object Oriented Design, Section 508, Usability, Writing.
+Especialidades: Python, Django, JavaScript, JQuery, PostgreSQL, Apio, Diseño orientado a objetos, Sección 508, Usabilidad, Escritura.
 ---
 keynote: yes
 ---
@@ -18,8 +18,12 @@ name: Daniel
 ---
 position: Autor
 ---
-summary: Co-Author Two Scoops of Django, Co-Author Ambria, open source coder and former NASA coder
+summary: Co-Autor de Two Scoops of Django, Co-Autor Ambria, desarrollador de código abierto y antiguo desarrollador en NASA
 ---
 twitter_handle: pydanny
 ---
 web: https://www.pydanny.com/
+---
+employer: Two Scoops Press
+---
+publish: yes

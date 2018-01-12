@@ -1,0 +1,11 @@
+authors: david-przybilla
+---
+language: en
+---
+name: Python en la tierra de Serverless
+---
+summary: Hace un año me uní a un equipo que utilizaba *Serverless*, desde entonces he estado creando y manteniendo muchos servicios que utilizan el paradigma *Serverless*. Con una pizca de escepticismo, superé algunos de los desafíos y aprendí el uso de nuevas herramientas. Quiero compartir con la comunidad los dolores y la gloria de este proceso.
+---
+type: talk
+---
+_slug: python-en-la-tierra-de-serverless

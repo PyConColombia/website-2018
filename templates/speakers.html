@@ -1,13 +1,15 @@
+{% extends "page.html" %}
 {%- from "macros/speakers.html" import render_speaker -%}
 {%- from "macros/translation.html" import transbag -%}
+
 {%- set t_keynote_speakers = transbag('translate', this.alt, 'keynote_speakers') -%}
 {%- set t_speakers = transbag('translate', this.alt, 'speakers') -%}
-{% extends "page.html" %}
 {%- set t_accepted_speakers_button = transbag('translate', this.alt, 'accepted_speakers_button') -%}
+
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote).filter(F.publish) %}
-  <h1 class="section-title-light">{{ t_keynote_speakers }}</h1>
+  {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote).filter(F.publish).order_by('_id') %}
+  <h1 class="section-title-light">{{ t_keynote_speakers }} ({{ speakers.count()}})</h1>
   <div class="row">
     {%- set items_per_row = 3 -%}
     {%- set grid_max_cols = 12 -%}
@@ -31,8 +33,11 @@
     </div>
     {% endfor %}
   </div>
+
   {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote != True).filter(F.publish) %}
-  <h1 class="section-title-light">{{ t_speakers }}</h1>
+  <br>
+  <br>
+  <h1 class="section-title-light">{{ t_speakers }} ({{ speakers.count() }})</h1>
   <div class="row">
     {% if speakers %}
     {% for speaker in speakers %}

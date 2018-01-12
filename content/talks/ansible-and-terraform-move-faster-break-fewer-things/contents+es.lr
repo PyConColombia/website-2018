@@ -1,0 +1,11 @@
+_slug: ansible-y-terraform-muevete-mas-rapido-y-rompe-menos-cosas
+---
+authors: ezequiel-golub
+---
+language: en
+---
+name: Ansible y Terraform: ¡Muévete más rápido, rompe menos cosas!
+---
+summary: Charla introductoria sobre el uso de Ansible y Terraform juntos. Estas herramientas le permiten aprovisionar recursos en la nube, como Servidores Virtuales o CDN, y configurar sus servidores con cualquier software que se necesite. Esto permite tratar la infraestructura como código, una piedra angular de DevOps.
+---
+type: talk

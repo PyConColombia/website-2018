@@ -1,0 +1,9 @@
+name: Why you might want to  go async
+---
+authors: jonas-obrist
+---
+summary: Building a website, an API server, a scraper? Want it to handle more than one request at a time without having to use threads? Want to get the most out of your resources? You might want to go async. Learn what it is and why it could be for you in this talk.
+---
+language: en
+---
+type: talk

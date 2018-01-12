@@ -1,0 +1,13 @@
+name: Detection vs Tracking:  A computer vision approach
+---
+authors: jorge-martinez
+---
+language: en
+---
+summary:
+
+Computer vision literature exhibits many object tracking and detection methods. Detectors use trained models based on general attributes. Furthermore, trackers learn specific features.
+
+Here, I present a tracking algorithm which combines both approaches leveraging common problems presented in videos.
+---
+type: talk

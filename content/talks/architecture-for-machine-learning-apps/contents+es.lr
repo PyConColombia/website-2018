@@ -1,0 +1,11 @@
+_slug: arquitectura-para-aplicaciones-de-aprendizaje-de-maquina
+---
+authors: jorge-luis-galvis-quintero
+---
+language: en
+---
+name: Arquitectura para aplicaciones de aprendizaje de máquina (con sabor a Django)
+---
+summary: ¿Te has preguntado cómo integrar modelos de aprendizaje automático con aplicaciones web Django? A través de pequeños fragmentos de código y un ejemplo preparado, te mostraré cómo lo estamos haciendo en Dlabs.
+---
+type: talk

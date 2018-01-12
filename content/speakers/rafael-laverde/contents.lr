@@ -1,3 +1,31 @@
 name: Rafael
 ---
 last_name: Laverde
+---
+prefix: Mr.
+---
+keynote: no
+---
+email: leafar91@gmail.com
+---
+image: rafael-laverde.jpg
+---
+position: Data Engineer
+---
+employer: Mo
+---
+information: Software Developer, Pythonist, Software Libre Advocate.
+---
+github_handle: rlaverde
+---
+twitter_handle: rafa_laverde
+---
+facebook_handle: leafar91
+---
+dob: 1991-9-6
+---
+country: Colombia
+---
+country_residence: Colombia
+---
+publish: yes

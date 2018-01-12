@@ -1,0 +1,9 @@
+name: Identification of Colombian Bird species using Python
+---
+authors: angie-katherine-reyes-betancourt
+---
+language: es
+---
+summary: The main objective of the talk is to show the development of a system based on audio signal processing, machine learning and visualization techniques, which allows the graphic analysis of Colombian bird species. Everything is made with libraries and Python code.
+---
+type: workshop

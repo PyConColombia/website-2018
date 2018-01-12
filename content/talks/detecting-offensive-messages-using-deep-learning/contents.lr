@@ -1,0 +1,9 @@
+name: Detecting offensive messages using Deep Learning: A micro- service based approach
+---
+authors: alizishaan-khatri
+---
+summary: What are you doing to control abusive content on your platform? Can your current solution tell the difference between fking awesome and fking loser? Can it detect racist and sexist content? You will learn how to build a deep learning based solution and deploy it as a micro-service.
+---
+language: en
+---
+type: talk

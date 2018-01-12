@@ -1,0 +1,11 @@
+_slug: canales-en-django
+---
+language: en
+---
+name: Canales en Django
+---
+summary: En lugar de simplemente recibir y responder solicitudes, una por una *Channels* cambia la forma en que funciona Django, hacia un enfoque basado en eventos. Con eso, ahora tenemos acceso a WebSockets y otras maravillas asincrónicas. Puse mi fe en que los Canales serán el futuro de cómo desarrollamos las aplicaciones de Django.
+---
+type: talk
+---
+authors: jonatas-baldin

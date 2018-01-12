@@ -1,0 +1,9 @@
+name: Clean Architecture with Python
+---
+authors: esteban-echeverry
+---
+language: es
+---
+summary: Clean Architecture gives flexibility, independence and ease to test our applications. Using the included Python batteries and some optional add-ons, we can design our programs cleanly today, without compromising our tomorrow's decisions too much.
+---
+type: workshop

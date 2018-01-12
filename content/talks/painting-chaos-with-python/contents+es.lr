@@ -1,0 +1,11 @@
+authors: isabel-cristina-ruiz-buritica
+---
+language: es
+---
+name: Pintando el caos con Python
+---
+summary: Hablaremos de Fractal, sus aplicaciones, y cómo los computadores fueron imprescindibles para poder representar estas complejas y llamativas formas matemáticas. Se utilizarán las librerías Matplotlib, Numpy y Turtle graphics de Python para gráficar los principales fractales.
+---
+type: talk
+---
+_slug: pintando-el-caos-con-python

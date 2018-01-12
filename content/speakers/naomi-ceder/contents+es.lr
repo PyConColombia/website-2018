@@ -8,8 +8,30 @@ last_name: Ceder
 ---
 name: Naomi
 ---
-position: Gerente Desarrollo OS
+position:
+
+Gerente Desarrollo OS 
 ---
-summary: Coder, speaker, teacher, co-founder of @trans_code, chair of @thePSF Board of directors
+summary: Desarrolladora, ponente, docente, cofundadora de @trans_code, presidente de la  Junta de directores de la @thePSF
 ---
 twitter_handle: naomiceder
+---
+github_handle: nceder
+---
+publish: yes
+---
+web: http://whataboutnaomi.blogspot.com/
+---
+information:
+
+Líder especializada en Python y Linux y creando equipos de desarrolladores; solucionadora de problemas de "hacer que funcione"; 15 años de experiencia y certificación LPI 2 en la administración de sistemas Linux; experta en hacer que sistemas dispares y flujos de datos jueguen bien juntos; autora con publicaciones, oradora consumada y presentadora.
+
+La experiencia de desarrollo web incluye tornado, django y cherrypy, así como apache y edición de HTML / CSS sin formato. También he soñado con consultas MySQL ...;)
+
+Experiencia como arquitecta y propietaria de producto Scrum a cargo de toda la infraestructura de aplicaciones web alojada en los servidores en la nube de AWS & Azure y todo el flujo de datos, incluida la interfaz con SaaS CRM (Netsuite) y múltiples backends de proveedores.
+
+Experiencia adicional: infraestructura en la nube -arquitectos en AWS. Administración de Netsuite y scripting.
+
+Proponente de la programación docente, especialmente Python, para estudiantes de secundaria y preparatoria, y defensora de software abierto y contenido abierto. Organizadora de PyCon, miembro de Python Software Foundation, y organizadora principal del Grupo de Usuarios de Linux de Fort Wayne.
+
+Especialidades: Python, MySQL, Javascript en el servidor, C / C ++. Construyendo y administrando equipos de desarrolladores. Enseñanza de la programación y administración de sistemas y uso de marcos web para administrar / compartir información. LPI administrador Linux certificado avanzado.

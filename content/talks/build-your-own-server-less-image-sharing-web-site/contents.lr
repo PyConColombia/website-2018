@@ -1,0 +1,11 @@
+name: Build your own serverless image sharing web- site with Lambda, API  Gateway, DynamoDB and S3
+---
+authors: justyna-janczyszyn
+---
+language: en
+---
+summary: Learn how to build your own image sharing website, like Instagram, using serverless technologies. During the workshop you will build an entire end to end system that’s powered by AWS Lambda, API Gateway, S3, DynamoDB, Auth0 and much more. This workshop is suitable for beginners and experts alike.
+---
+type: workshop
+---
+_slug: 

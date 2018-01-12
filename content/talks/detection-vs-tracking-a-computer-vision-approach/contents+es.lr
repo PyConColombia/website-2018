@@ -1,0 +1,15 @@
+_slug: deteccion-y-seguimiento-un-enfoque-de-vision-por-computadora
+---
+authors: jorge-martinez
+---
+language: en
+---
+name: Detección y seguimiento: un enfoque de visión por computadora
+---
+summary:
+
+La literatura de visión por computadora muestra muchos métodos de seguimiento y detección de objetos. Los detectores usan modelos entrenados basados en atributos generales. Además, los rastreadores aprenden características específicas.
+
+Aquí, presento un algoritmo de seguimiento que combina ambos enfoques aprovechando problemas comunes presentados en videos.
+---
+type: talk

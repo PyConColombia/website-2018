@@ -1,0 +1,19 @@
+_slug: descompilacion-y-la-caja-de-pandora
+---
+authors: rocky-bernstein
+---
+language: en
+---
+name: Descompilación y la caja de Pandora
+---
+summary:
+
+Junto con un descompilador de Python de versión cruzada, uncompyle6, escribí las siguientes herramientas:
+
+- (i) desensamblador (hum),
+- (ii) ensamblador (¿qué?),
+- (iii) Analizador de código de bytes Python.
+
+Muestro el daño que puedes hacer al usar estos y algunos beneficios también.
+---
+type: talk

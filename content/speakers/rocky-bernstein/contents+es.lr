@@ -1,0 +1,36 @@
+country: USA
+---
+country_residence: USA
+---
+dob: 1955-10-27
+---
+email: rocky@gnu.org
+---
+employer: porcine software
+---
+github_handle: rocky
+---
+image: rocky-bernstein.jpg
+---
+information:
+
+Rocky Bernstein es un desarrollador abierto de larga data. Tu computadora incluso puede contener parte de mi código.
+
+Entre los muchos programas de tipos diferentes que he escrito, hay depuradores para 8 o más lenguajes de programación, incluidos bash, zsh y GNU make.
+
+He trabajado en IBM Research, como contratista del gobierno para la NASA (en estudios climáticos), Associated Press, un gran instituto financiero, una universidad y demasiadas nuevas empresas.
+
+Recientemente, he estado interesado en re-evaluar la tecnología del compilador y el conducto del compilador estándar del Dragon-Book a la luz de los avances tecnológicos, y el uso de esta compilación revisada como medio para proporcionar información de posición en tiempo de ejecución o cuando ocurre un error.
+
+---
+keynote: no
+---
+last_name: Bernstein
+---
+name: Rocky
+---
+position: Científico Loco Jefe
+---
+prefix: Mr.
+---
+publish: yes

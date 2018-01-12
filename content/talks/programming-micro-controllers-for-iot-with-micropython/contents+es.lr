@@ -1,0 +1,13 @@
+_slug: programacion-de-microcontroladores-con-micropython
+---
+authors: olemis-lang
+---
+language: en
+---
+name: Programación de microcontroladores para IoT con MicroPython
+---
+summary: MicroPython está surgiendo como una opción para programar rápidamente los micro-controladores utilizados para prototipar el hardware en las primeras etapas de diseño. El taller presenta MicroPython, conceptos básicos y dispositivos compatibles. El laboratorio práctico cubre programación en red, MQTT y ejercicios con LED, botones y servomotores.
+---
+topic: IoT
+---
+type: workshop

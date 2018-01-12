@@ -1,4 +1,4 @@
-employer: Two Scoops Academy
+employer: Two Scoops Press
 ---
 github_handle: audreyr
 ---
@@ -6,13 +6,14 @@ image: audreyroygreenfeld.jpg
 ---
 information:
 
-Principal at Cartwheel Web. Senior technical instructor at Two Scoops Academy. Technical writer and editor at Two Scoops Press, best known for the Two Scoops of Django series.
+Directora en Cartwheel Web. Instructora técnico en Two Scoops Academy. Escritora técnica y editora en Two Scoops Press, mejor conocida por la serie **Two Scoops of Django**.
 
-Artist/illustrator/sculptor by night.
+Artista / ilustradora/ escultora (por la noche!)
 
-Specialties: Python, Django, JavaScript, software development, design, illustration, generative & new media art, sculpture
+Especialidades: Python, Django, JavaScript, desarrollo de software, diseño, ilustración, arte generativo y de nuevos medios, escultura
 
-Co-author of Two Scoops of Django: Best Practices For Django 1.8 and previous editions: http://twoscoopspress.org/products/two-scoops-of-django-1-8
+Co-autora de Two Scoops of Django: Mejores prácticas para Django 1.8 y ediciones anteriores: http://twoscoopspress.org/products/two-scoops-of-django-1-8
+
 ---
 keynote: yes
 ---
@@ -27,3 +28,5 @@ summary: Creator of Python/JS/CSS open-source libraries. Coauthor of Two Scoops 
 twitter_handle: audreyr
 ---
 web: https://www.audreyr.com/
+---
+publish: yes

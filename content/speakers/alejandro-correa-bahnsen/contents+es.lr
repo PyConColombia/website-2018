@@ -1,0 +1,33 @@
+country: Colombia
+---
+country_residence: Colombia
+---
+dob: 1985-03-18
+---
+email: al.bahnsen@gmail.com
+---
+employer: Easy Solutions
+---
+image: alejandro-correa-bahnsen.jpg
+---
+information:
+
+El Dr. Alejandro Correa Bahnsen es el Jefe Científico de Datos en Easy Solutions. Con una pasión por el aprendizaje de máquina, se considera un evangelista de tecnología de la ciencia de datos. Tiene más de una década de experiencia aplicando el uso y desarrollo de modelos predictivos a problemas del mundo real tales como el fraude cibernético, análisis de recursos humanos, calificación crediticia, modelado de abandono y marketing directo.
+
+Además de asesorar al equipo ejecutivo y a los clientes de Easy Solution en desafíos exclusivos de fraude, Alejandro administra el equipo de ciencia de datos, prueba los motores de procesamiento de big data e investiga la aplicación del aprendizaje profundo sobre la prevención del fraude electrónico. También crea y desarrolla algoritmos de aprendizaje de máquina relacionados con la detección de *phishing*, identificación de usuarios y prevención de *malware*. Mejora constantemente los productos de Easy Solutions con la ciencia de datos y las capacidades de inteligencia artificial.
+
+Alejandro tiene un doctorado en Aprendizaje de Máquina y Reconocimiento de Patrones de la Universidad de Luxemburgo. Ha publicado más de 15 trabajos académicos e industriales en destacadas publicaciones científicas. También enseñó las siguientes materias a nivel universitario: econometría, gestión de riesgos financieros, aprendizaje automático y procesamiento del lenguaje natural. Además, es un colaborador activo de varios proyectos de código abierto como scikit-learn y costcla.
+---
+keynote: no
+---
+last_name: Correa  Bahnsen
+---
+name: Alejandro
+---
+position: Jefe de Científicos de Datos
+---
+prefix: Dr.
+---
+publish: yes
+---
+twitter_handle: albahnsen

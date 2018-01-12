@@ -151,25 +151,28 @@
               </div>
             </div>
           </div>
-          {% if 'link-accepted-speakers' in this.sections %}
-          <div class="row accepted-speakers">
-            <div class="col-md-6 col-sm-8 col-xs-10 mx-auto text-center">
-              <h1 class="section-title-light">{{ t_accepted_speakers_title }}</h1>
+        </div>
+      </div>  
 
-              <a href="{{ this.accepted_speakers_link }}" target="blank" class="btn btn-success btn-lg centerer-block text">
-                    {{ t_accepted_speakers_button }}
-              </a>
+      <!-- Talks & Workshops Section -->
+      <div class="container-fluid dark-section">
+        <div class="section-container">
+          <div class="row">
+            <div class="col-xl-8 col-lg-9 col-md-8 col-sm-10 col-xs-10 mx-auto">
+
+              <h2 class="text-center section-title-dark"><a href="{{'talks'|url(alt=this.alt)}}">{{ t_accepted_speakers_title }}</a></h2>
+              <br>
+              <br>
+              {%- include 'partials/_talks.html' -%}
             </div>
           </div>
-          {% endif %}
-        </div>
-        </div>
-      </div>
+        </div><!-- End Section -->
+      </div><!-- End Container -->
 
       <!-- Sponsors Section -->
       <div class="container-fluid light-section">
         <div class="section-container">        
-          {% include 'partials/_sponsors.html' %}
+          {%- include 'partials/_sponsors.html' -%}
         </div>
       </div>
 
@@ -179,7 +182,7 @@
         <div class="section-container">
           <div class="row">
             <div class="col-md-6 col-xs-10 mx-auto">
-              {% include 'partials/_schedule.html' %}
+              {%- include 'partials/_schedule.html' -%}
             </div>
           </div>
         </div>
