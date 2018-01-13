@@ -7,6 +7,15 @@
 {%- set t_accepted_speakers_button = transbag('translate', this.alt, 'accepted_speakers_button') -%}
 
 {% block title %}{{ this.title }}{% endblock %}
+
+      {% block vectors %}
+      <img src="/static/images/graph-big-left.png" class="vector-img big-left">
+      <img src="/static/images/graph-big-right.png" class="vector-img big-right">
+      <img src="/static/images/graph-small-left.png" class="vector-img small-left">
+      <img src="/static/images/graph-small-right.png" class="vector-img small-right">
+      {% endblock %}
+
+
 {% block content %}
 <div class="container-fluid keynote-section">
   <div class="section-container">

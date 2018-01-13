@@ -6,7 +6,7 @@ dob: 1991-03-27
 ---
 email: jorgemg0327@gmail.com
 ---
-employer: Piensa Labs / Universidad del Norte
+employer: 
 ---
 facebook_handle: jorge.martinezgomez.12
 ---
@@ -22,10 +22,14 @@ last_name: Martinez
 ---
 name: Jorge
 ---
-position: Ingeniero de Software / Docente
+position: 
 ---
 prefix: Mr.
 ---
 publish: yes
 ---
 twitter_handle: _JorgeMartinezG
+---
+display_summary: yes
+---
+summary: Ingeniero de Software en Piensa Labs / Docente en Universidad del Norte

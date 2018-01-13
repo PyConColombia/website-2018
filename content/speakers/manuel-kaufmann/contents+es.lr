@@ -29,3 +29,7 @@ image: manuel-kaufmann.jpg
 position: Programador / Fundador
 ---
 prefix: Mr.
+---
+display_summary: yes
+---
+summary: Programador en Read The Docs / Fundador de Argentina en Python / Embajador de la PSF en latinoamérica

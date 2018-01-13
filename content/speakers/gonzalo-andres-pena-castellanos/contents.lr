@@ -37,3 +37,7 @@ country_residence: Colombia
 publish: yes
 ---
 web: https://www.linkedin.com/in/goanpeca/
+---
+display_summary: yes
+---
+summary: Software Engineer at Anaconda, Inc / Project Engineer at SIHSA Ltd.

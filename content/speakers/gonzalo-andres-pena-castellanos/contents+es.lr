@@ -6,7 +6,7 @@ dob: 1983-04-24
 ---
 email: goanpeca@gmail.com
 ---
-employer: Anaconda, Inc / SIHSA Ltda.
+employer: 
 ---
 facebook_handle: goanpeca
 ---
@@ -28,7 +28,7 @@ last_name: Peña Castellanos
 ---
 name: Gonzalo Andrés
 ---
-position: Ingeniero de Software/ Ingeniero de Proyectos
+position: 
 ---
 prefix: Mr.
 ---
@@ -37,3 +37,7 @@ publish: yes
 twitter_handle: goanpeca
 ---
 web: https://www.linkedin.com/in/goanpeca/?locale=es_ES
+---
+display_summary: yes
+---
+summary: Ingeniero de Software en Anaconda, Inc / Ingeniero de Proyectos en SIHSA Ltd.

@@ -24,6 +24,12 @@ image: manuel-kaufmann.jpg
 ---
 prefix: Mr.
 ---
-employer: Read the Docs / Argentina en Python
+employer:
+
+Read the Docs / Argentina en Python / 
 ---
 position: Developer / Founder
+---
+display_summary: yes
+---
+summary: Developer at Read The Docs / Founder of Argentina en Python / PSF Ambassador in Latin America

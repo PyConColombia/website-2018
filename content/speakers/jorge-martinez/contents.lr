@@ -10,9 +10,9 @@ email: jorgemg0327@gmail.com
 ---
 image: jorge-martinez.jpg
 ---
-position: Software engineer / Lecturer
+position: 
 ---
-employer: Piensa Labs / Universidad del Norte
+employer: 
 ---
 information: I'm a software engineer at Piensa Labs. I'm also lecturer for the artificial intelligence class and computer vision at Universidad del Norte in Barranquilla. I work on the development of computer vision and machine learning algorithms
 ---
@@ -29,3 +29,7 @@ country: Colombia
 country_residence: Colombia
 ---
 publish: yes
+---
+display_summary: yes
+---
+summary: Software Engineer at Piensa Labs / Lecturer at Universidad del Norte
