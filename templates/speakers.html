@@ -17,7 +17,7 @@
 
 
 {% block content %}
-<div class="container-fluid keynote-section">
+<div class="container-fluid light-section">
   <div class="section-container">
     <div class="container">
 
@@ -26,15 +26,14 @@
       <div class="row justify-content-center">
         {% for speaker in speakers %}
         <div class="col-sm-6 col-lg-4">
-          {{ render_speaker(speaker, index=loop.index, details=True, css='dark-color') }}
+          {{ render_speaker(speaker, index=loop.index, details=True, css='light-color') }}
         </div>
         {% endfor %}
       </div>
     </div>
   </div>
 </div>
-
-<div class="container-fluid light-section">
+<div class="container-fluid dark-section">
   <div class="section-container">
     <div class="container">
 
