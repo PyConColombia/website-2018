@@ -1,0 +1,11 @@
+authors: nicolas-guarin-zapata
+---
+language: en
+---
+name: SolidsPy: análisis de elementos finitos para enseñar modelado computacional con Python
+---
+summary: Hemos creado un código de análisis de elementos finitos que integra varias herramientas de código abierto para enseñar modelos computacionales con Python a nivel de pregrado y postgrado. Su estructura modular permite a los estudiantes codificar sus propios análisis para resolver modelos específicos a través de scripts de Python.
+---
+type: talk
+---
+_slug: solidspy-análisis-de-elementos-finitos-para-enseñanza

@@ -64,10 +64,12 @@
   <body>
     <div class="body-wrapper">
       <button class="js-gitter-toggle-chat-button gitter-custom-button">{{ t_open_chat }}</button>
+      {% block vectors %}
       <img src="/static/images/graph-big-left.png" class="vector-img big-left">
       <img src="/static/images/graph-big-right.png" class="vector-img big-right">
       <img src="/static/images/graph-small-left.png" class="vector-img small-left">
       <img src="/static/images/graph-small-right.png" class="vector-img small-right">
+      {% endblock %}
 
       <div class="container-fluid header-content">
         <div class="container nav-container">
@@ -81,7 +83,7 @@
               <ul class="navbar-nav mr-auto">
                 {{ menu_item('venue') }}
                 {{ menu_item('speakers') }}
-                {# {{ menu_item('talks') }} #}
+                {{ menu_item('talks') }}
                 {{ menu_item('sponsors') }}
                 {{ menu_item('volunteers') }}
                 {{ menu_item('team') }}

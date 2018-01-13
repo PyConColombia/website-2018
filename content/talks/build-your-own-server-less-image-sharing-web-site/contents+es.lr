@@ -1,0 +1,11 @@
+_slug: crea-tu-propio-sitio-web-serverless-para-compartir-imagenes
+---
+authors: justyna-janczyszyn
+---
+language: en
+---
+name: Crea tu propio sitio web serverless para compartir imágenes con Lambda, API Gateway, DynamoDB y S3
+---
+summary: Aprenda a construir su propio sitio web para compartir imágenes, como Instagram, utilizando tecnologías sin servidor. Durante el taller, creará un sistema completo de extremo a extremo que cuenta con la tecnología de AWS Lambda, API Gateway, S3, DynamoDB, Auth0 y mucho más. Este taller es adecuado tanto para principiantes como para expertos.
+---
+type: workshop

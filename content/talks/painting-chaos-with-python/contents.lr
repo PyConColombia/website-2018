@@ -1,0 +1,9 @@
+name: Painting Chaos with Python
+---
+authors: isabel-cristina-ruiz-buritica
+---
+language: es
+---
+summary: We will talk about Fractal, its applications, and how computers were essential to be able to represent these complex and striking mathematical forms. The Matplotlib, Numpy and Turtle graphics libraries of Python will be used to graph the main fractals.
+---
+type: talk

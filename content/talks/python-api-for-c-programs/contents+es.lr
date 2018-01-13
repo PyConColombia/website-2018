@@ -1,0 +1,13 @@
+authors: sergio-pulgarin
+---
+description: 
+---
+language: es
+---
+name: Python API para programas en C
+---
+summary: Muchas librerías importantes de Python utilizan programas escritos en C que proveen la funcionalidad necesaria ya que permite aumentar la velocidad de ejecución, acceso a funciones de bajo nivel o reuso de librerías. Crearemos un API de Python para un programa en C y podrás crear tus propias APIs.
+---
+type: workshop
+---
+_slug: python-api-para-programas-en-c

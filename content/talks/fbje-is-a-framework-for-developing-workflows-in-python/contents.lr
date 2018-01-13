@@ -1,0 +1,9 @@
+name: FBJE is a framework used at Facebook for developing workflows in Python
+---
+authors: navid-sheikhol
+---
+language: en
+---
+summary: How does Facebook manage one of the largest infrastructures on the planet? Using Python we have built a framework to develop scalable workflows that engineers at Facebook use to automate our infrastructure’s lifecycle so that you can keep sharing and connecting with your friends and family.
+---
+type: talk

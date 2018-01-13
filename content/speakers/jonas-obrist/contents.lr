@@ -1,0 +1,29 @@
+name: Jonas
+---
+last_name: Obrist
+---
+prefix: Mr.
+---
+keynote: no
+---
+email: ojiidotch@gmail.com
+---
+image: jonas-obrist.jpg
+---
+position: Software Engineer
+---
+employer: HDE Inc
+---
+information: I'm a Python developer from Switzerland, living in Japan. I got started with Python developing modifications for the video game Counter-Strike before getting my first job building websites using Django. There I got involved with the popular open source Content Management System django CMS. Nowadays I work primarily with the Tornado framework and various asyncio libraries.
+---
+github_handle: ojii
+---
+twitter_handle: ojiidotch
+---
+dob: 1988-07-04
+---
+country: Switzerland
+---
+country_residence: Japan
+---
+publish: yes

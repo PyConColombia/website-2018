@@ -1,0 +1,11 @@
+_slug: reconocimiento-facial-con-redes-neuronales
+---
+language: es
+---
+name: Reconocimiento facial con redes neuronales
+---
+summary: Te has preguntado ¿como hace facebook para etiquetar el rostro de tus amigos y el tuyo en tus fotos? Sí la respuesta es un si y te gustaría aprender a hacerlo, estaré encantado de darte una introducción al reconocimiento de rostros con redes neuronales usando Tensorflow y Python.
+---
+type: talk
+---
+authors: dario-guzman

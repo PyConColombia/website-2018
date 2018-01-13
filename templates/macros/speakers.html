@@ -29,7 +29,7 @@
       {% if speaker.display_summary %}
       {{ speaker.summary }}
       {% else%}
-      {{ speaker.position }} {{ t_speaker_at }} {{ speaker.employer }}
+      {{ speaker.position }} {%- if speaker.employer -%}&nbsp;{{ t_speaker_at }}&nbsp;{{ speaker.employer }}{%- endif -%}</h2>
       {% endif %}
     </div>
   </div>

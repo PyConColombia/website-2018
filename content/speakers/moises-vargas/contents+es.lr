@@ -1,0 +1,35 @@
+country: Colombia
+---
+country_residence: Colombia
+---
+dob: 1983-9-9
+---
+email: moisesweb@gmail.com
+---
+employer: OpenMined
+---
+github_handle: moisesvw
+---
+image: moises-vargas.jpg
+---
+information:
+
+Moisés es un ingeniero de software con habilidades de DeepLearning y Machine Learning.
+
+Tiene experiencia en la creación de redes neuronales convolucionales en Tensor Flow y Keras. Trabajó en proyectos que detectan formas de vehículos y rostros humanos. Actualmente es un Ingeniero de Aprendizaje de Maquina graduado y Estudiante de autos de conducción automática en Udacity.
+---
+keynote: no
+---
+last_name: Vargas
+---
+name: Moises
+---
+position:
+
+Desarrollador de Machine Learning 
+---
+prefix: Mr.
+---
+publish: yes
+---
+twitter_handle: moisesvw

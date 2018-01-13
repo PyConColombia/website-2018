@@ -1,14 +1,17 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
+{% block vectors %}{% endblock %}
 {% block banner_text %}
 <div class="container-fluid">
   <div class="banner">
+    {% block banner %}
     <div class="banner-image">
       <img src="/{{ this._id }}/{{ this.banner }}" class="banner"/>
       <div class="banner-text">
         <h1>{{ this.title }}</h1>
       </div>
-  </div>
+    </div>
+    {% endblock %}
   </div>
 </div>
 {% endblock %}

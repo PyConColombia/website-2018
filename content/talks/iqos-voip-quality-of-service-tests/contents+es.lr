@@ -1,0 +1,15 @@
+_slug: iqo-pruebas-de-calidad-de-servicio-en-voip
+---
+authors: oscar-jovanni-maestre-sanmiguel
+---
+language: es
+---
+name: iQoS, Pruebas de calidad de servicio en VoIP con Python y Linux
+---
+summary:
+
+iQoS es un software desarrollado 100% en Python, posee en un entorno Web que permite emular llamadas de VoIP , evaluar métricas de QoS y genera gráficos estadísticos para interpretar los resultados.
+
+Integra modulos de Python como Flask y Shapy, herramientas de Linux como TC, Gstreamer y Iperf.
+---
+type: talk

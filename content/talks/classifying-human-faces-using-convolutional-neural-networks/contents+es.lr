@@ -1,0 +1,11 @@
+_slug: clasificando-rostros-usando-redes-neuronales
+---
+authors: moises-vargas
+---
+language: en
+---
+name: Clasificando rostros humanos usando redes neuronales convolucionales
+---
+summary: El objetivo de este taller es introducir la arquitectura de red neuronal convolucional clásica (ConvNet) LeNet-5 a los asistentes usando Python, Tensor-flow y Sci-kit learn. Los asistentes aprenderán los conceptos básicos y cómo construir una ConvNet clasificando si sí o no una imagen tiene un rostro humano.
+---
+type: workshop

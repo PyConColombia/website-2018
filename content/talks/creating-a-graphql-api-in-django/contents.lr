@@ -1,0 +1,9 @@
+name: Creating a GraphQL api in Django
+---
+authors: carlos-alberto-martinez-morales
+---
+language: es
+---
+summary: From 0 to 100 in the implementation of an api graphql in django. What is an api of graphql and its advantages, how to create an api of graphql in django and to flexibilize the consumption of the data of an application.
+---
+type: talk

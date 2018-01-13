@@ -2,4 +2,24 @@ name: Johana
 ---
 last_name: Sanchez
 ---
-publish: no
+publish: yes
+---
+country: Colombia
+---
+country_residence: Ecuador
+---
+information: Passionate and restless Chemist. Programmer and scientific apprentice in transition. In love with the Python Argentina community. Motivator of outdated scientists and children of neuronal reproduction age through the project [Chemist & Nomad](https://quimicanomada.wordpress.com/).
+---
+prefix: Ms.
+---
+image: johanna-sanchez.jpg
+---
+email: ellaquimica@gmail.com
+---
+facebook_handle: EllaQuimica
+---
+github_handle: ellaquimica
+---
+twitter_handle: ellaquimica
+---
+web: https://quimicanomada.wordpress.com/

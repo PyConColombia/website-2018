@@ -1,0 +1,9 @@
+name: Take your (Storm) Water Modeling to the next level with PySWMM and the OpenWaterAnalytics Initiative
+---
+authors: gonzalo-andres-pena-castellanos
+---
+summary: PySWMM is a Python wrapper for the SWMM software (created by the US Environmental Protection Agency - EPA) for the creation, manipulation, and study of the structure, dynamics, and function of complex sewer networks including hydrodynamic modeling, water quality and optimization!
+---
+language: en
+---
+type: talk

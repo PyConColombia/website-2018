@@ -1,4 +1,48 @@
 {% extends "page.html" %}
+{%- from "macros/translation.html" import transbag -%}
+{%- set t_language = transbag('translate', this.alt, 'talk_language') -%}
+{%- set t_authors = transbag('translate', this.alt, 'talk_authors') -%}
+{%- set t_type  = transbag('translate', this.alt, 'talk_type') -%}
+{%- set t_talk_type  = transbag('translate', this.alt, 'type_'+this.type) -%}
+{%- set t_summary = transbag('translate', this.alt, 'talk_summary') -%}
+{%- set t_talk_description = transbag('translate', this.alt, 'talk_description') -%}
+{%- set t_resources = transbag('translate', this.alt, 'talk_resources') -%}
+{%- set t_lang = transbag('translate', this.alt, this.language) -%}
+
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
+{% block banner %}{% endblock %}
+
+<div class="row">
+  <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+      <h2>{{ this.name }}</h2>
+      <br>
+      <dl>
+        <dt>{{ t_language }}:</dt>
+        <dd>{{ t_lang }}</dd>
+        <dt>{{ t_type }}:</dt>
+        <dd>{{ t_talk_type }}</dd>
+        <dt>{{ t_authors }}:</dt>
+        <dd>
+        {%- for author in this.authors -%}
+          {%- set current_author = site.get('/speakers/'+author, alt=this.alt) -%}
+          {%- set t_country_res = transbag('translate', this.alt, current_author.country) -%}
+          <a class="link" href="{{current_author|url(alt=this.alt)}}">{{ current_author.name }} {{ current_author.last_name }} {% if current_author.country %}<small>({{ t_country_res }})</small>{% endif %}</a>{% if not loop.last %},&nbsp{% endif %}
+        {%- endfor -%}
+        </dd>
+        <dt>{{ t_summary }}:</dt>
+        <dd>{{ this.summary }}</dd>
+        {%- if this.description-%}
+        <dt>{{ t_talk_description }}:</dt>
+        <dd>{{ this.description }}</dd>
+        {%- endif -%}
+        {%- if this.url -%}
+        <dt>{{ t_resources }}:</dt>
+        <dd>this.url</dd>
+        {%- endif -%}
+      </dl>
+    <div class="col-lg-2"></div>
+  </div>
+</div>
 {% endblock %}

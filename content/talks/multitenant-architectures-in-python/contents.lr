@@ -1,0 +1,9 @@
+name: Multitenant Architectures in Python
+---
+language: es
+---
+type: talk
+---
+summary: In this talk I will talk a little about what are multitenant architectures, what types exist, how to implement one with Django and Postgresql, my experiences implementing this type of architecture and practical advice on this subject in general.
+---
+authors: milton-lenis

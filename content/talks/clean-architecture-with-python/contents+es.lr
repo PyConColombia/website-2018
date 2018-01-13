@@ -1,0 +1,13 @@
+authors: esteban-echeverry
+---
+description: 
+---
+language: es
+---
+name: Arquitectura limpia con Python
+---
+summary: La *Arquitectura limpia* otorga flexibilidad, independencia y facilidad para probar nuestras aplicaciones. Usando las baterías incluidas de Python y algunos complementos opcionales, podremos diseñar nuestros programas de manera limpia hoy, sin comprometer demasiado nuestras decisiones del mañana.
+---
+type: workshop
+---
+_slug: arquitectura-limpia-con-python

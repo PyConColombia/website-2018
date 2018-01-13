@@ -21,3 +21,17 @@ web: http://whataboutnaomi.blogspot.com/
 github_handle: nceder
 ---
 publish: yes
+---
+information:
+
+Leader specializing in Python and Linux and building developer teams; a "make it work" problem solver; 15 years experience and LPI 2 certification in managing Linux systems; expert in making disparate systems and data streams play nicely together; published author, accomplished speaker and presenter. 
+
+Web development experience includes tornado, django, and cherrypy, as well as apache and editing raw HTML/CSS. I've also actually dreamed MySQL queries... ;) 
+
+Experienced as architect and Scrum product owner in charge of entire web application infrastructure hosted on AWS & Azure cloud servers and entire dataflow including interface with SaaS CRM (Netsuite) and multiple supplier backends.
+
+Other experience: Cloud infrastructure -architecting systems on AWS . Netsuite administration and scripting.
+
+Proponent of teaching programming, especially Python, to middle and high school students, and an advocate for open software and open content. Organizer of PyCon, member of Python Software Foundation, and a principal organizer of the Fort Wayne Linux Users Group.
+
+Specialties: Python, MySQL, Javascript on server, C/C++. Building and managing developer teams. Teaching programming and system administration and using web frameworks to manage/share information. LPI advanced certified Linux admin.

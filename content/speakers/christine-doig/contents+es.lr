@@ -1,4 +1,4 @@
-employer: Anaconda, Inc
+employer: 
 ---
 github_handle: chdoig
 ---
@@ -6,15 +6,13 @@ image: chdoig.jpg
 ---
 information:
 
-Senior Data Scientist and Technology Evangelist at Continuum Analytics. 
+Me encanta empoderar a las personas a través de la ciencia de datos y la tecnología de código abierto.
 
-I love empowering people through data science and open source technology. 
+Con más de 5 años de experiencia profesional en análisis, investigación de operaciones y aprendizaje automático en una variedad de industrias, incluyendo energía, fabricación, banca y defensa, ha trabajado con una variedad de software y lenguajes de programación, incluyendo Matlab, Excel, SAS, R, Python y Hadoop. Adaptable y siempre con ganas de aprender. Trabaja eficazmente en equipos multifuncionales con Ingeniería, Producto, UX, Ventas y Marketing. 
 
-5+ years of professional experience in analytics, operations research, and machine learning in a variety of industries, including energy, manufacturing, banking and defense. Worked with a variety of software and programming languages, including Matlab, Excel, SAS, R, Python and Hadoop. Adaptive and always eager to learn. Thrived in cross-functional teams with Engineering, Product, UX, Sales and Marketing. Empathetic and good listener.
+Ponente y desarrolladora en muchas conferencias de código abierto, incluyendo PyCon, EuroPython, SciPy y OSCON, y reuniones locales, como ACM SIGKDD Austin, PyBCN y PyLadies. Los temas incluyen: Visualización interactiva de datos, Aprendizaje automático, Modelado de temas, Reproducibilidad de ciencia de datos, Mejores prácticas y Descripción general del ecosistema. Excelentes habilidades para contar historias y excelentes para presentar temas complejos para audiencias no técnicas y para principiantes. Blogger ocasional, escritora y presentadora de webinars.
 
-Speaker and trainer at many Open Source conferences, including PyCon, EuroPython, SciPy, and OSCON, and local meetups, such as ACM SIGKDD Austin, PyBCN and PyLadies. Topics include: Interactive Data Visualization, Machine Learning, Topic Modeling, Data Science Reproducibility, Best Practices and Ecosystem Overview. Excellent storytelling skills and great at presenting complex subjects to non-technical and beginner audiences. Occasional blogger, writer and webinar presenter.
-
-M.S. in Industrial Engineering from the Polytechnic University of Catalonia in Barcelona. Master Thesis at RWTH Aachen, Germany. Lived in three different countries (U.S., Spain and Germany) and proficient in four languages (English, Spanish, Catalan and German). Love traveling and movies.
+M.S. en Ingeniería Industrial de la Universidad Politécnica de Cataluña en Barcelona. Tesis de maestría en RWTH Aachen, Alemania. Ha vivido en tres países diferentes (EE.UU., España y Alemania) y es competente en cuatro idiomas (inglés, español, catalán y alemán). Le encanta viajar y ver películas.
 ---
 keynote: yes
 ---
@@ -24,10 +22,14 @@ name: Christine
 ---
 position: Científica de Datos
 ---
-summary: Senior Data Scientist @AnacondaInc. Python, R, Open Source, Education, Travel, Indie Films. DREAMER.
+summary: Científica de Datos @AnacondaInc. Python, R, Código Abierto, Educación, Viajes, Películas independientes. SOÑADORA.
 ---
 twitter_handle: ch_doig
 ---
 web: http://chdoig.github.io/
 ---
 publish: yes
+---
+email: christine.doig.cardet@gmail.com
+---
+prefix: Ms.

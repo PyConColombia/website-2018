@@ -1,0 +1,9 @@
+name: Design your own CLI with Python
+---
+authors: cesar-augusto-herdenez
+---
+language: es
+---
+summary: In our day we are full of CLIs (Command Line Interfaces), cp, mv, rm, mkdir, docker, heroku, awscli, git, among many others, and why not design your own tool to your needs and taste.
+---
+type: workshop
