@@ -8,7 +8,11 @@ country: Argentina
 ---
 country_residence: Ecuador
 ---
-information: Restless and fussy driver with routes, GPS and maps. Computer programmer and member of the Python Argentina community since 2006. Juggler and unicyclist. Frustrated teacher and in active recovery. Simply *humitos*.
+information:
+
+Restless and fussy driver with routes, GPS and maps. Computer programmer and member of the Python Argentina community since 2006. Juggler and unicyclist. Frustrated teacher and in active recovery. Simply *humitos*.
+
+Founder of the Argentina en Python project and Python Ambassador for Latin America.
 ---
 github_handle: humitos
 ---
@@ -19,3 +23,7 @@ web: https://elblogdehumitos.com
 image: manuel-kaufmann.jpg
 ---
 prefix: Mr.
+---
+employer: Read the Docs / Argentina en Python
+---
+position: Developer / Founder

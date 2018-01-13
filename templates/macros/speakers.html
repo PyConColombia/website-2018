@@ -21,9 +21,9 @@
   </div>
 {% endmacro %}
 
-{% macro render_speaker_info(speaker) %}
+{% macro render_speaker_info(speaker, css) %}
  {%- set t_speaker_at = transbag('translate', speaker.alt, 'speaker_at') -%}
-  <div class="speaker-details">
+  <div class="speaker-details {{ css }}">
     <div class="speaker-name">{{ speaker.name }} {{speaker.last_name }}</div>
     <div class="speaker-job">
       {% if speaker.display_summary %}
@@ -35,7 +35,7 @@
   </div>
 {% endmacro %}
 
-{% macro render_speaker(speaker, index=1, details=True) %}
+{% macro render_speaker(speaker, index=1, details=True, css='light-color') %}
 {%- set complete_name = speaker.name + " " + speaker.last_name -%}
 
   <div class="speaker">
@@ -52,7 +52,7 @@
     {% if details -%}
     <div class="speaker-details-wrapper">
       {{ render_speaker_social(speaker, index) }}
-      {{ render_speaker_info(speaker) }}
+      {{ render_speaker_info(speaker, css) }}
     </div>
     {%- endif %}
   </div>
