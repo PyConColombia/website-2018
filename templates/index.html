@@ -120,56 +120,43 @@
     {% endif %}
 
       <!-- Keynote Speakers Section -->
-      <div class="container-fluid keynote-section">
+      <div class="container-fluid light-section">
         <div class="section-container">        
           <div class="row">
         <div class="container">
               {% set speakers = site.query('/speakers', alt=this.alt).filter(F.keynote).filter(F.publish) %}
-              {%- set items_per_row = 3 -%}
-              {%- set grid_max_cols = 12 -%}
-              {%- set last_row_items = speakers.count() % items_per_row -%}
-              <h1 class="section-title-light">{{ t_keynote_speakers }}</h1>
-              <div class="row">            
+              <h1 class="section-title-light"><b>{{ t_keynote_speakers }}</b></h1>
+              <div class="row justify-content-center">
                 {% for speaker in speakers %}
-                {%- set row = ((loop.index - 1)/items_per_row)|int -%}
-                {# Only affect the first item of the last row #}
-                {% if last_row_items and loop.index > speakers.count() - last_row_items %}
-                {%   if last_row_items == 1 %}
-                <div class="col-md-3 col-lg-4">
-                {# empty column #}
-                </div>
-                {%   else %}
-                <div class="col-md-0 col-lg-2">
-                {# empty column #}
-                </div>  
-                {%   endif %}
-                {% endif %}
                 <div class="col-md-6 col-lg-4">
-                  {{ render_speaker(speaker, loop.index) }}
+                  {{ render_speaker(speaker, index=loop.index, details=True, css='light-color') }}
                 </div>
                 {% endfor %}
               </div>
             </div>
           </div>
-          {% if 'link-accepted-speakers' in this.sections %}
-          <div class="row accepted-speakers">
-            <div class="col-md-6 col-sm-8 col-xs-10 mx-auto text-center">
-              <h1 class="section-title-light">{{ t_accepted_speakers_title }}</h1>
+        </div>
+      </div>  
 
-              <a href="{{ this.accepted_speakers_link }}" target="blank" class="btn btn-success btn-lg centerer-block text">
-                    {{ t_accepted_speakers_button }}
-              </a>
+      <!-- Talks & Workshops Section -->
+      <div class="container-fluid dark-section">
+        <div class="section-container">
+          <div class="row">
+            <div class="col-xl-8 col-lg-9 col-md-8 col-sm-10 col-xs-10 mx-auto">
+
+              <h2 class="text-center section-title-dark"><a href="{{'talks'|url(alt=this.alt)}}">{{ t_accepted_speakers_title }}</a></h2>
+              <br>
+              <br>
+              {%- include 'partials/_talks.html' -%}
             </div>
           </div>
-          {% endif %}
-        </div>
-        </div>
-      </div>
+        </div><!-- End Section -->
+      </div><!-- End Container -->
 
       <!-- Sponsors Section -->
       <div class="container-fluid light-section">
         <div class="section-container">        
-          {% include 'partials/_sponsors.html' %}
+          {%- include 'partials/_sponsors.html' -%}
         </div>
       </div>
 
@@ -179,7 +166,7 @@
         <div class="section-container">
           <div class="row">
             <div class="col-md-6 col-xs-10 mx-auto">
-              {% include 'partials/_schedule.html' %}
+              {%- include 'partials/_schedule.html' -%}
             </div>
           </div>
         </div>

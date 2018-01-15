@@ -1,0 +1,36 @@
+name: Rocky
+---
+last_name: Bernstein
+---
+prefix: Mr.
+---
+keynote: no
+---
+email: rocky@gnu.org
+---
+image: rocky-bernstein.jpg
+---
+position: Chief Mad Scientist
+---
+employer: porcine software
+---
+information:
+
+Rocky Bernstein is a long-time open-source developer. Your computer may even contain some of my code.
+
+Among the many different kinds programs I have written, there are debuggers for 8 or so programming languages including bash, zsh and GNU make.
+
+I have worked at IBM Research, as a government contractor for NASA (in climate studies), the Associated Press, a large financial institute, a University, and way too many startups.
+
+Recently, I have been interested in reassessing compiler technology and the standard Dragon-book compiler pipeline in light of technological advances, and using this revised compiler pipeline as a means for giving position information at runtime or when an error occurs.
+
+---
+github_handle: rocky
+---
+dob: 1955-10-27
+---
+country: USA
+---
+country_residence: USA
+---
+publish: yes

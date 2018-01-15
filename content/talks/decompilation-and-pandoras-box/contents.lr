@@ -1,0 +1,17 @@
+name: Decompilation and Pandora’s box
+---
+authors: rocky-bernstein
+---
+language: en
+---
+summary:
+
+In conjunction with a cross-version Python decompiler, uncompyle6,I’ve written the following tools:
+
+- (i) disassembler (ho hum),
+- (ii) assembler (say what?),
+- (iii) Python bytecode analyzer.
+
+I show the damage you can do in using these, and some benefits too.
+---
+type: talk

@@ -1,0 +1,11 @@
+_slug: flujos-de-trabajo-en-python-con-fbje
+---
+authors: navid-sheikhol
+---
+language: en
+---
+name: FBJE es un marco utilizado en Facebook para desarrollar flujos de trabajo en Python
+---
+summary: ¿Cómo administra Facebook una de las infraestructuras más grandes del planeta? Al usar Python, hemos creado un marco para desarrollar flujos de trabajo escalables que los ingenieros de Facebook utilizan para automatizar el ciclo de vida de nuestra infraestructura, de modo que pueda seguir compartiendo y conectarse con sus amigos y familiares.
+---
+type: talk

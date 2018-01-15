@@ -1,0 +1,11 @@
+_slug: disena-tu-propia-cli-con-python
+---
+authors: cesar-augusto-herdenez
+---
+language: es
+---
+name: Diseña tu propia CLI con Python
+---
+summary: En nuestro da a da estamos llenos de CLIs (Command Line Interfaces), cp, mv, rm, mkdir, docker, heroku, awscli, git, entre muchas otras, y por qué no diseñar tu propia herramienta a tus necesidades y gustos.
+---
+type: workshop

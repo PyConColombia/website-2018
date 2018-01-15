@@ -1,4 +1,36 @@
 {% extends "page.html" %}
+{%- from "macros/translation.html" import transbag -%}
+{%- from "macros/speakers.html" import render_speaker -%}
+
+{% macro render_list(type) %}
+  {% set talks = site.query('/talks', alt=this.alt).filter(F.type == type).order_by('_id') %}
+  {%- set t_title = transbag('translate', this.alt, type) -%}
+  <h1 class="text-center">{{ t_title }} ({{ talks.count() }})</h1>
+  <div>
+  {%- for talk in talks -%}
+  {%- set t_lang = transbag('translate', this.alt, talk.language) -%}
+    <h3>{{ loop.index }}.&nbsp;<a class="link" href="{{talk|url(alt=this.alt)}}">{{ talk.name }} <small><i>({{ t_lang }})</i></small></a></h3>
+    <p>
+    {%- for author in talk.authors -%}
+      {%- set current_author = site.get('/speakers/'+author, alt=this.alt) -%}
+      {%- set current_country = transbag('translate', this.alt, current_author.country) -%}
+      <a class="link" href="{{current_author|url(alt=this.alt)}}"><i>{{ current_author.name }} {{ current_author.last_name }} {% if current_author.country %}<small>({{ current_country }})</small>{% endif %}</i></a>{% if not loop.last %},&nbsp{% endif %}
+      {%- endfor -%}
+    </p>
+    {{ talk.summary }}
+    <br>
+  {%- endfor -%}
+  </div>
+{% endmacro %}
+
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
+<div class="row">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-8">
+  {{ render_list('talk') }}
+  {{ render_list('workshop') }}
+  </div>
+  <div class="col-lg-2"></div>
+</div>
 {% endblock %}

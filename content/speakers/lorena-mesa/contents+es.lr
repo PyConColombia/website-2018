@@ -4,6 +4,8 @@ image: lorenamesa.jpg
 ---
 information:
 
+Analista política convertida en codificadora, Lorena Mesa es ingeniera de software de Sprout Social en ciencias de la información, directora de la Python Software Foundation, co-organizadora de PyLadies Chicago y organizadora de la ciudad de Tech Ladies Chicago. A Lorena le encanta dar sentido a los datos, hacer grandes preguntas y usar su código para construir modelos que deriven ese significado. Fanático de Star Wars, pero principalmente un Trekkie, Lorena cumple con el lema de "vivir largo y prosperar".
+
 Mi pasión y curiosidad por comprender problemas complejos y los impactos que estos problemas tienen en las redes sociales y los espacios sociales ha sido un hilo conductor de mi trabajo. La transición de la investigación aplicada de las ciencias sociales y las relaciones públicas al desarrollo de software es una opción obvia y emocionante para mí. El software responde a los problemas de las personas, los problemas que me inspiran.
 
 La implementación de soluciones que hace que la minería orgánica de los medios de comunicación social de tráfico parece fácil, reflexionando sobre los datos de compra de los consumidores para encontrar historias, discutir y diseñar código sostenible y flexible son los tipos de problemas que estoy ansioso por mi código para perseguir.
@@ -23,3 +25,5 @@ twitter_handle: loooorenanicole
 web: http://lorenamesa.com/
 ---
 github_handle: lorenanicole
+---
+publish: yes

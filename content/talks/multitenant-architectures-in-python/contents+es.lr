@@ -1,0 +1,11 @@
+language: es
+---
+name: Arquitecturas Multitenant en Python
+---
+summary: En esta charla hablaré un poco sobre que son las arquitecturas multitenant, que tipos existen, como implementar una con Django y Postgresql, mis experiencias implementando este tipo de arquitecturas y consejos prácticos sobre esta temática en general
+---
+type: talk
+---
+authors: milton-lenis
+---
+_slug: arquitecturas-multitenant-en-python

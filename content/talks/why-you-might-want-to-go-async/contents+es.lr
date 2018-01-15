@@ -1,0 +1,15 @@
+_slug: porque-querrias-trabajar-con-asyncio
+---
+authors: jonas-obrist
+---
+language: en
+---
+name: Porque querrias trabajar con asyncio
+---
+summary:
+
+¿Necesitas Construir un sitio web, un servidor API, un scraper? ¿Deseas manejar más de una solicitud a la vez sin tener que usar sub procesos? ¿Quieres aprovechar al máximo tus recursos?
+
+Es posible que desee utilizar programación asincrónica. Aprende lo que es y por qué podría ser útil para ti en esta charla.
+---
+type: talk

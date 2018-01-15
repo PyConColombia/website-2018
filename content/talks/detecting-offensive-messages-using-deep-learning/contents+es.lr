@@ -1,0 +1,15 @@
+_slug: deteccion-de-mensajes-ofensivos-utilizando-deep-learning
+---
+authors: alizishaan-khatri
+---
+language: en
+---
+name: Detección de mensajes ofensivos utilizando Deep Learning: un enfoque basado en micro servicios
+---
+summary:
+
+¿Qué estás haciendo para controlar el contenido abusivo en tu plataforma? ¿Puede su solución actual decir la diferencia entre *fking awesome* y *fking looser? ¿Puede detectar contenido racista y sexista?
+
+Aprenda a construir una solución basada en el *Deep Learning* y e impleméntela como un micro-servicio.
+---
+type: talk

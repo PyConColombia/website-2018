@@ -10,8 +10,6 @@ name: Christine
 ---
 information:
 
-Senior Data Scientist and Technology Evangelist at Continuum Analytics. 
-
 I love empowering people through data science and open source technology. 
 
 5+ years of professional experience in analytics, operations research, and machine learning in a variety of industries, including energy, manufacturing, banking and defense. Worked with a variety of software and programming languages, including Matlab, Excel, SAS, R, Python and Hadoop. Adaptive and always eager to learn. Thrived in cross-functional teams with Engineering, Product, UX, Sales and Marketing. Empathetic and good listener.
@@ -26,10 +24,14 @@ twitter_handle: ch_doig
 ---
 image: chdoig.jpg
 ---
-employer: Anaconda, Inc
+employer: 
 ---
 position: Data Scientist
 ---
 web: http://chdoig.github.io/
 ---
 publish: yes
+---
+email: christine.doig.cardet@gmail.com
+---
+prefix: Ms.

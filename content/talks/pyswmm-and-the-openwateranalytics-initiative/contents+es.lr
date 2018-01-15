@@ -1,0 +1,11 @@
+_slug: pyswmm-y-owa
+---
+authors: gonzalo-andres-pena-castellanos
+---
+language: en
+---
+name: Lleva el modelado de alcantarillados al siguiente nivel con PySWMM y la Iniciativa OpenWaterAnalytics
+---
+summary: PySWMM es una librería de enlace de Python con el software SWMM (creado por la Agencia de Protección Ambiental de EE. UU. - EPA) para la creación, manipulación y estudio de la estructura, dinámica y funcionamiento de complejas redes de alcantarillado que incluyen la capacidad de realizar modelación hidrodinámica, de calidad del agua y optimización de sistemas.
+---
+type: talk

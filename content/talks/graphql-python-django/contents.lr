@@ -1,0 +1,9 @@
+name: GraphQL + Python/Django
+---
+summary: GraphQL is a query language to define the data we request from an API, but unlike REST it is much easier to maintain and the client decides what data he wants.
+---
+authors: nicolas-molina-monroy
+---
+language: es
+---
+type: talk

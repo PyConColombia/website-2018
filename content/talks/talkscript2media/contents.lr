@@ -1,0 +1,9 @@
+name: TalkScript2Media
+---
+language: es
+---
+summary: Free package implemented in Python with assistance of TTS engines, ffmpeg, and other free tools, for automation of presentations to video for easy and efficient management of information in education with a futuristic vision.
+---
+type: talk
+---
+authors: manuela-jaramillo-rendon

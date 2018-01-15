@@ -1,0 +1,25 @@
+country: Canada
+---
+country_residence: Canada
+---
+dob: 1993-06-07
+---
+email: max.humber@gmail.com
+---
+employer: W
+---
+image: max-humber.jpg
+---
+information: Max es un ingeniero de datos para Wealthsimple, una empresa de Fintech ganadora de Premio Webby que brinda servicios financieros más inteligentes a todos, independientemente de su edad o patrimonio neto. Antes de Wealthsimple, Max fue el primer Data Scientist para la plataforma de préstamos en línea Borrowell. Ha hablado en ODSC, PyData, useR y BigDataX en Londres, Berlín, Bruselas y Toronto.
+---
+keynote: no
+---
+last_name: Humber
+---
+name: Max
+---
+position: Ingeniero de Datos
+---
+prefix: Mr.
+---
+publish: yes

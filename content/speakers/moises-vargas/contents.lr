@@ -1,0 +1,33 @@
+name: Moises
+---
+last_name: Vargas
+---
+prefix: Mr.
+---
+keynote: no
+---
+email: moisesweb@gmail.com
+---
+image: moises-vargas.jpg
+---
+position: Machine Learning Contributor
+---
+employer: OpenMined
+---
+information:
+
+Moises is a Software Engineer with DeepLearning and Machine Learning skills.
+
+He has experience building Convolutional Neural Networks in Tensor Flow and Keras. He worked on projects that detect vehicles shapes, and human faces. Currently he is a graduated Machine Learning Engineer and Self Driving Cars Student at Udacity.
+---
+github_handle: moisesvw
+---
+twitter_handle: moisesvw
+---
+dob: 1983-9-9
+---
+country: Colombia
+---
+country_residence: Colombia
+---
+publish: yes

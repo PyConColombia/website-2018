@@ -1,0 +1,15 @@
+name: AMUSE: Taking python to the stars
+---
+authors: maria-camila-remolina-gutierrez
+---
+summary: AMUSE (Astrophysical Multipurpose Software Environment) is a tool for developing complex astrophysical simulations involving different physical domains and scales. It consists of a Python interface linked to a C/Fortran one, while using MPI for distributed computation.
+---
+type: talk
+---
+language: en
+---
+description:
+
+AMUSE was developed in the Netherlands and since then, it has been a key tool for hundreds of research projects regarding all areas of astrophysics. The wonder of this environment is that it allows the user to create his own universe in a intuitive and python-like way. It allows the researcher to focus on the science of the simulations instead of the implementation of the numerical algorithms that solve well-known problems, such as planetary evolution for example. Besides, its design allows to couple all the different codes available in its library, and for instance mix the previous example with a star evolution, creating a complete planetary system in a couple of lines of code.
+
+In this talk my goal is to divulge AMUSE and present all the capabilities it holds. I hope that the audience is motivated to venture in the world of astrophysics and that python open this door of mystery and passion for the cosmos.

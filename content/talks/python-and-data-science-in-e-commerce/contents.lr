@@ -1,0 +1,15 @@
+name: Python and Data Science in e-commerce: A success story
+---
+authors: javier-mansilla
+---
+language: es
+---
+summary: A case of success of the design, construction, implementation and start-up of a Machine Learning / NLP system applied to an e-commerce platform is described. Initial challenges, generation of hypotheses, and the path traveled by constructing predictive models and putting them into production.
+---
+type: talk
+---
+description:
+
+The aim of the talk is to convey the experience of a Data Science team in a real case and that is currently in production. The attendees will get in touch with the problems faced by the teams on a day-to-day basis, and how the choice of Python as a base language allows sufficient flexibility to provide solutions to all.
+
+Presentation of the case Initial challenges. Organization of work. Articulation with the client for experimentation and the development and training of models. Engineering and production start-up Impact of the solution on production in the life of the client and its users.

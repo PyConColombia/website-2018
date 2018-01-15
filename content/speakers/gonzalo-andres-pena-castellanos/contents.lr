@@ -1,15 +1,43 @@
-id: gonzalo-andres-pena-castellanos
+name: Gonzalo Andrés
 ---
-last_name: Peña-Castellanos
+last_name: Peña Castellanos
 ---
-name: Gonzalo
+prefix: Mr.
 ---
-facebook_handle: goanpeca
+keynote: no
+---
+email: goanpeca@gmail.com
+---
+image: gonzalo-andres-pena-castellanos.jpg
+---
+position: Software Engineer / Project Engineer
+---
+employer: Anaconda, Inc / SIHSA Ltda.
+---
+information:
+
+I am a Water Resources Engineer with B.S. in Civil Engineering, an MSc. in Hydro Informatics and an MSc. in Sanitary Engineering. Since 2009, I have been working with the Python language and it's scientific computing stack to solve problems related to Hydrology (Stochastic Downdscaling of Precipitation), Hydraulics (River dynamics modelling) and Water Quality (Biological Reactors Simulation). Since 2015 I have been working part-time as Software Engineer using Flask, PyQt in tandem with the Conda, Miniconda and Anaconda ecosystem and part time as a Project Engineer in water related issues.
+
+I am currently the Technical Lead for the Anaconda Navigator At [Anaconda, Inc](https://www.anaconda.com) project and a core developer for the Scientific PYthon Development EnviRonment - [Spyder](http://www.spyder-ide.org), and related projects (QtPy, QtAwesome, Conda-Manager), [Project Area Leader for the PyBee project](https://github.com/pybee/pybee.github.io/wiki/Project-Area-Leaders), contributor and collaborator on the [Open Water Analytics initiative](https://github.com/openwateranalytics/) and project Engineer with [Sistemas Hidráulicos y Sanitarios Ltda.](http://www.sihsa.co).
+
+I am the Organizer of [Python Bucaramanga](http://facebook.com/PythonBucaramanga) and the Co-organizer of [Django Girls Colombia](http://facebook.com/DjangoGirlsColombia), [Python Colombia](http://facebook.com/ColombiaPython) and PyCon Colombia 2018.
 ---
 github_handle: goanpeca
 ---
 twitter_handle: goanpeca
 ---
-employer: Anacoda, Inc
+facebook_handle: goanpeca
 ---
-position: Software Engineer
+dob: 1983-04-24
+---
+country: Colombia
+---
+country_residence: Colombia
+---
+publish: yes
+---
+web: https://www.linkedin.com/in/goanpeca/
+---
+display_summary: yes
+---
+summary: Software Engineer at Anaconda, Inc / Project Engineer at SIHSA Ltd.

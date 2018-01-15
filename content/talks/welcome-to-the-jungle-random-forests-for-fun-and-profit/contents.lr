@@ -1,0 +1,9 @@
+name: Welcome to the Jungle: Random Forests for Fun and Profit
+---
+authors: matt-harrison
+---
+language: en
+---
+summary: The Random Forest is a popular machine learning algorithm, and for good reason. Even if you are just a ”programmer”, you can use this algorithm to build predictive models. This talk will discuss the intuition behind decisions trees and random forests.
+---
+type: workshop

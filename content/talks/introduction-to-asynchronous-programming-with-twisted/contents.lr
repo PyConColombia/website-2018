@@ -1,0 +1,9 @@
+name: Introduction to asynchronous programming  with Python and Twisted
+---
+authors: jonathan-sandoval-cardona
+---
+language: en
+---
+summary: Asynchronous programming has become very popular with the introduction of asyncio to the python stdlib. Asyncio was largely influenced by Twisted. Async programming is a trend in python. In this talk I’ll show the basics of async programming that are valid in twisted and asyncio and a comparison.
+---
+type: talk

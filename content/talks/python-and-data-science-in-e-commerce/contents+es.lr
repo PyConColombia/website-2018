@@ -1,0 +1,17 @@
+authors: javier-mansilla
+---
+description:
+
+El objetivo de la charla es transmitir la experiencia de un equipo de Data Science en un caso real y que hoy en día está en producción. Los asistentes tomarán contacto con los problemas a los que se enfrentan los equipos en el día a día, y cómo la elección de Python como lenguaje base permite tener la flexibilidad suficiente para darle soluciones a todos.
+
+Presentación del caso Desafíos iniciales. Organización del trabajo. Articulación con el cliente para la experimentación y el desarrollo y entrenamiento de modelos. Ingeniería y puesta en producción. Impacto de la solución en producción en la vida del cliente y sus usuarios.
+---
+language: es
+---
+name: Python y Ciencia de Datos en el Comercio Electrónico: Un caso de éxito!
+---
+summary: Se describe un caso de éxito del diseño, construcción, implementación y puesta en producción de un sistema de Machine Learning/NLP aplicado a una plataforma de e-commerce. Desafíos iniciales, generación de hipótesis, y el camino recorrido construyendo modelos predictivos y poniéndolos en producción.
+---
+type: talk
+---
+_slug: python-y-ciencia-de-datos-en-comercio-electronico
