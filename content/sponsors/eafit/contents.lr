@@ -2,9 +2,9 @@ name: Eafit
 ---
 image: eafit-inverse.svg
 ---
-web: hhttp://www.eafit.edu.co/
+web: http://www.eafit.edu.co/
 ---
-confirmed: no
+confirmed: yes
 ---
 category: diamond
 ---

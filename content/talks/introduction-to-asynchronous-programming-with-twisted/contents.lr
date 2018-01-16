@@ -7,3 +7,9 @@ language: en
 summary: Asynchronous programming has become very popular with the introduction of asyncio to the python stdlib. Asyncio was largely influenced by Twisted. Async programming is a trend in python. In this talk I’ll show the basics of async programming that are valid in twisted and asyncio and a comparison.
 ---
 type: talk
+---
+datetime: 2018-02-09 13:00:00 -0500
+---
+datetime_end: 2018-02-09 13:40:00 -0500
+---
+room: b-auxiliary-conference-hall-1

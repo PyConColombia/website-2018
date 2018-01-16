@@ -1,6 +1,6 @@
 authors: juan-david-velasquez-henao
 ---
-datetime: 
+datetime: 2018-02-11 11:00:00 -0500
 ---
 language: en
 ---
@@ -12,4 +12,8 @@ type: workshop
 ---
 _slug: cashflows-modelos-de-inversion-financiera
 ---
-_hidden: yes
+_hidden: no
+---
+datetime_end: 2018-02-11 13:00:00 -0500
+---
+room: k-workshop-room-8

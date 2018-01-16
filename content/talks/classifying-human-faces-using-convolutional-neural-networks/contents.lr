@@ -7,3 +7,9 @@ language: en
 summary: The objective of this workshop is to Introduce classic convolutional neural network (ConvNet) architecture LeNet-5 to the assistants using Python, Tensor-flow and Sci-kit learn. Assistants will learn basics and how to build a ConvNet classifying whether yes or not an image has a human face.
 ---
 type: workshop
+---
+datetime: 2018-02-11 11:00:00 -0500
+---
+datetime_end: 2018-02-11 13:00:00 -0500
+---
+room: h-workshop-room-5

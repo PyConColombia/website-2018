@@ -7,3 +7,9 @@ language: es
 summary: In our day we are full of CLIs (Command Line Interfaces), cp, mv, rm, mkdir, docker, heroku, awscli, git, among many others, and why not design your own tool to your needs and taste.
 ---
 type: workshop
+---
+datetime: 2018-02-11 08:30:00 -0500
+---
+datetime_end: 2018-02-11 10:30:00 -0500
+---
+room: j-workshop-room-7

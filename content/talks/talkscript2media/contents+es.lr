@@ -9,3 +9,9 @@ name: TalkScript2Media
 summary: Paquete libre implementado en Python con asistencia de motores TTS, ffmpeg, y otras herramientas gratuitas, para automatización de presentaciones a video para el manejo fácil y eficiente de la información en la educación con una visión futurista.
 ---
 type: talk
+---
+datetime: 2018-02-10 10:20:00 -0500
+---
+datetime_end: 2018-02-10 11:00:00 -0500
+---
+room: b-auxiliary-conference-hall-1

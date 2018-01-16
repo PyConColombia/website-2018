@@ -7,3 +7,9 @@ language: en
 summary: One year ago I joined a team that favours Serverless, since then I’ve been building and maintaining lots of services using Serverless. With a pinch of Skepticism, I sailed through some of the challenges and tooling, I want to share with the community the pains and glory of it.
 ---
 type: talk
+---
+datetime: 2018-02-09 10:40:00 -0500
+---
+datetime_end: 2018-02-09 11:30:00 -0500
+---
+room: a-main-conference-hall

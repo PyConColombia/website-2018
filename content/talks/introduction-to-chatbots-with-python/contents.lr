@@ -7,3 +7,9 @@ language: es
 summary: Since F8 and the announcement of Facebook Messages API, the world of technology was enchanted by chatbots, since then the market has opened and some believe that Chatbots are the new Apps. In this workshop you will learn how to make your own chatbot.
 ---
 type: workshop
+---
+datetime: 2018-02-11 08:30:00 -0500
+---
+datetime_end: 2018-02-11 10:30:00 -0500
+---
+room: e-workshop-room-2

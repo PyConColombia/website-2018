@@ -1,0 +1,35 @@
+_model: page
+---
+title: Scholarships
+---
+body:
+
+# Diversity Scholarship
+
+We are really happy to announce the PyCon Colombia Diversity Scholarships! We believe that a diverse set of viewpoints and opinions is really important to build a thriving community. In an ideal world, every part of the tech community would be made up of people from all walks of life. However the reality is that we must be proactive and make an effort to make sure everybody has a voice. 
+
+Those studying or working in computer science or a related field can apply for a free conference ticket to attend the PyConColombia 
+
+To apply for the scholarship, please read the following guidelines and fill in the form provided by the link at the bottom.
+
+# Award Includes
+- Paid registration fee for the PyCon Colombia conference.
+- Additional meal stipend
+
+# Important Dates
+- Application opens: XX Applications for the PyCon Colombia Scholarship must be submitted
+- Application closes: XX: Applications after this date won't be reviewed.
+- Selected applications: Award recipients will be notified by email of their acceptance.
+- Confirmation: Award recipients must confirm they will be accepting the scholarship.
+
+# Eligibility
+- Must provide a letter of interest following this suggested format. International applicants are covered by this scholarship.
+- You must be available to attend the full duration of the PyCon Colombia Conference
+
+<br>
+
+<div class="text-center">
+  <a class="btn btn-large btn-success" href="">Application Form</a>
+</div>
+---
+banner: scholarships.jpg
