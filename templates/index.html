@@ -165,18 +165,19 @@
             <div class="col-md-6 col-sm-6 col-xs-10 mx-auto">
               <h1 class="section-title-light text-center"><b>{{ t_scholarships }}</b></h1>
               <br>
-              <p class="text-center">
-              {{ t_scholarship_text }}
-              </p>
+              <h3 class="text-center">
+              {%- set scholar = t_scholarship_text.split(' br ') -%}
+              {{ scholar[0] }}
+              </h3>
               <br>
               <br>
             </div>
           </div>
-          <div class="col-lg-4 col-md-8 col-sm-10 col-xs-12 mx-auto">
+          {#<div class="col-lg-4 col-md-8 col-sm-10 col-xs-12 mx-auto">
             <a href="{{ '/scholarships'|url(alt=this.alt) }}" class="btn btn-success btn-lg btn-block center-block">
             {{ t_apply_for_scholarship }}!
             </a>
-          </div>
+          </div>#}
         </div>
       </div>
 

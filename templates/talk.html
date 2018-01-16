@@ -8,8 +8,7 @@
 {%- set t_talk_description = transbag('translate', this.alt, 'talk_description') -%}
 {%- set t_resources = transbag('translate', this.alt, 'talk_resources') -%}
 {%- set t_location = transbag('translate', this.alt, 'location') -%}
-{%- set t_date_and_time = transbag('translate', this.alt, 'schedule_time') -%}
-{%- set room = site.get('/rooms/' + this.room, alt=this.alt) -%}
+{%- set t_date_and_time = transbag('translate', this.alt, 'date_and_time') -%}
 {%- set t_lang = transbag('translate', this.alt, this.language) -%}
 {%- set t_day = transbag('translate', this.alt, this.datetime.strftime('%A')) -%}
 
@@ -20,17 +19,18 @@
 <div class="row">
   <div class="col-lg-2"></div>
     <div class="col-lg-8">
-      <h2>{{ this.name }}</h2>
+      <h1 class="text-center">{{t_talk_type }}</h1>
+      <h2>{{ this.name }} <small>({{ t_lang }})</small></h2>
       <br>
       <dl>
-        <dt>{{ t_language }}:</dt>
-        <dd>{{ t_lang }}</dd>
+        <dd></dd>
+        {%- if this.room -%}
+        {%- set room = site.get('/rooms/' + this.room, alt=this.alt) -%}
         <dt>{{ t_location }}:</dt>
         <dd>{{ room.name }}</dd>
+        {%- endif -%}
         <dt>{{ t_date_and_time }}:</dt>
-        <dd>{{ t_day }} {{ this.datetime.strftime("%d, %H:%M:%S") }}</dd>
-        <dt>{{ t_type }}:</dt>
-        <dd>{{ t_talk_type }}</dd>
+        <dd>{{ t_day }} {{ this.datetime.strftime("%d, %H:%M") }}</dd>
         <dt>{{ t_authors }}:</dt>
         <dd>
         {%- for author in this.authors -%}

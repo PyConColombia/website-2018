@@ -10,7 +10,7 @@
               {%- set current_author = site.get('/speakers/'+author, alt=this.alt) -%}
               {%- set t_country = transbag('translate', this.alt, current_author.country) -%}
             <span>
-              <a class="link" style="color:{{ color }};" href="{{current_author|url(alt=this.alt)}}"><b>{{ current_author.name.split(' ')[0] }} {{ current_author.last_name.split(' ')[0] }}</b>{%- if current_author.country -%}&nbsp;<small>({{ t_country }})</small>{% endif %}</a>{% if not loop.last %},&nbsp{% endif %}
+              <a class="link" style="color:{{ color }};" href="{{current_author|url(alt=this.alt)}}"><b>{{ current_author.name.split(' ')[0] }} {{ current_author.last_name }}</b>{%- if current_author.country -%}&nbsp;<small>({{ t_country }})</small>{% endif %}</a>{% if not loop.last %},&nbsp{% endif %}
             </span>
             {%- endfor -%}
 {%- endmacro -%}
