@@ -2,35 +2,33 @@ banner: scholarships.jpg
 ---
 body:
 
-# Diversity Scholarship
+# Beca de Diversidad
 
-Today I’m really happy to announce the React.js Conf Diversity Scholarship! We believe that a diverse set of viewpoints and opinions is really important to build a thriving community. In an ideal world, every part of the tech community would be made up of people from all walks of life. However the reality is that we must be proactive and make an effort to make sure everybody has a voice. As conference organizers we worked closely with the Diversity Team here at Facebook to set aside 10 tickets and provide a scholarship. 10 tickets may not be many in the grand scheme but we really believe that this will have a positive impact on the discussions we have at the conference.
+¡Estamos muy contentos de anunciar las Becas de Diversidad de PyCon Colombia! Creemos que un conjunto diverso de puntos de vista y opiniones es realmente importante para construir una comunidad próspera. En un mundo ideal, cada parte de la comunidad tecnológica estaría compuesta por personas de todos los ámbitos de la vida. Sin embargo, la realidad es que debemos ser proactivos y hacer un esfuerzo para asegurarnos de que todos tengan voz.
 
-I’m really excited about this and I hope you are too! The full announcement is below:
+Aquellos que estudian o trabajan en ciencias de la computación o un campo relacionado pueden solicitar un boleto de conferencia gratis para asistir a PyConColombia
 
-The Diversity Team at Facebook is excited to announce that we are now accepting applications for the React.js Conf scholarship!
+Para solicitar la beca, lea las siguientes pautas y complete el formulario provisto por el enlace en la parte inferior.
 
-Beginning today, those studying or working in computer science or a related field can apply for an all-expense paid scholarship to attend the React.js Conf at Facebook’s Headquarters in Menlo Park, CA on January 28 & 29, 2015. React opens a world of new possibilities such as server-side rendering, real-time updates, different rendering targets like SVG and canvas. Join us at React.js Conf to shape the future of client-side applications! For more information about the React.js conference, please see the website and previous updates on our blog.
+# Premio incluye
+- Cuota de inscripción pagada para la conferencia PyCon Colombia.
+- Estipendio de comida adicional
 
-At Facebook, we believe that anyone anywhere can make a positive impact by developing products to make the world more open and connected to the people and things they care about. Given the current realities of the tech industry and the lack of representation of communities we seek to serve, applicants currently under-represented in Computer Science and related fields are strongly encouraged to apply. Facebook will make determinations on scholarship recipients in its sole discretion. Facebook complies with all equal opportunity laws.
-
-To apply for the scholarship, please visit the Application Page: https://www.surveymonkey.com/s/XVJGK6R
-
-# Award Includes
-- Paid registration fee for the React.js Conf January 28 & 29th at Facebook’s Headquarters in Menlo Park, CA
-- Paid travel and lodging expenses
-- Additional $200 meal stipend
-
-# Important Dates
-Monday, January 5, 2015: Applications for the React.js Conf Scholarship must be submitted in full
-Friday, January 9, 2015: Award recipients will be notified by email of their acceptance
-Wednesday & Thursday, January 28 & 29, 2015: React.js Conf
+# Fechas importantes
+- Se abre la aplicación: XX Las solicitudes para la beca PyCon Colombia deben enviarse
+- La aplicación cierra: XX: las solicitudes posteriores a esta fecha no serán revisadas.
+- Aplicaciones seleccionadas: los destinatarios del premio serán notificados por correo electrónico de su aceptación.
+- Confirmación: los ganadores del premio deben confirmar que aceptarán la beca.
 
 # Eligibility
-Must currently be studying or working in Computer Science or a related field
-International applicants are welcome, but you will be responsible for securing your own visa to attend the conference
-You must be available to attend the full duration of React.js conf on January 28 and 29 at Facebook Headquarters in Menlo Park
+- Must provide a letter of interest following this suggested format. International applicants are covered by this scholarship.
+- You must be available to attend the full duration of the PyCon Colombia Conference
 
+<br>
+
+<div class="text-center">
+  <a class="btn btn-large btn-success" href="">Formulario de aplicacioón</a>
+</div>
 ---
 title: Becas
 ---
