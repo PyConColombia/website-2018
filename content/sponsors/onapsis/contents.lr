@@ -1,1 +1,9 @@
 name: Onapsis
+---
+web: https://www.onapsis.com/
+---
+confirmed: yes
+---
+image: onapsis-inverse.svg
+---
+category: gold
