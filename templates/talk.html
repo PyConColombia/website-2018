@@ -7,7 +7,11 @@
 {%- set t_summary = transbag('translate', this.alt, 'talk_summary') -%}
 {%- set t_talk_description = transbag('translate', this.alt, 'talk_description') -%}
 {%- set t_resources = transbag('translate', this.alt, 'talk_resources') -%}
+{%- set t_location = transbag('translate', this.alt, 'location') -%}
+{%- set t_date_and_time = transbag('translate', this.alt, 'schedule_time') -%}
+{%- set room = site.get('/rooms/' + this.room, alt=this.alt) -%}
 {%- set t_lang = transbag('translate', this.alt, this.language) -%}
+{%- set t_day = transbag('translate', this.alt, this.datetime.strftime('%A')) -%}
 
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
@@ -21,6 +25,10 @@
       <dl>
         <dt>{{ t_language }}:</dt>
         <dd>{{ t_lang }}</dd>
+        <dt>{{ t_location }}:</dt>
+        <dd>{{ room.name }}</dd>
+        <dt>{{ t_date_and_time }}:</dt>
+        <dd>{{ t_day }} {{ this.datetime.strftime("%d, %H:%M:%S") }}</dd>
         <dt>{{ t_type }}:</dt>
         <dd>{{ t_talk_type }}</dd>
         <dt>{{ t_authors }}:</dt>
