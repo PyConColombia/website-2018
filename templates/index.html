@@ -22,6 +22,11 @@
 {%- set t_count_minutes = transbag('translate', this.alt, 'count_minutes') -%}
 {%- set t_count_seconds = transbag('translate', this.alt, 'count_seconds') -%}
 {%- set t_tickets_available = transbag('translate', this.alt, 'tickets_available') -%}
+{%- set t_tell_me_more = transbag('translate', this.alt, 'tell_me_more') -%}
+{%- set t_scholarships = transbag('translate', this.alt, 'scholarships') -%}
+{%- set t_scholarship_text = transbag('translate', this.alt, 'scholarship_text') -%}
+{%- set t_apply_for_scholarship = transbag('translate', this.alt, 'apply_for_scholarship') -%}
+{%- set t_agenda = transbag('translate', this.alt, 'agenda') -%}
 {%- set event = site.get('/venue', alt=this.alt) -%}
 
 {% extends "layout.html" %}
@@ -142,16 +147,72 @@
       <div class="container-fluid dark-section">
         <div class="section-container">
           <div class="row">
-            <div class="col-xl-8 col-lg-9 col-md-8 col-sm-10 col-xs-10 mx-auto">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-10 col-xs-10 mx-auto">
 
-              <h2 class="text-center section-title-dark"><a href="{{'talks'|url(alt=this.alt)}}">{{ t_accepted_speakers_title }}</a></h2>
+              <h2 class="text-center section-title-dark">{{ t_agenda }}</h2>
               <br>
               <br>
-              {%- include 'partials/_talks.html' -%}
+              {%- include 'partials/_schedule3.html' -%}
             </div>
           </div>
         </div><!-- End Section -->
       </div><!-- End Container -->
+
+      <!-- Scholarships Section -->
+      <div class="container-fluid light-section">
+        <div class="section-container">        
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-10 mx-auto">
+              <h1 class="section-title-light text-center"><b>{{ t_scholarships }}</b></h1>
+              <br>
+              <p class="text-center">
+              {{ t_scholarship_text }}
+              </p>
+              <br>
+              <br>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-8 col-sm-10 col-xs-12 mx-auto">
+            <a href="{{ '/scholarships'|url(alt=this.alt) }}" class="btn btn-success btn-lg btn-block center-block">
+            {{ t_apply_for_scholarship }}!
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Django Girls Section -->
+      <div class="container-fluid dark-section">
+        <div class="section-container">        
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 mx-auto d-flex justify-content-center flex-wr">
+              <img src="/static/images/django-girls-pycon-logo.svg" class="img-fluid">
+            </div>
+          </div>
+          <div class="row">
+            <div class="d-none d-lg-block col-lg-3 col-md-2 mx-auto">
+                <img src="/static/images/pony-left.svg" class="img-fluid" style="float:right;">
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12 mx-auto">
+              <br>
+              <br>
+              {% set django_girls = site.get('/django-girls', alt=this.alt) %}
+              {{ django_girls.body }}
+              <br>
+              <br>
+            </div>
+            <div class="d-none d-lg-block col-lg-3 col-md-2 mx-auto">
+                <img src="/static/images/pony-right.svg" class="img-fluid" style="float:left;">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-8 col-sm-10 col-xs-12 mx-auto">
+              <a href="https://argentinaenpython.com/django-girls/2018/02/pyconcolombia/" class="btn btn-primary btn-lg btn-block center-block" target="_blank">
+              {{ t_tell_me_more }}!
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>  
 
       <!-- Sponsors Section -->
       <div class="container-fluid light-section">
@@ -203,7 +264,7 @@
                   <br />
                   <br />
                   <br />
-                  <a href="{{ '/venue'|url(alt=this.alt) }}" class="btn btn-secondary btn-lg btn-block center-block">
+                  <a href="{{ '/venue'|url(alt=this.alt) }}" class="btn btn-primary btn-lg btn-block center-block">
                     {{ t_more_info }}
                   </a>
                 </div>

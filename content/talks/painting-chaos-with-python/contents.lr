@@ -7,3 +7,9 @@ language: es
 summary: We will talk about Fractal, its applications, and how computers were essential to be able to represent these complex and striking mathematical forms. The Matplotlib, Numpy and Turtle graphics libraries of Python will be used to graph the main fractals.
 ---
 type: talk
+---
+datetime: 2018-02-09 11:40:00 -0500
+---
+datetime_end: 2018-02-09 12:20:00 -0500
+---
+room: c-auxiliary-conference-hall-2

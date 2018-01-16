@@ -7,3 +7,9 @@ language: es
 summary: Clean Architecture gives flexibility, independence and ease to test our applications. Using the included Python batteries and some optional add-ons, we can design our programs cleanly today, without compromising our tomorrow's decisions too much.
 ---
 type: workshop
+---
+datetime: 2018-02-11 11:00:00 -0500
+---
+datetime_end: 2018-02-11 13:00:00 -0500
+---
+room: j-workshop-room-7

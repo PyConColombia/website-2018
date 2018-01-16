@@ -7,3 +7,9 @@ language: en
 summary: Building simple websites, like a blog, or a personal website do not require an interactive experience, using an static site generator like Lektor you could achieve the same functionality, without worrying about updates, security, performance, or cost; and deploy your site for free in Github Pages.
 ---
 type: workshop
+---
+datetime: 2018-02-11 11:00:00 -0500
+---
+datetime_end: 2018-02-11 13:00:00 -0500
+---
+room: e-workshop-room-2

@@ -582,7 +582,7 @@ $default-transition-duration: 0.5s;
 .sponsors {
   text-align: center;
   .sponsors-category{
-    padding: 3em 0;
+    padding: 0 0 1em 0;
   }
   .sponsors-title{
     text-align: center;
@@ -604,21 +604,30 @@ $default-transition-duration: 0.5s;
     font-size: 18px;
   }
 }
+
 .sponsor {
   display: inline-block;
   max-width: 100%;
   height: auto;
   &.sponsor-diamond{
-    height:150px;
+    height:200px;
+    max-height: 200px;
   }
   &.sponsor-gold{
-    height:100px;
+    height:160px;
+    max-height: 160px;
+  }
+  &.sponsor-silver{
+    height:130px;
+    max-height: 130px;
   }
   &.sponsor-bronce{
-    height:50px;
+    height:100px;
+    max-height: 100px;
   }
   &.sponsor-startup{
-    height:30px;
+    height:100px;
+    max-height:100px;
   }
   a {
     display:table;
@@ -637,7 +646,6 @@ $default-transition-duration: 0.5s;
       vertical-align: middle;
 
       img {
-        max-height: 150px;
         margin: auto auto;
         max-width: 80%;
       }

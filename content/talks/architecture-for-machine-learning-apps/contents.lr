@@ -7,3 +7,9 @@ language: en
 summary: Have you ever wondered how to integrate machine learning models with web Django applications? Through small snippets of code and a prepared example, I’ll show you how we are doing it at Dlabs.
 ---
 type: talk
+---
+datetime: 2018-02-09 10:40:00 -0500
+---
+datetime_end: 2018-02-09 11:30:00 -0500
+---
+room: c-auxiliary-conference-hall-2

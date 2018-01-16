@@ -2,7 +2,7 @@ name: Cashflows: Financial investment modeling and advanced engineering economic
 ---
 authors: juan-david-velasquez-henao
 ---
-datetime: 
+datetime: 2018-02-11 11:00:00 -0500
 ---
 language: en
 ---
@@ -10,4 +10,8 @@ summary: In this talk, we introduce cashflows, an open source Python library to 
 ---
 type: workshop
 ---
-_hidden: yes
+_hidden: no
+---
+datetime_end: 2018-02-11 13:00:00 -0500
+---
+room: k-workshop-room-8

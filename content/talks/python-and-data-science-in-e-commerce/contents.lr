@@ -13,3 +13,9 @@ description:
 The aim of the talk is to convey the experience of a Data Science team in a real case and that is currently in production. The attendees will get in touch with the problems faced by the teams on a day-to-day basis, and how the choice of Python as a base language allows sufficient flexibility to provide solutions to all.
 
 Presentation of the case Initial challenges. Organization of work. Articulation with the client for experimentation and the development and training of models. Engineering and production start-up Impact of the solution on production in the life of the client and its users.
+---
+datetime: 2018-02-10 13:30:00 -0500
+---
+datetime_end: 2018-02-10 14:10:00 -0500
+---
+room: a-main-conference-hall

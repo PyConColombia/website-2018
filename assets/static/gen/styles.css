@@ -7438,30 +7438,39 @@ input {
     font-family: 'FontAwesome';
     content: '\F05D';
     padding-right: 5px; }
+.sponsor-category {
+  padding:0px; }
 .sponsors-text {
   text-align: center;
   font-size: 1.2em; }
 .sponsors {
   text-align: center; }
 .sponsors .sponsors-category {
-    padding: 3em 0; }
+    padding: 0 0 1em 0; }
 .sponsors .sponsors-title {
     text-align: center;
     margin-bottom: 0.7em; }
-.sponsors .sponsor-invitation-text {
+.sponsors .sponsoinvitation-text {
     font-size: 18px; }
 .sponsor {
   display: inline-block;
   max-width: 100%;
   height: auto; }
 .sponsor.sponsor-diamond {
-    height: 150px; }
+    height: 200px;
+    max-height: 200px; }
 .sponsor.sponsor-gold {
-    height: 100px; }
+    height: 160px;
+    max-height: 160px; }
+.sponsor.sponsor-silver {
+    height: 130px;
+    max-height: 130px; }
 .sponsor.sponsor-bronce {
-    height: 50px; }
+    height: 100px;
+    max-height: 100px; }
 .sponsor.sponsor-startup {
-    height: 30px; }
+    height: 100px;
+    max-height: 100px; }
 .sponsor a {
     display: table;
     vertical-align: middle;
@@ -7483,7 +7492,6 @@ input {
       height: 100%;
       vertical-align: middle; }
 .sponsor a div img {
-        max-height: 150px;
         margin: auto auto;
         max-width: 80%; }
 .team-title {
@@ -7765,11 +7773,38 @@ main [class*="pure-u-"]:last-child article {
   -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg); }
 
+/* Colors */
 .light-color {
-  color: white;
-}
+  color: white; }
 
 .dark-color {
-  color: #3e1b88;
+  color: #3e1b88; }
+
+/* Schedule */
+.schedule {
+  padding: 10px;
+  margin: 15px;
 }
+
+.schedule-lightning, .schedule-inscription, .schedule-keynote, .schedule-opening, .schedule-closing, .schedule-break, .schedule-lunch_break {
+  border-radius: 15px;
+  border-style: solid;
+  border-color: white; }
+
+.schedule-keynote {
+  color: #3e1a87;
+  background: #c5bbdc; }
+
+.schedule-break, .schedule-lunch_break {
+  color: #3e1a87;
+  background: #c8dbf6; }
+
+.schedule-opening, .schedule-closing, .schedule-inscription, .schedule-lightning {
+  color: #3e1a87;
+  background: #23cde5; }
+
+.schedule-multiple-item {
+  padding-bottom:15px;
+  padding-top:15px; }
+
 /*# sourceMappingURL=styles.css.map*/
