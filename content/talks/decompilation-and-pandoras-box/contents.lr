@@ -6,13 +6,11 @@ language: en
 ---
 summary:
 
-In conjunction with a cross-version Python decompiler, uncompyle6,I’ve written the following tools:
+How is translating between English and Spanish similar to finding out where you are when you hit an error in your program?  I'll show you how, and show off a program I've written to give the error location pretty precisely.
 
-- (i) disassembler (ho hum),
-- (ii) assembler (say what?),
-- (iii) Python bytecode analyzer.
+The technology behind this is pretty sophisticated, but the talk is aimed for a general audience.
 
-I show the damage you can do in using these, and some benefits too.
+
 ---
 type: talk
 ---
@@ -21,3 +19,5 @@ datetime: 2018-02-10 13:30:00 -0500
 datetime_end: 2018-02-10 16:10:00 -0500
 ---
 room: b-auxiliary-conference-hall-1
+---
+description: 

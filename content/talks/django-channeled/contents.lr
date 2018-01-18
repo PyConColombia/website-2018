@@ -1,8 +1,8 @@
-name: Django Channeled
+name: Serverless for Pythonists
 ---
 language: en
 ---
-summary: Instead of just receiving and answering requests one by one Channels changes the way Django works, towards an event-driven approach. With that, we now have access to WebSockets and others asynchronous wonders. I put my faith that Channels will be the future of how we develop Django applications.
+summary: 
 ---
 type: talk
 ---
