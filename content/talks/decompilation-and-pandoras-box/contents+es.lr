@@ -8,12 +8,16 @@ name: Descompilación y la caja de Pandora
 ---
 summary:
 
-Junto con un descompilador de Python de versión cruzada, uncompyle6, escribí las siguientes herramientas:
+¿Cómo es la traducción entre inglés y español similar a descubrir dónde se encuentra cuando se produce un error en su programa? Te mostraré cómo y mostraré un programa que he escrito para dar la ubicación del error con bastante precisión.
 
-- (i) desensamblador (hum),
-- (ii) ensamblador (¿qué?),
-- (iii) Analizador de código de bytes Python.
-
-Muestro el daño que puedes hacer al usar estos y algunos beneficios también.
+La tecnología detrás de esto es bastante sofisticada, pero la charla está dirigida a un público general.
 ---
 type: talk
+---
+datetime: 2018-02-10 13:30:00 -0500
+---
+datetime_end: 2018-02-10 16:10:00 -0500
+---
+description: 
+---
+room: b-auxiliary-conference-hall-1

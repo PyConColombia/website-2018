@@ -1111,10 +1111,36 @@ main [class*="pure-u-"]:last-child article {
 }
 
 
+/* Colors */
 .light-color {
-  color: white;
-}
+  color: white; }
 
 .dark-color {
-  color: #3e1b88;
+  color: #3e1b88; }
+
+/* Schedule */
+.schedule {
+  padding: 10px;
+  margin: 15px;
 }
+
+.schedule-lightning, .schedule-inscription, .schedule-keynote, .schedule-opening, .schedule-closing, .schedule-break, .schedule-lunch_break {
+  border-radius: 15px;
+  border-style: solid;
+  border-color: white; }
+
+.schedule-keynote {
+  color: #3e1a87;
+  background: #c5bbdc; }
+
+.schedule-break, .schedule-lunch_break {
+  color: #3e1a87;
+  background: #c8dbf6; }
+
+.schedule-opening, .schedule-closing, .schedule-inscription, .schedule-lightning {
+  color: #3e1a87;
+  background: #23cde5; }
+
+.schedule-multiple-item {
+  padding-bottom:15px;
+  padding-top:15px; }
