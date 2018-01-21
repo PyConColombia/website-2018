@@ -6,7 +6,7 @@ last_name: Martinez Gomez
 ---
 publish: yes
 ---
-category: Collaborator
+category: Co-Organizer
 ---
 image: jorge-martinez.jpg
 ---
@@ -26,6 +26,6 @@ I received an Engineering degree in Electronics in 2013, and M.Sc. degree in Ele
 
 I’m currently a software engineer in Piensa Labs (Colombia), focusing on the development of software for geography (GIS) and AI. I’m also a cathedratic professor in Image Processing at Universidad del Norte. My research interests are in computer vision and machine learning, with a focus on activity recognition and object tracking in videos. I’m a recipient of the joven investigador scholarship to support young researchers (2014).
 ---
-sort_key: 20
+sort_key: 40
 ---
 responsibility: Speakers

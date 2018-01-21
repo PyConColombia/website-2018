@@ -7807,4 +7807,7 @@ main [class*="pure-u-"]:last-child article {
   padding-bottom:15px;
   padding-top:15px; }
 
+p > strong > a, body >a {
+  text-decoration:underline;}
+
 /*# sourceMappingURL=styles.css.map*/

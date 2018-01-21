@@ -19,4 +19,5 @@ class PyConPlugin(Plugin):
     DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
 
     def on_setup_env(self, **extra):
+        self.env.jinja_env.globals.update(dir=dir)
         self.env.jinja_env.globals.update(OrderedDict=OrderedDict)
