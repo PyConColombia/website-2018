@@ -41,12 +41,12 @@
               <div class="date">{{ t_place }}<br>{{ t_date }}</div>
             </div>
             {% if 'tickets' in this.sections %}
-            <div hidden class="col-12 ticket-wrapper" id="ticket-div">
+            <div class="col-12 ticket-wrapper" id="ticket-div">
               <div class="atom"></div>
               <a href="{{ this.tickets_link }}" title="{{ t_ticket_text }}" target="blank"><div class="ticket ticket-{{ this.alt }}"></div></a>
               <div class="atom"></div>
               </div>
-            <div class="col-12 text-center" id="countdown-div">
+            <div hidden class="col-12 text-center" id="countdown-div">
               <h2>{{ t_tickets_available }}</h2>
               <br>
               <div class="main-example">
