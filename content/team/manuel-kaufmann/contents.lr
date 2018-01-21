@@ -22,10 +22,8 @@ email: humitos@gmail.com
 ---
 description: Argentina en Python
 ---
-information:
-
-Founder of Argentina in Python. Nowadays, I'm working as developer at Read the Docs.
+information: Founder of Argentina in Python. Nowadays, I'm working as developer at Read the Docs.
 ---
-sort_key: 35
+sort_key: 
 ---
 responsibility: Python Software Foundation
