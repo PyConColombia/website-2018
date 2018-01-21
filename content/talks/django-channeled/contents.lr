@@ -1,8 +1,10 @@
-name: Serverless for Pythonists
+name: Serverless for Pythonistas
 ---
 language: en
 ---
-summary: 
+summary: Serverless: an architecture style based on single purpose functions, builtin scalability and cost by the millisecond. But what does this mean to Pythonistas?
+
+In this talk we will discuss concepts, tools and frameworks for developing Python applications in a world where servers are gone.
 ---
 type: talk
 ---
