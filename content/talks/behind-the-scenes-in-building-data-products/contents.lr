@@ -1,8 +1,8 @@
-name: Behind the Scenes in Building Data Products
+name: Practical Machine Learning with Scikit-Learn
 ---
 authors: alejandro-correa-bahnsen
 ---
-summary: Most people think that a successful data product requires just data, the right algorithm, and good execution. However, creating an effective product requires much more than machine learning model with zero errors. In this talk, I will share my successes and failures in building data products.
+summary: 
 ---
 type: talk
 ---
