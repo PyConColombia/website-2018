@@ -2,7 +2,7 @@ name: Onapsis
 ---
 web: https://www.onapsis.com/
 ---
-confirmed: yes
+confirmed: no
 ---
 image: onapsis-inverse.svg
 ---
