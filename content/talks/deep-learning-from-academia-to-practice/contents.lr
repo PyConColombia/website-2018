@@ -13,3 +13,11 @@ datetime: 2018-02-09 09:30:00 -0500
 datetime_end: 2018-02-09 10:10:00 -0500
 ---
 room: c-auxiliary-conference-hall-2
+---
+description:
+
+Everyone, regardless of their academic background, is able to create models of artificial intelligence, which can be successfully applied to real-world problems that involve large volumes of data for the discovery and/or application of knowledge, allowing to expand the limits of the industry, through the use and adoption of microservice-oriented architectures.
+
+This talk is aimed at all technology enthusiasts who want to learn to create intelligent services, making emphasis on the creation of microservices that can be consumed independently or orchestrated jointly towards specific solutions.
+
+Finally, a couple of practical applications will be presented using TensorFlow and a bit of fun though misunderstood, mathematical and statistical knowledge.

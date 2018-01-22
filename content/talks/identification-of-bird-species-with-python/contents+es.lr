@@ -1,6 +1,10 @@
 authors: angie-katherine-reyes-betancourt
 ---
-description: 
+description:
+
+Basados en el trabajo presentado en Signal Processing, Images and Computer Vision (STSIVA), 2015. Se dará inicio al planteamiento de problemática y la contextualización de la clasificación de diferentes especies de aves colombianas por medio de grabaciones de audio. El objetivo principal de la charla es mostrar el desarrollo de las distintas fases como el procesamiento de señales de audio, el aprendizaje de máquina y las técnicas de visualización (todo programado en Python).
+
+Se mostrará de igual forma los avances obtenidos en estos años de evolución de la investigación en marcha y la implementación en herramientas más novedosas como Tensor Flow.
 ---
 language: es
 ---
@@ -11,3 +15,9 @@ summary: El objetivo principal de la charla es mostrar el desarrollo de un siste
 type: workshop
 ---
 _slug: identificacion-de-especies-de-aves-colombianas
+---
+datetime: 2018-02-11 08:30:00 -0500
+---
+datetime_end: 2018-02-11 10:30:00 -0500
+---
+room: k-workshop-room-8

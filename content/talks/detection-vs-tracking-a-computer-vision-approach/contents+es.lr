@@ -19,3 +19,11 @@ datetime: 2018-02-10 13:30:00 -0500
 datetime_end: 2018-02-10 16:10:00 -0500
 ---
 room: c-auxiliary-conference-hall-2
+---
+description:
+
+En la visión por computadora, el objetivo del seguimiento de objetos visuales es estimar el estado de un objetivo en una secuencia de imágenes. Esta es una tarea difícil, ya que el objeto objetivo puede ser articulado o deformable, la iluminación de la escena puede cambiar repentinamente, el desorden de fondo puede introducir distracciones que resultan en la deriva del rastreador, entre otros. A pesar de los múltiples desafíos, hay muchas aplicaciones potenciales que hacen que esta capacidad sea atractiva, como reconocimiento de actividad, análisis de movimiento, vigilancia humana y robótica.
+
+En general, cada enfoque de seguimiento requiere un enfoque de detección de objetos como inicialización, o en cada fotograma del video. La detección se puede definir como la búsqueda de instancias de objetos en imágenes o videos utilizando un modelo previamente capacitado. Un método común para el seguimiento de objetos es aplicar la detección de objetos cuando el objeto aparece por primera vez, reduciendo el número de detecciones falsas. Sin embargo, estos detectores son lentos y generalmente fallan al usar objetos deformables. Además, los detectores no almacenan las características del objeto que cambian en un video.
+
+El objetivo de esta charla es mostrar un algoritmo de seguimiento de objetos basado en una fusión de un detector de objetos y un algoritmo de seguimiento básico. El rastreador resultante puede aprovechar las fortalezas y superar las fallas de cada enfoque individual. La combinación del conocimiento de la clase general de un objeto, que es aprendido por el detector, con la instancia específica de la clase de objeto, es posible superar los problemas habituales presentados en los videos, como oclusiones y deformaciones.

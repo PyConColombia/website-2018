@@ -13,3 +13,13 @@ datetime: 2018-02-11 08:30:00 -0500
 datetime_end: 2018-02-11 10:30:00 -0500
 ---
 room: d-workshop-room-1
+---
+description:
+
+“Data science” and machine learning have moved on from more than just ad clicks and are now being used in many verticals. Python is well suited to Data Science and is one of the most popular tools for practitioners. For newcomers, it can be confusing to know where to start with algorithm selection.
+
+We now have research pointing giving us significant hints. In October 2014 researchers published a paper evaluating 179 classifiers arising from 17 families across 121 standard datasets from the UCI machine learning repository. The results included the following:
+
+The classifiers most likely to be the bests are the random forest (RF) versions, the best of which (implemented in R and accessed via caret) achieves 94.1% of the maximum accuracy overcoming 90% in the 84.3% of the data sets.
+
+This talk will discuss the intuition behind this popular classifier. We will start with a decision tree, then move onto the random forest. Python examples will abound.

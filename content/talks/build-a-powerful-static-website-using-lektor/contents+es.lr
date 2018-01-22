@@ -2,10 +2,52 @@ _slug: construye-un-potente-sitio-web-estatico-con-lektor
 ---
 authors: rafael-laverde
 ---
-language: en
+language: es
 ---
 name: Construye un potente sitio web estático con Lektor
 ---
 summary: La creación de sitios web simples, como un blog o un sitio web personal no requiere una experiencia interactiva; al usar un generador de sitios estáticos como Lektor se puede lograr la misma funcionalidad, sin preocuparse por actualizaciones, seguridad, rendimiento o costo; y despliega tu sitio gratis en Github Pages.
 ---
 type: workshop
+---
+datetime: 2018-02-11 11:00:00 -0500
+---
+datetime_end: 2018-02-11 13:00:00 -0500
+---
+room: e-workshop-room-2
+---
+description:
+
+Crear un sitio web simple, como un blog, o un sitio personal no requiere una experiencia interactiva, usando un generador de sitios estáticos como Lektor puedes alcanzar la misma funcionalidad sin preocuparte por actualizaciones, seguridad, desempeño, o costo, y desplegar tu sitio en GitHub Pages.
+
+El propósito del workshop es crear un sitio web estático usando Lektor, mientras se van explorando sus características.
+
+**1. ¿Que es Lektor?**
+Lektor es un flexible y poderoso sistema de manejo de sitios estáticos que permite crear sitios complejos y bonitos a partir de archivos planos.
+
+**2. ¿Por qué usar un generador de sitios estáticos puede ser una mejor decisión? (Pros/Contras)**
+Un sitio estático es mas seguro, usa menos recursos, y no presenta lock-in que puede ocurrir con algunos servicios de blogging(cuando la información esta en un formato no estándar y no puede ser exportada a otra herramienta)
+
+**3. ¿Por qué Lektor?**
+Lektor ha sido diseñado buscando flexibilidad en su propósito de uso, lo cual lo diferencia de otros generadores estáticos
+
+**4. Estructura de un proyecto de Lektor**
+- Creando un sitio básico
+- Explorando los modelos de datos de Lektor: Los modelos de datos añaden flexibilidad a Lektor permitiendo crear sitios complejos (y hace que Lektor no este orientado en crear solamente blogs como muchos otros generadores estáticos)
+- Explorando el sistema de plantillas (templates) de Lektor (Jinja2)
+
+**5. Desplegando**
+- Desplegando tu sitio a Github Pages
+- Automatizando el despliegue con un servicio de integración continua (Travis-CI)
+
+**6. Temas!!!**
+- Como funciona el sistema de temas de Lektor: Permite extender no solamente las plantillas, sino también los modelos de datos
+- Instalando un tema
+- Conceptos básicos para crear un tema de Lektor
+
+**7. Plugins**
+- Como funciona el sistema de plugins
+- Como instalar un plugin
+- Creando un plugin para Lektor
+- El API de Lektor
+

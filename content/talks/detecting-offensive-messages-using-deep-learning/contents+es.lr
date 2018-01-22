@@ -13,3 +13,20 @@ summary:
 Aprenda a construir una solución basada en el *Deep Learning* y e impleméntela como un micro-servicio.
 ---
 type: talk
+---
+datetime: 2018-02-09 10:40:00 -0500
+---
+datetime_end: 2018-02-09 11:30:00 -0500
+---
+description:
+
+Esta charla se enfoca en:
+
+Las deficiencias / trampas comunes de los enfoques actuales en términos de:
+- Funcionalidad
+- Escalabilidad
+- Manejando las ambigüedades al definir contenido ofensivo
+- Usar un enfoque basado en Deep Learning para detectar contenido ofensivo
+- Crear la solución
+---
+room: c-auxiliary-conference-hall-2

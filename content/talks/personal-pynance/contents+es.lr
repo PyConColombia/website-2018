@@ -9,3 +9,25 @@ name: Pynanzas Personales
 summary: ¡Presupuestos, calendarios de amortización y devoluciones de inversiones con pandas!
 ---
 type: talk
+---
+datetime: 2018-02-10 14:20:00 -0500
+---
+datetime_end: 2018-02-10 15:00:00 -0500
+---
+description:
+
+En 'Personal Py-nance', hablaremos sobre cómo usar Python para administrar sus finanzas personales.
+
+Específicamente, veremos cómo crear:
+
+- Presupuestos, para pronosticar flujos de efectivo mensuales
+- Horarios de amortización, para comparar préstamos e hipotecas
+- Calculadoras de inversión, para medir diferentes rendimientos
+
+¡Cada ejemplo se construirá desde cero y se codificará principalmente en pandas!
+
+¿Por qué deberías asistir a 'Personal Py-nance'?
+
+(1) ¡La educación financiera es tan importante! Si eres malo en eso, las instituciones financieras pueden y se aprovecharán de ti. (2) La mayoría de las personas no hace un seguimiento de sus finanzas y si lo hacen es con bolígrafo y papel o Excel (¡y ambas opciones apestan!) (3) pandas es la mejor herramienta para la manipulación y preparación de datos y es la base para una gran cantidad de aprendizaje de máquinas sexy en Python
+---
+room: a-main-conference-hall

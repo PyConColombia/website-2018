@@ -2,7 +2,7 @@ _slug: programacion-de-microcontroladores-con-micropython
 ---
 authors: olemis-lang
 ---
-language: en
+language: es
 ---
 name: Programación de microcontroladores para IoT con MicroPython
 ---
@@ -11,3 +11,27 @@ summary: MicroPython está surgiendo como una opción para programar rápidament
 topic: IoT
 ---
 type: workshop
+---
+datetime: 2018-02-11 11:00:00 -0500
+---
+datetime_end: 2018-02-11 13:00:00 -0500
+---
+room: g-workshop-room-4
+---
+description:
+
+El esquema del taller es el siguiente:
+
+- Descripción general de MicroPython (15 min - talk)
+- Laboratorios prácticos: programación en red, MQTT (10 min)
+- Prácticas de laboratorio: ejercicios con LED (10 min)
+- Prácticas de laboratorio: ejercicios con botones (10 min)
+- Laboratorios prácticos: ejercicios con servomotores (10 min)
+- Ejemplo final: Dispositivo simple capaz de interactuar con un mundo virtual (5 min)
+
+**Configuración requerida**
+- Descargar [MicroPython web REPL](https://github.com/micropython/webrepl).
+- Instale un [software emulador de terminal](https://en.wikipedia.org/wiki/Terminal_emulator) capaz de conectarse a dispositivos seriales.
+- Instale un [software editor de texto](https://en.wikipedia.org/wiki/Text_editor) o [entorno de desarrollo integrado](https://en.wikipedia.org/wiki/Integrated_development_environment) de su preferencia.
+  - Vamos a editar el código de Python, si está utilizando un IDE, asegúrese de tener las herramientas de idioma correspondientes instaladas
+- ¡Trae tu computadora portátil!

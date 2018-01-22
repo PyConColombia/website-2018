@@ -9,3 +9,15 @@ summary: Hablaremos de Fractal, sus aplicaciones, y cómo los computadores fuero
 type: talk
 ---
 _slug: pintando-el-caos-con-python
+---
+datetime: 2018-02-09 11:40:00 -0500
+---
+datetime_end: 2018-02-09 12:20:00 -0500
+---
+description:
+
+Si se quiere comenzar a construir diseños computacionales con patrones más allá de las formas simples elipse() , rect() y line() , es hora de aprender sobre conceptos y técnicas para simular la geometría de la naturaleza: los fractales.
+
+Se revisarán dos formas de generar fractales, primero, una función que se llame recursivamente y que siempre producirá el mismo resultado en cada iteración, aplica para fractales clásicos como el conjunto de Cantor, el triángulo de Sierpinski, árboles binarios, etc, y segundo, combinar los algoritmos recursivos con aleatoriedad y generar un resultado diferente y más realista en cada iteración, por ejemplo, podríamos usar un color aleatorio, grosor de línea, orientación, etc. Aplica para fractales complejos como las curvas de Koch, el conjunto de Mandelbrot, y el conjunto de julia. El árbol fractal recursivo es un buen ejemplo de un escenario en el que agregar un poco de aleatoriedad puede hacer que el elemento parezca más natural.
+---
+room: c-auxiliary-conference-hall-2

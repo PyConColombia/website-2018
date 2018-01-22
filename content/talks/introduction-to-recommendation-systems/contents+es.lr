@@ -1,9 +1,69 @@
 _slug: introduccion-a-sistemas-de-recomendacion
 ---
-language: es
+language: en
 ---
 name: Introducción a Sistemas de Recomendación
 ---
 summary: Los sistemas de recomendación están en todo lado. Por ejemplo cuando nuestra red social nos invita a conectar con otros usuarios, o cuando nuestro servicio de música por suscripción nos sugiere nuevo contenido. Todos estos sistemas comparten algunos principios básicos que revisaremos en esta charla.
 ---
 type: talk
+---
+authors: manuel-ignacio-franco-galeano
+---
+datetime: 2018-02-10 11:10:00 -0500
+---
+datetime_end: 2018-02-10 11:50:00 -0500
+---
+room: a-main-conference-hall
+---
+description:
+
+En esta charla analizaremos los aspectos básicos del funcionamiento de los sistemas de recomendación. La charla se divide en 5 partes:
+
+### Introducción (10 minutos)
+Empezaremos por discutir brevemente los orígenes y oportunidades de negocio que han generado la expansión de los sistemas de recomendación. Analizaremos las principales ventajas desde el punto de vista de empresas y usuarios.
+
+- Un caso del mundo real (El efecto Amazon).
+- Anatomía de la cola larga (Long Tail)
+- Recomendación basada en contenido.
+- Filtrado Colaborativo.
+- Sistemas Híbridos.
+- Recomendación Conversacional.
+
+### [nt-recommend](https://github.com/maigfrga/nt-recommend): Framework Didáctico Basado en Python3 Para el Aprendizaje de Sistemas de Recomendación (10 minutos)
+
+### Filtrado colaborativo. (15 minutos)
+
+Recomendaciones basadas en usuarios.
+- Ratings de usuarios.
+- Matriz de ratings de usuarios.
+- Rating promedio.
+- Similitud entre usuarios.
+- Vecindarios de similitudes.
+- Generando predicciones.
+- Pros y cons de filtrado colaborativo basado en usuarios.
+
+Mejorando computo de similitud.
+- Calculo de similitud basado en cosenos.
+- Coeficiente de correlación de Pearson.
+
+Mejorando el computo de predicciones
+- Formula de predicción de Resnick
+- Ponderación de valores.
+- Voto por defecto.
+
+Predicción de Ratings vs Recomendación de Top N Items
+
+Evaluación de Sistemas Basados en Filtrado Colaborativo.
+- Sub-Sampling Aleatorio (Repeated Random Sub-Sampling).
+- Validación Cruzada K-Pliegues (K-Fold Cross Validation).
+- Dejar uno fuera (Leave-One-Out).
+
+Metricas para prediccion.
+- Error medio al cuadrado (MSE).
+- Raíz cuadrada de error medio al cuadrado (MSE).
+- Cobertura.
+
+### Conclusiones (5 minutos)
+- Fuentes de información.
+- Premio Netflix.

@@ -9,3 +9,11 @@ name: Crea tu propio sitio web serverless para compartir imágenes con Lambda, A
 summary: Aprenda a construir su propio sitio web para compartir imágenes, como Instagram, utilizando tecnologías sin servidor. Durante el taller, creará un sistema completo de extremo a extremo que cuenta con la tecnología de AWS Lambda, API Gateway, S3, DynamoDB, Auth0 y mucho más. Este taller es adecuado tanto para principiantes como para expertos.
 ---
 type: workshop
+---
+datetime: 2018-02-11 11:00:00 -0500
+---
+datetime_end: 2018-02-11 13:00:00 -0500
+---
+description: Serverless permite a los desarrolladores concentrarse en la lógica empresarial que hace que su aplicación sea única sin la necesidad de preocuparse por la infraestructura y la escalabilidad. Durante el taller, los participantes podrán construir una aplicación de extremo a extremo que funcione utilizando Amazon Web Services y el Framework Serverless que ayudará a automatizar el proceso de implementación. El taller incluirá un repositorio de Github que tendrá todo el código listo para usar. El objetivo del taller es hacer que los participantes comprendan cómo las tecnologías presentadas se pueden usar juntas para que luego puedan usarlas en sus propios proyectos. Python se usará para el back-end (AWS Lambda).
+---
+room: l-workshop-room-9

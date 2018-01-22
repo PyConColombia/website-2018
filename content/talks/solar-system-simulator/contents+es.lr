@@ -1,6 +1,6 @@
 authors: santiago-mesa-velasquez
 ---
-description: 
+description: Todo comienza con un proyecto, y una pasión arraigada a la astronomía, junto con la programación expuesta por un adolescente. En esta exposición se hablará y se mostrará al publico sobre una aplicación creada con el propósito específico de simular sistemas solares, permitiendo al usuario poder colocar estrellas y planetas a su gusto, dando libertad de asignar masas y distancias para experimentar sucesos y resultados de las mencionadas acciones. Principalmente en el programa se tienen en cuenta las leyes de Kepler con un pequeño, pero exquisito toque de la gravitación propuesta por Ser Isaac Newton. Se usará el tiempo de la charla, para hablarle al público sobre el empleo de la aplicación, las características que están incluidas en ella, y sobre todo, la parte divulgativa del proyecto a cualquier público. Como objetivo adicional se busca dar incentivo a los asistentes, para que ellos mismos plasmen sus propios gustos creando sus propias aplicaciones por medio del lenguaje de Python. Se mostrarán antecedentes de la creación de la aplicación, carácter histórico (en específico por las leyes de Kepler y la gravitación), y luego, el proceso que esta tuvo, enseñando a los asistentes la metodología y progresos que se fueron obteniendo.
 ---
 language: es
 ---
@@ -11,3 +11,11 @@ summary: Astronomía y programación, un proyecto ambicioso sobre la unión de e
 type: talk
 ---
 _slug: simulador-de-sistemas-solares
+---
+_hidden: no
+---
+datetime: 2018-02-09 10:40:00 -0500
+---
+datetime_end: 2018-02-09 11:30:00 -0500
+---
+room: a-main-conference-hall

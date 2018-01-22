@@ -1,6 +1,13 @@
 authors: silvia-marcela-henao-villa, boris-mauricio-revelo-rendon
 ---
-description: 
+description:
+
+Objetivos del taller: 
+- Conocer el proceso para monitorear de forma remota una variable electromagnética usando raspberry pi y python
+
+Descripción de la metodología a utilizar resaltando los atributos diferenciadores.
+
+Para poder alcanzar el monitoreo de las señales de forma remota se deben escoger la estructura que permite identificar el tipo de sensor a utilizar para interactuar con el medio, la arquitectura que permitirá obtener la lectura de la señal, el lenguaje de programación que permitirá enviar y recibir los datos, el tipo de conectividad cableada, inalámbrica o de otro tipo para enviar los datos a una plataforma tipo IoT que permita reflejar remotamente los datos obtenidos.
 ---
 language: es
 ---
@@ -11,3 +18,9 @@ summary: En el taller el asistente podrá conocer el paso a paso para poder lleg
 type: workshop
 ---
 _slug: monitoreo-de-variables-electromagneticas
+---
+datetime: 2018-02-11 08:30:00 -0500
+---
+datetime_end: 2018-02-11 10:30:00 -0500
+---
+room: g-workshop-room-4

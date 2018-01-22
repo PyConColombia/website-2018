@@ -8,7 +8,20 @@ summary: As students of Systems Engineering, we had certain difficulties in the 
 ---
 type: workshop
 ---
-description: 
+description:
+
+Our objective with this workshop is to introduce the participants in the functional programming with python, illustrating its characteristics, properties.
+
+**What we want to achieve**
+- Perform a review of fundamental concepts of functional programming.
+- Illustrate through exercises and examples how to work with functional programming in Python.
+- Generate concerns in the workshop participants about the scope of functional programming.
+- Identify Python's own tools for working in functional programming.
+
+**Methodology**
+The workshop will be divided into two parts. The first part consists of a theoretical introduction to the functional programming, which will include the following items:> - First class and higher order functions> - Lambda functions> - Recursivity> - Anxious and lazy execution> - Working with lists
+
+The second part consists of exercises and practical examples of functional programming in Python.
 ---
 _slug: 
 ---

@@ -13,3 +13,36 @@ datetime: 2018-02-11 11:00:00 -0500
 datetime_end: 2018-02-11 13:00:00 -0500
 ---
 room: e-workshop-room-2
+---
+description:
+
+The idea of this workshop is to create an static website using Lektor, while exploring its features
+
+**1. What’s Lektor?**
+Lektor is a flexible and powerful static content management system for building complex and beautiful websites out of flat files.
+
+**2. Why a static website could be a better decision? (Pro/Cons)**
+Static websites are safer, use fewer resources, and doesn’t have vendor and platform lock-in (when data can’t be exported).
+
+**3. Why Lektor?**
+Lektor has flexibility buid-in in its core, it’s multipurpose, a big difference between it and other static generators
+
+**4. Structure of a Lektor project**
+- Creating a basic site
+- Exploring Lektor datamodels: Lekotr datamodels adds flexibility allowing to create complex sites (making Lektor general-purpose, and not only for blogs like other static generators)
+- Exploring Lektor template system (jinja2)
+
+**5. Deploying**
+- Deploy your website using github pages
+- Automatize the deployment with a continuum integration system (Travis-CI)
+
+**6. Themes**
+- How Lektor theme system works: Its allows to extend not only the templates but also the datamodels
+- Installing a theme
+- Basics for developing a theme
+
+**7. Plugins**
+- How plugin system works
+- How to install a plugin,
+- Creating a simple Lektor plugin
+- The Lektor API

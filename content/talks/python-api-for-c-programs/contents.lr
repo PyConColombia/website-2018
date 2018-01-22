@@ -13,3 +13,15 @@ datetime: 2018-02-11 08:30:00 -0500
 datetime_end: 2018-02-11 10:30:00 -0500
 ---
 room: f-workshop-room-3
+---
+description:
+
+Many important Python libraries use programs written in C that provide the necessary functionality: pyscopg2, python-libevent, lxml, cryptography, numpy, Pillow, among others.
+
+This functionality of the language is very useful since it allows to increase the speed of execution, access to functions of low level or reuse of libraries.
+
+**Goals**
+- We will create a Python API for a C program
+- You will learn to create your own APIs
+- Understand how those libraries that depend on other C programs work
+- We will use setuptools to configure the module installation

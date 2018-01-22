@@ -17,3 +17,11 @@ datetime: 2018-02-09 15:20:00 -0500
 datetime_end: 2018-02-09 16:00:00 -0500
 ---
 room: b-auxiliary-conference-hall-1
+---
+description:
+
+iQos, a free software for the evaluation of metrics quality of service in voice over IP developed in Python. During the process of creating this software, it became necessary to choose a set of open frameworks, tools and standards, which were integrated to measure the performance of a data network at the time that one or multiple voice telephone calls were made. over IP.
+
+The talk describes the Web environment developed in Flask to recreate VoIP calls through the manipulation of TCP/IP packets, according to the specifications of the RTP protocol, the use of REST services for performing QoS tests to from the integration of the backend and frontend in the system.
+
+The quality of service metrics to be evaluated are explained in terms of delay, packet loss and fluctuation in time (Jitter) to determine the feasibility of implementing VoIP in a data network.

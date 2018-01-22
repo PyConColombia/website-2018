@@ -8,7 +8,15 @@ summary: In the workshop the assistant can learn step by step how to remotely mo
 ---
 type: workshop
 ---
-description: 
+description:
+
+Objectives of the workshop:
+
+- To know the process to remotely monitor an electromagnetic variable using raspberry pi and python
+
+Description of the methodology:
+
+highlighting the differentiating attributes To be able to achieve the monitoring of the signals remotely, we must choose the structure that allows us to identify the type of sensor to be used to interact with the environment, the architecture that will allow us to obtain the reading of the signal, the programming language that will allow sending and receiving data, the type of wired, wireless or other connectivity to send the data to an IoT platform that allows to remotely reflect the data obtained.
 ---
 datetime: 2018-02-11 08:30:00 -0500
 ---

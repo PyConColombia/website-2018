@@ -13,3 +13,55 @@ datetime: 2018-02-10 11:10:00 -0500
 datetime_end: 2018-02-10 11:50:00 -0500
 ---
 room: a-main-conference-hall
+---
+description:
+
+In this talk we will analyze the basic aspects of the functioning of the recommendation systems. The talk is divided into 5 parts:
+
+### Introduction (10 minutes)
+We will begin by briefly discussing the origins and business opportunities that have generated the expansion of recommendation systems. We will analyze the main advantages from the point of view of companies and users.
+
+- A case of the real world (The Amazon effect).
+- Anatomy of the long tail (Long Tail)
+- Content-based recommendation.
+- Collaborative filtering.
+- Hybrid systems.
+- Conversational Recommendation.
+
+### [nt-recommend] (https://github.com/maigfrga/nt-recommend): Python-based Didactic Framework3 For Learning Systems Recommendation (10 minutes)
+
+### Collaborative filtering. (15 minutes)
+
+Recommendations based on users.
+- User ratings.
+- User ratings matrix.
+- Average rating.
+- Similarity between users.
+- Neighborhoods of similarities.
+- Generating predictions.
+- Pros and cons of collaborative filtering based on users.
+
+Improving similarity computation.
+- Calculation of similarity based on cosines.
+- Pearson's correlation coefficient.
+
+Improving the calculation of predictions
+- Resnick prediction formula
+- Weighting of values.
+- Vote by default.
+
+Prediction of Ratings vs Recommendation of Top N Items
+
+Evaluation of Systems Based on Collaborative Filtering.
+- Random Sub-Sampling (Repeated Random Sub-Sampling).
+- Cross-validation K-Folds (K-Fold Cross Validation).
+- Leave one out (Leave-One-Out).
+
+Metrics for prediction.
+- Mean squared error (MSE).
+- Square root of medium squared error (MSE).
+- Coverage.
+
+### Conclusions (5 minutes)
+- Information sources.
+- Netflix Award

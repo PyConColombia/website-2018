@@ -1,6 +1,16 @@
 authors: sergio-pulgarin
 ---
-description: 
+description:
+
+Muchas librerías importantes de Python utilizan programas escritos en C que proveen la funcionalidad necesaria: pyscopg2, python-libevent, lxml, cryptography, numpy, Pillow, entre otras.
+
+Esta funcionalidad del lenguaje es muy útil ya que permite aumentar la velocidad de ejecución, acceso a funciones de bajo nivel o reuso de librerías.
+
+**Objetivos**
+- Crearemos un API de Python para un programa en C
+- Aprenderás a crear tus propias APIs
+- Entenderás como funcionan aquellas librerías que dependen de otros programas en C
+- Usaremos setuptools para configurar la instalación del módulo
 ---
 language: es
 ---
@@ -11,3 +21,9 @@ summary: Muchas librerías importantes de Python utilizan programas escritos en 
 type: workshop
 ---
 _slug: python-api-para-programas-en-c
+---
+datetime: 2018-02-11 08:30:00 -0500
+---
+datetime_end: 2018-02-11 10:30:00 -0500
+---
+room: f-workshop-room-3

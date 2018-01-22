@@ -4,7 +4,7 @@ authors: carlos-alberto-martinez-morales
 ---
 language: es
 ---
-summary: From 0 to 100 in the implementation of an api graphql in django. What is an api of graphql and its advantages, how to create an api of graphql in django and to flexibilize the consumption of the data of an application.
+summary: From 0 to 100 in the implementation of an API GraphQL in Django. What is an API of GraphQL and its advantages, how to create an API of GraphQL in Django and to flexibilize the consumption of the data of an application.
 ---
 type: talk
 ---
@@ -13,3 +13,11 @@ datetime: 2018-02-10 10:20:00 -0500
 datetime_end: 2018-02-10 11:00:00 -0500
 ---
 room: a-main-conference-hall
+---
+description:
+
+GraphQL is a new standard for communicating with a backend server that allows queries to be made on an endpoint. This makes application development more flexible and optimizes the use of resources associated with the information required from the frontend of a web application or mobile application.
+
+I will present the differences we found when implementing Django Rest Framework and the differences we have in flexibility and speed to change the API when implementing GraphQL. I will show the implementation structure of a GraphQL API Common implementation challenges, such as the management of authentication and authorization of nodes and mutations.
+
+Finally I will give a brief description of the successful case of implementation in Colombia at Comparamejor.

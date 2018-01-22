@@ -13,3 +13,17 @@ iQoS es un software desarrollado 100% en Python, posee en un entorno Web que per
 Integra modulos de Python como Flask y Shapy, herramientas de Linux como TC, Gstreamer y Iperf.
 ---
 type: talk
+---
+datetime: 2018-02-09 15:20:00 -0500
+---
+datetime_end: 2018-02-09 16:00:00 -0500
+---
+description:
+
+iQos, un software libre para evaluación de métricas calidad de servicio en voz sobre IP desarrollado en Python. Durante el proceso de creación de este software, se hizo necesario la elección de un conjunto de frameworks, herramientas y estándares abiertos, que se integraron para medir el desempeño de una red de datos en el momento que se realiza una o múltiples llamadas telefónicas de voz sobre IP.
+
+En la charla se describe el ambiente Web desarrollado en Flask para recrear llamadas VoIP a través de la manipulación de paquetes TCP/IP, de acuerdo a las especificaciones de del protocolo RTP, el uso de servicios REST para la realización de las pruebas de QoS a partir de la integración del backend y frontend en el sistema.
+
+Se explican las métricas de calidad de servicio a evaluar en términos de retardo, perdida de paquetes y fluctuación en el tiempo (Jitter) para determinar la factibilidad de implantar VoIP en una red de datos.
+---
+room: b-auxiliary-conference-hall-1

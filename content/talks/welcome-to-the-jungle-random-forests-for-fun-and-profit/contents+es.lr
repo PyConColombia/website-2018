@@ -9,3 +9,19 @@ name: Bienvenidos a la jungla: Random Forest para diversión y ganancias
 summary: El *Random Forest* es un algoritmo popular de aprendizaje de máquina, y por buenas razones. Incluso si solo eres un "programador", puedes usar este algoritmo para construir modelos predictivos. Esta charla discutirá la intuición detrás de árboles de decisiones y bosques aleatorios.
 ---
 type: workshop
+---
+datetime: 2018-02-11 08:30:00 -0500
+---
+datetime_end: 2018-02-11 10:30:00 -0500
+---
+description:
+
+La "ciencia de los datos" y el aprendizaje automático han pasado de ser más que solo clics publicitarios y ahora se utilizan en muchos verticales. Python es muy adecuado para Data Science y es una de las herramientas más populares para los profesionales. Para los recién llegados, puede ser confuso saber por dónde empezar con la selección del algoritmo.
+
+Ahora tenemos investigaciones que nos señalan importantes pistas. En octubre de 2014, los investigadores publicaron un documento que evaluaba 179 clasificadores procedentes de 17 familias en 121 conjuntos de datos estándar del repositorio de aprendizaje automático UCI. Los resultados incluyeron lo siguiente:
+
+>Los clasificadores con mayor probabilidad de ser los mejores son las versiones de bosque aleatorio (RF), la mejor de las cuales (implementada en R y accedida mediante caret) logra el 94.1% de la precisión máxima superando el 90% en el 84.3% de los conjuntos de datos.
+
+Esta charla discutirá la intuición detrás de este popular clasificador. Comenzaremos con un árbol de decisión, luego nos moveremos al bosque aleatorio. Los ejemplos de Python abundan.
+---
+room: d-workshop-room-1

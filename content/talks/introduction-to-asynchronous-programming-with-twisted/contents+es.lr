@@ -15,3 +15,11 @@ datetime: 2018-02-09 10:40:00 -0500
 datetime_end: 2018-02-09 11:30:00 -0500
 ---
 room: b-auxiliary-conference-hall-1
+---
+description:
+
+La charla es una introducción a la programación asincrónica con Python, Twisted y AsyncIO. Twisted (y Tornado) influyó en la forma en que se diseñó AsyncIO. Conceptos básicos como corutinas, protocolos, fábricas,  futuros, callbacks y eventos, el reactor (bucle/loop) y muchos otros provienen de Twisted. Muchos de esos conceptos incluso llegaron al lenguaje en forma de async y await.
+
+Planeo introducir los conceptos básicos de la programación asincrónica con python usando Twisted, que muestra el código para las tareas más comunes, como las solicitudes de sincronización, la programación web asincrónica, la consulta de la base de datos, y así sucesivamente. Planeo comparar torcido con AsyncIO para mostrar qué tan similares son (y cómo difieren).
+
+Presenté una versión más larga de la charla para los equipos de desarrollo de dos compañias. Uno de ellos es Apostar S.A. y el otro se llama Callzi. Usan twisted y Django para algunos de sus servicios.

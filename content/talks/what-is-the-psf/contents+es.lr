@@ -1,6 +1,10 @@
 authors: manuel-kaufmann
 ---
-description: 
+description:
+
+La charla propone una especie de foro donde se plantea una línea inicial principal sobre “Que es la PSF y su rol en la comunidad” explicando su filosofía y su propósito. Luego, un conjunto de preguntas son propuestas por los disertantes invitando a la audiencia a hacer eliminar sus dudas sobre la función de la fundación, logrando así un foro entre disertantes y la audiencia.
+
+Finalmente se explican los roles que existen dentro de la PSF y se invita a la audiencia a ser parte de la fundación.
 ---
 language: es
 ---
@@ -22,3 +26,9 @@ Daremos respuestas a todas estas preguntas!
 type: talk
 ---
 _slug: que-es-la-psf
+---
+datetime: 2018-02-10 15:10:00 -0500
+---
+datetime_end: 2018-02-10 15:50:00 -0500
+---
+room: b-auxiliary-conference-hall-1

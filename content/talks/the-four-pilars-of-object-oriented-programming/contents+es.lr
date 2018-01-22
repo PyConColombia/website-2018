@@ -9,3 +9,31 @@ name: Programación para no  programadores: Los cuatro pilares de la programaci�
 summary: Con un lenguaje sencillo, ejemplos de la vida diaria y ejercicios prácticos, haré que los participantes entiendan y apliquen la OOP, sus 4 pilares, y el por que entender este paradigma resulta esencial en la programación de hoy en día.
 ---
 type: workshop
+---
+datetime: 2018-02-11 08:30:00 -0500
+---
+datetime_end: 2018-02-11 10:30:00 -0500
+---
+description:
+
+El taller se enfocará en explicar cada uno de los cuatro pilares (Abstracción, Encapsulamiento, Herencia y Polimorfismo) y con un lenguaje sencillo y con ejemplos de la vida cotidiana, ir aplicando lo aprendido a la programación con Python. El taller es un primer acercamiento a la OOP (Object Oriented Programming), y tiene como objetivo explicar estos pilares y su aplicación.
+
+Durante el taller se enfatizará que todo en Python es un objeto y que la misma lógica y sintaxis usada durante el taller se usará constantemente durante el desarrollo de software con este lenguaje. También se analizarán los errores más comunes y la lógica que hay detrás de ellos para que no vuelvan a ocurrir.
+
+La temática del taller comprende los siguientes temas (pero no se limita a ellos):
+- Clases y Objetos. 
+- Atributos de un objeto
+- ¿Cómo instanciar un objeto? ¿Cómo acceder a sus atributos?
+- Crear métodos. ¿Cómo acceder a sus métodos?
+- Entender el parámetro ‘self’.
+- ¿Para qué sirve el ‘init’ ?
+- 4 pilares: Absrtacción, Encapsulamiento, Herencia y Polimorfismo.
+- En cada tema, explicaciones y ejercicios prácticos.
+
+La metodología a usar será teórico-práctica y estará divida en tres fases:
+
+1. Presentación del tema. Se explica el tema y se contextualiza con un ejemplo de la vida diaria. Aunque no lo expliquen así los libros de texto, todos los temas en la programación tienen explicación, uso y aplicación en la cotidianidad, por lo que es la manera en que se presentará el tema.
+2. Práctica. Se invita a los asistentes a hacer una práctica controlada, con un par de ejercicios que deben solucionar individualmente. Promover el trabajo individual como primera fase posibilita que para la segunda los participantes puedan compartir el código con la persona que tienen al lado. Este método permite que los participantes se conozcan y facilita que tengan otro punto de vista sobre cómo desarrolla el mismo ejercicio otra persona.
+3. Producción: Se asignan ejercicios en los que los participantes deben aplicar el conocimiento recientemente adquirido para poder solucionarlos. Al igual que en la fase práctica, se promueve el trabajo individual para que luego puedan compartir las soluciones con las personas sentadas en la misma mesa. Se asignarán otros ejercicios para que solucionen durante la sesión.
+---
+room: i-workshop-room-6

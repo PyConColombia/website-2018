@@ -13,3 +13,11 @@ datetime: 2018-02-10 11:10:00 -0500
 datetime_end: 2018-02-10 11:50:00 -0500
 ---
 room: c-auxiliary-conference-hall-2
+---
+description:
+
+Machine learning models are becoming more and more popular nowadays. Usually, those models are written by scientists who translate complex mathematical models into code, which is great, but let’s be honest, what’s the point of building smart models if they don’t interact with users? Whether be for collecting data or for actually showing results, we need to place components (web, desktop, CLI) in the middle in order to allow this interaction.
+
+In this talk I will give a general description of the architecture used at DLabs for this kind of projects; Docker, Celery, RabbitMQ, Django and many others tools will be covered in the context of a small example.
+
+The goal of this talk is to show from the experience an architectural approach for machine learning projects.

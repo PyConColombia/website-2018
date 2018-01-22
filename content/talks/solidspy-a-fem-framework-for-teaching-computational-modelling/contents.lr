@@ -13,3 +13,15 @@ datetime: 2018-02-09 13:00:00 -0500
 datetime_end: 2018-02-09 13:40:00 -0500
 ---
 room: c-auxiliary-conference-hall-2
+---
+description:
+
+We have used the context of the well-known finite element analysis method (FEM) to integrate multiple teaching targets, namely:
+
+1. computing programing with Python;
+2. numerical methods; and
+3. computational modeling.
+
+All three of them reached within a single 48 hours course oriented to second year civil engineering students. After imparting the fundamentals of numerical modeling, the students are walked through the steps of conducting a mechanical simulation in terms of independent Python scripts required to define the SolidsPy model.
+
+To create the model we have integrated the open-source three-dimensional mesh generator [Gmsh](http://gmsh.info/) and the Python module [Meshio](https://github.com/nschloe/meshio). The former is used to create and discretize the computational domain while the latter generates the required SolidsPy input files. With the model available and ready to be solved, the students create independent scripts using functions from the SolidsPy library in oder to find and visualize specific solution variables. The code, which is available as a [GitHub Repo](https://github.com/AppliedMechanics-EAFIT/SolidsPy), is open-source and can be used as a stand-alone platform or through its independent functions. There is also a second [GitHub Repo](https://github.com/AppliedMechanics-EAFIT/SolidsPy-meshes) with several models (text files and Python scripts) which are continuously updated.

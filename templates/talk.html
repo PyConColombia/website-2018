@@ -39,8 +39,10 @@
           <a class="link" href="{{current_author|url(alt=this.alt)}}">{{ current_author.name }} {{ current_author.last_name }} {% if current_author.country %}<small>({{ t_country_res }})</small>{% endif %}</a>{% if not loop.last %},&nbsp{% endif %}
         {%- endfor -%}
         </dd>
+        {%- if this.summary -%}        
         <dt>{{ t_summary }}:</dt>
         <dd>{{ this.summary }}</dd>
+        {%- endif -%}
         {%- if this.description-%}
         <dt>{{ t_talk_description }}:</dt>
         <dd>{{ this.description }}</dd>

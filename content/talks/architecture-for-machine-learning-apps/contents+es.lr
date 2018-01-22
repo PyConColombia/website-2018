@@ -15,3 +15,12 @@ datetime: 2018-02-10 11:10:00 -0500
 datetime_end: 2018-02-10 11:50:00 -0500
 ---
 room: c-auxiliary-conference-hall-2
+---
+description:
+
+Los modelos de aprendizaje automático son cada vez más populares hoy en día. Por lo general, esos modelos son escritos por científicos que traducen modelos matemáticos complejos en código, lo cual es genial, pero seamos honestos, ¿de qué sirve construir modelos inteligentes si no interactúan con los usuarios? Ya sea para recolectar datos o para mostrar resultados, necesitamos ubicar componentes (web, escritorio, CLI) en el medio para permitir esta interacción.
+
+En esta charla daré una descripción general de la arquitectura utilizada en DLabs para este tipo de proyectos; Las herramientas Docker, Apio, RabbitMQ, Django y muchas otras se tratarán en el contexto de un pequeño ejemplo.
+
+El objetivo de esta charla es mostrar a partir de la experiencia un enfoque arquitectónico para proyectos de aprendizaje automático.
+

@@ -13,3 +13,15 @@ datetime: 2018-02-10 14:20:00 -0500
 datetime_end: 2018-02-10 15:00:00 -0500
 ---
 room: c-auxiliary-conference-hall-2
+---
+description:
+
+Recognizing a person in an image or video is a simple task for our brain, however this is a difficult problem to solve for computers, since the 1960s some methods have been discovered to facilitate this task, but all these algorithms focus on manually extract the characteristics of the face, however in images that present variations such as the angle in which the face is seen or in its illumination, these characteristics tend to deform, causing the recognition to fail.
+
+Currently, neural networks are used so that the computer can obtain the characteristics of the face, this helps the characteristics to be general and work in different situations.
+
+Content
+- Introduction to computer vision.
+- History of the methods used for the detection and recognition of faces.
+- Possible applications in this technology.
+- Detection and recognition of faces with neural networks.
