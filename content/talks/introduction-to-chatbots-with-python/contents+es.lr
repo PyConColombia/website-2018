@@ -1,6 +1,17 @@
 authors: mauricio-collazos
 ---
-description: 
+description:
+
+Desde F8 y el anuncio de Messages API de Facebook, el mundo de la tecnología se encantó por los chatbots, desde entonces el mercado se ha abierto y algunos consideran que los Chatbots son las nuevas Apps. En este workshop aprenderás como hacer tu propio chatbot.
+
+**Objetivo**
+
+Motivar al asistente a la creación del asistentes conversacionales usando Python y librerías de código abierto como rasa NLU y rasa Core
+
+**Metodología**
+
+Una clase práctica de 60 minutos donde se conocerán desde los fundamentos teóricos hasta el desarrollo práctico de un asistente conversacional que llevará una lista de tareas. Al final del taller se mostrará como a través de un servicio de Mensajería Instantánea como Facebook Messenger se puede interactuar de manera sencilla a través de una una interfaz de lenguaje natural.
+
 ---
 language: es
 ---
@@ -11,3 +22,9 @@ summary: Desde F8 y el anuncio de Messages API de Facebook, el mundo de la tecno
 type: workshop
 ---
 _slug: introduccion-a-los-chatbots-con-python
+---
+datetime: 2018-02-11 08:30:00 -0500
+---
+datetime_end: 2018-02-11 10:30:00 -0500
+---
+room: e-workshop-room-2

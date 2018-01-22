@@ -9,3 +9,19 @@ type: talk
 authors: milton-lenis
 ---
 _slug: arquitecturas-multitenant-en-python
+---
+datetime: 2018-02-09 09:30:00 -0500
+---
+datetime_end: 2018-02-09 10:10:00 -0500
+---
+description:
+
+Tradicionalmente las aplicaciones web, dependiendo de su tipo, han sido implementadas utilizando un servidor y una base de datos para cada cliente que la utilice (Single-Tenant), esto significa que para cada uno de ellos es necesario hacer actividades de soporte y mantenimiento, sin mencionar las constantes personalizaciones solicitadas por los clientes, lo cual, cuando es llevado a gran escala (miles o millones de clientes) se puede convertir en una pesadilla para los equipos desarrolladores.
+
+Como una alternativa a este problema, surgieron las Arquitecturas Multitenant, las cuales son un tipo de arquitectura de software en la cual una única instancia de una aplicación es utilizada por más de un cliente a la vez, centralizando todas las tareas de desarrollo y facilitando el trabajo con los clientes de las aplicaciones. Este tipo de arquitectura es indispensable, por ejemplo, en Software as a Service (Office 365, Google Drive, Slack, Suite de Adobe, etc).
+
+Una de las características principales de las arquitecturas multitenant es que (dependiendo la implementación) agilizan el proceso de desarrollo, la cual es una característica inherente del lenguaje de programación Python. Ahora, si combinamos ambas, obtenemos un estilo de desarrollo bastante elegante y rápido para aplicaciones que soporten muchos clientes.
+
+Existen diversas formas de implementar una arquitectura multitenant, siendo tres las principales: Aislada, Semi-aislada y No aislada, cada una con sus ventajas y desventajas, para esta charla se dará una introducción sobre como implementar una arquitectura multitenant semi-aislada utilizando Django y Postgresql, además de comentar que errores comunes existen, que buenas prácticas existen, que prácticas de optimización se pueden utilizar, entre otros.
+---
+room: b-auxiliary-conference-hall-1

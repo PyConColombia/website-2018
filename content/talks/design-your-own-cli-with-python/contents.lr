@@ -13,3 +13,9 @@ datetime: 2018-02-11 08:30:00 -0500
 datetime_end: 2018-02-11 10:30:00 -0500
 ---
 room: j-workshop-room-7
+---
+description:
+
+The theoretical-practical workshop has as a central audience people with basic and intermediate knowledge where they can review concepts and learn more about the standard library.
+
+

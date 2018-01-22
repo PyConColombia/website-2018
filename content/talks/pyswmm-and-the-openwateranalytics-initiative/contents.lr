@@ -13,3 +13,29 @@ datetime: 2018-02-09 15:20:00 -0500
 datetime_end: 2018-02-09 16:00:00 -0500
 ---
 room: a-main-conference-hall
+---
+description:
+
+In support of the OpenWaterAnalytics open source initiative, the PySWMM project encompasses the development of a Python interfacing wrapper to SWMM5 with parallel ongoing development of the [USEPA](https://www.epa.gov/) Stormwater Management Model ([SWMM5](https://www.epa.gov/water-research/storm-water-management-model-swmm)) application programming interface (API). PySWMM (along with the co-development of the SWMM5-API) is being developed to enable Python to access the SWMM5 data model to facilitate rapid prototyping enabling users to observe simulated values during simulation time, change controllable features, such as weir and pump settings, as well as load externally generated inflows to a node during simulation time. The over-arching goal is to provide the community with a complete collection of low-level interfacing functions through which the user can access the entire data model as well as make modifications (getters and setters). Until the recent work on the extended SWMM5-API, complex control configurations required special non-connected hydraulic units known generally as ‘‘widgets’’ that had to be incorporated to track state systems (e.g. WWF, DWF, ramping up, ramping down). With the development of PySWMM, control algorithms can now be developed exclusively in Python which allows the use of functions and objects as well as storing and tracking hydraulic trends (running averages). Enabling complex controls rules opens the door to faster prototyping for basin-wide coordinated control frameworks such as agent-based modeling or market-based optimization and more easily facilitates the implementation of machine learning techniques such as a support vector machine to be used as forecasting tools. Some of these tools are demonstrated within. Allowing users to programmatically assign inflow rate values to nodes provides a framework for making model run faster. Models can run faster by replacing a tributary pipe network with a trained neural network. As the project evolves, the SWMM-API will provide a complete interfacing framework that gives full access to the SWMM data model, active simulation results and stability, and simulated output values.
+
+**Talk Outline**
+
+The talk will be divided in the following sections:
+
+- Introduction (~2 minutes)
+- OWA initiative and team members (~3 minutes)
+- SWMM: Storm Water Management Model (~5 minutes)
+- PySWMM: SWMM Python wrapper (~8 minutes)
+- Usage: `print('Hello Pipe!")` (~8 minutes)
+- Study Case Examples (~5 minutes)
+- Q&A (~5 minutes)
+
+**About the [Open Water Analytics](http://wateranalytics.org/) (OWA) initiative**
+
+Open Water Analytics is the home of the community projects for [EPANET](https://github.com/OpenWaterAnalytics/epanet-dev) and [SWMM](https://github.com/OpenWaterAnalytics/Stormwater-Management-Model/), and related tools and technologies. We are an open community for the exchange of information and ideas related to computing and analysis in the water & wastewater industries. This informal collective in an umbrella that covers many groups and projects; members with varying affiliations work together to craft the current and future development of these mission-critical software tools.
+
+- Visit the [organization on github](https://github.com/OpenWaterAnalytics/)!
+
+**Who uses [PySWMM](https://github.com/OpenWaterAnalytics/)?**
+
+PySWMM is used by engineers, modelers, and researchers who want to streamline stormwater modeling optimization, controls, and post-processing results.

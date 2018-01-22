@@ -1,6 +1,12 @@
 authors: esteban-echeverry
 ---
-description: 
+description:
+
+El objetivo del taller será crear una aplicación de consola para gestionar tareas por realizar (i.e. TODO List), usando patrones de la arquitectura limpia (i.e. Clean Architecture: https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) propuesta por Robert Cecil Martin, más conocido como Uncle Bob.
+
+“Clean Architecture” promueve la separación entre la lógica de una aplicación y su implementación, haciendo que ella sea flexible, fácil de probar e independiente de cualquier framework o infraestructura (e.g. base de datos, interfaz de usuario).
+
+Python 3 es ideal para usar los lineamientos de la arquitectura limpia al ser un lenguaje dinámico, orientado a objetos y con tipado estático (usando anotaciones y mypy) lo que facilita la representación de conceptos como la inversión de dependencias y el modelamiento de sistemas a través de sus entidades y sus interacciones.
 ---
 language: es
 ---
@@ -11,3 +17,9 @@ summary: La *Arquitectura limpia* otorga flexibilidad, independencia y facilidad
 type: workshop
 ---
 _slug: arquitectura-limpia-con-python
+---
+datetime: 2018-02-11 11:00:00 -0500
+---
+datetime_end: 2018-02-11 13:00:00 -0500
+---
+room: j-workshop-room-7

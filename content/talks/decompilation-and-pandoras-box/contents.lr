@@ -9,8 +9,6 @@ summary:
 How is translating between English and Spanish similar to finding out where you are when you hit an error in your program?  I'll show you how, and show off a program I've written to give the error location pretty precisely.
 
 The technology behind this is pretty sophisticated, but the talk is aimed for a general audience.
-
-
 ---
 type: talk
 ---
@@ -20,4 +18,20 @@ datetime_end: 2018-02-10 16:10:00 -0500
 ---
 room: b-auxiliary-conference-hall-1
 ---
-description: 
+description:
+
+In writing a cross-version decompiler for Python, [uncompyle6](https://pypi.python.org/pypi/uncompyle6) I needed some [cross-version](https://pypi.python.org/pypi/xdis) Python tools.
+
+I have recently written some [new tools])(https://pypi.python.org/pypi/xasm) which can help you:
+
+- Make small patches to existing Python bytecode when you don’t have source
+- Craft efficient bytecode
+- Write an instruction-level optimizing compiler
+- Experiment with and learn about Python bytecode
+- Foil uncompyle6 so that it can’t disassemble bytecode (at least for now)
+
+Some things I may demo:
+- Convert bytecode from one Python version to another
+- Show the control flow of a Python program in pretty graphs
+- Use the assembler to remove tail recursion in a program
+- Cryptographically sign bytecode so that it is runnable, checkable before running, and checkable while running, since the signature is in a read-only section of code

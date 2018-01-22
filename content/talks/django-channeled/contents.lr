@@ -2,7 +2,9 @@ name: Serverless for Pythonistas
 ---
 language: en
 ---
-summary: Serverless: an architecture style based on single purpose functions, builtin scalability and cost by the millisecond. But what does this mean to Pythonistas?
+summary:
+
+Serverless: an architecture style based on single purpose functions, builtin scalability and cost by the millisecond. But what does this mean to Pythonistas?
 
 In this talk we will discuss concepts, tools and frameworks for developing Python applications in a world where servers are gone.
 ---
@@ -15,3 +17,9 @@ datetime: 2018-02-10 10:20:00 -0500
 datetime_end: 2018-02-10 11:00:00 -0500
 ---
 room: c-auxiliary-conference-hall-2
+---
+description:
+
+In this talk, I’m going to talk about the Serverless principles – such as single purpose functions and event-driven architecture –, use cases, drawbacks and opportunities. Since this architecture relies in cloud vendors, we are going to see how commercial and open source solutions are changing the way we build and create software. Of course Serverless isn’t a silver bullet, but it can be a good choice.
+
+On top of the paradigm, I’ll show how the Python language fits in this new world, the tools, frameworks and design patterns used to create scalable and cheap applications, proving that even in this new hype of software development, simple is still better than complex.

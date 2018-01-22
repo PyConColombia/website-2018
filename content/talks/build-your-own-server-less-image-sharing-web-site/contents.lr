@@ -15,3 +15,5 @@ datetime: 2018-02-11 11:00:00 -0500
 datetime_end: 2018-02-11 13:00:00 -0500
 ---
 room: l-workshop-room-9
+---
+description: Serverless lets developers concentrate on the business logic that makes their application unique without the need to worry about infrastructure and scaling. During the workshop, the participants will be able to build a working end to end application using Amazon Web Services and the Serverless Framework which will help automate the deployment process. The workshop will include a Github repository which will have all the code ready to use. The aim of the workshop is to make the participants understand how the presented technologies can be used together so that later they can use them in their own projects. Python will be used for the back-end (AWS Lambda).

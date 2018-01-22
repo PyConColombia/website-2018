@@ -1,6 +1,6 @@
 authors: edward-villegas-pulgarin
 ---
-description: 
+description: Con el crecimiento cada vez mayor de entusiastas y comunidades de software libre, cada vez nos vemos nutridos de nuevas opciones tecnológicas para apoyarnos para el desarrollo y administración de cursos de diversas disciplinas. Una de estas tecnologías con una amplia comunidad es Jupyter (antes IPython) Notebook, que si bien usa un concepto previamente existente de unir texto formateado y código ejecutable en el mismo documento, lo hace de la mano del código abierto y como una tecnología agnóstica ante el lenguaje permitiendo (como factor diferenciador) hacer uso de esta característica para diversos lenguajes. Poder hacer uso de documentos de este estilo permite pasar del concepto de un libro o notas de clases estáticas a un documento interactivo que apoya la comprensión del estudiante al permitirle observar al instante cambios de un resultado ante la modificación de un parámetro. Como veremos, este no es un beneficio que quedara exclusivo a los cursos de programación sino que puede extenderse a disciplinas muy variadas según la existencia de paquetes diseñados para este fin. Discutiremos así estos beneficios, veremos los elementos básicos generales para hacer uso de esta metodología y unos ejemplos de notebooks para su uso en clase. Repositorio del curso original: https://github.com/cosmoscalibur/hcomputacionales
 ---
 language: es
 ---
@@ -11,3 +11,9 @@ summary: La presente charla tiene como objetivo compartir la experiencia y bases
 type: talk
 ---
 _slug: usando-jupyter-en-el-aula
+---
+datetime: 2018-02-10 11:10:00 -0500
+---
+datetime_end: 2018-02-10 11:50:00 -0500
+---
+room: b-auxiliary-conference-hall-1

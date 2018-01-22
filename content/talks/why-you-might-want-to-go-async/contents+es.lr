@@ -13,3 +13,19 @@ summary:
 Es posible que desee utilizar programación asincrónica. Aprende lo que es y por qué podría ser útil para ti en esta charla.
 ---
 type: talk
+---
+datetime: 2018-02-09 11:40:00 -0500
+---
+datetime_end: 2018-02-09 12:20:00 -0500
+---
+description:
+
+La programación asincrónica se está convirtiendo en un tema candente en la comunidad de Python, especialmente con el aumento de la popularidad de Python 3 y la nueva biblioteca asyncio en su biblioteca estándar. Sin embargo, aún puede ser un concepto confuso y misterioso. En esta charla, explicaré qué es la programación asincrónica, cómo funciona y cómo podría beneficiarlo. Mi objetivo de esta charla es que al final tenga una idea de lo que queremos decir cuando decimos programación asincrónica en Python y usted sabe cómo y cuándo usarla.
+
+En la primera parte de la charla, me sumergiré en lo que es la programación asíncrona y lo que no es. Explicando la diferencia entre el código limitado por procesos de entrada y salida (IO) y el código limitado por la intensidad de procesamiento (CPU).
+
+Luego explicaré cómo funciona esto realmente en Python, explicando la idea de un ciclo de eventos, corutinas y multitareas cooperativa.
+
+Finalmente, hablaré sobre por qué esto puede ser beneficioso, qué tipo de aplicaciones pueden beneficiarse realmente de esto y proporcionaré algunos ejemplos de mi experiencia.
+---
+room: b-auxiliary-conference-hall-1

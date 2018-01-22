@@ -1,6 +1,12 @@
 authors: sergio-alexander-florez-galeano
 ---
-description: 
+description:
+
+Todo el mundo sin importar su background académico, está en la capacidad crear modelos de inteligencia artificial, que pueden ser aplicados con éxito hacía problemas del mundo real que involucren grandes volúmenes de datos para el descubrimiento y/o aplicación de conocimiento, permitiendo expandir los límites de la industria, mediante el uso y adopción de arquitecturas orientadas a microservicios.
+
+Esta charla esta orientada hacia todos los entusiastas de la tecnología que quieran aprender a crear servicios inteligentes, haciendo enfasís en la creación de microservicios que puedan ser consumidos de manera independiente u orquestados de manera conjunta hacia soluciones específicas.
+
+Finalmente se presentarán un par de aplicaciones practicas haciendo uso de TensorFlow y un poco de divertidos aunque incomprendidos, conocimientos matemáticos y estadísticos.
 ---
 language: es
 ---
@@ -11,3 +17,9 @@ summary: Conocerás cómo los modelos de deep learning han impulsado la evoluci�
 type: talk
 ---
 _slug: deep-learning-de-la-academia-a-la-practica
+---
+datetime: 2018-02-09 09:30:00 -0500
+---
+datetime_end: 2018-02-09 10:10:00 -0500
+---
+room: c-auxiliary-conference-hall-2

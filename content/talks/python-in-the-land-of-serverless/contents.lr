@@ -13,3 +13,16 @@ datetime: 2018-02-09 13:00:00 -0500
 datetime_end: 2018-02-09 13:40:00 -0500
 ---
 room: b-auxiliary-conference-hall-1
+---
+description:
+
+As services like AWS Lambda, Azure Cloud Functions among others become really cheap and popular, It is natural to consider Serverless when solving a problem. In Serverless Lands Python is a first class citizen, it is well supported and many tools are available.
+
+However, does Serverless stands for “simple” or “easy”? In this Talk, I’m going to guide you through the challenges my team went through while designing a (i) Stream Processing pipeline, and (ii) small ops tools.
+
+The talk will go into details about:
+
+- The mistakes
+- The tools that integrate well with python
+- How to write code for serverless
+- CI process

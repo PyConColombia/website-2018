@@ -15,3 +15,21 @@ datetime: 2018-02-11 11:00:00 -0500
 datetime_end: 2018-02-11 13:00:00 -0500
 ---
 room: g-workshop-room-4
+---
+description:
+
+Workshop outline is as follows :
+
+- Overview of MicroPython (15 min - talk)
+- Hands-on labs : Network programming, MQTT (10 min)
+- Hands-on labs : Exercises with LED (10 min)
+- Hands-on labs : Exercises with buttons (10 min)
+- Hands-on labs : Exercises with servo motors (10 min)
+- Final example : Simple device able to interact with a virtual world (5 min)
+
+**Required setup**
+- Download [MicroPython web REPL](https://github.com/micropython/webrepl).
+- Install a [terminal emulator software](https://en.wikipedia.org/wiki/Terminal_emulator) able to connect to serial devices.
+- Install a [text editor software](https://en.wikipedia.org/wiki/Text_editor) or [integrated development environment](https://en.wikipedia.org/wiki/Integrated_development_environment) of your preference.
+  - We’ll be editing Python code, if you are using an IDE make sure you have the corresponding language tools installed
+- Bring your laptop !

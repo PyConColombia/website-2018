@@ -1,6 +1,11 @@
 authors: manuela-jaramillo-rendon
 ---
-description: 
+description:
+
+Este proyecto ofrecerá una herramienta pensada para el manejo eficaz de la información en la educación a futuro; los formatos de almacenamiento de esta están tendiendo a convertirse en archivos de texto simple, por su compatibilidad, facilidad de combinación, por ser archivos livianos entre otras ventajas. Pensando en un complemento para este tipo de archivo y el manejo de la información en una visión futurista surge TalkScript2Media.
+
+Esta herramienta estará diseñada para automatizar a video archivos de texto plano utilizando códigos , imágenes a partir de diapositivas y audio generado a partir de TTS.Es importante resaltar que esta herramienta estará basada en una existente llamada Ari, que depende del servicio de Amazon Polly para TTS, y no es sencillo su uso para usuarios que no tengan conocimiento del lenguaje R.
+Así pues el enfoque de TalkScript2Media es generar un paquete libre de fácil acceso y manejo para la automatización de presentaciones a vídeo implementado en python con la asistencia de motores TTS gratuitos, ffmpeg y otras herramientas libres.
 ---
 language: es
 ---

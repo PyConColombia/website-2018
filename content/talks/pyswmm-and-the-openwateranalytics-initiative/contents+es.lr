@@ -9,3 +9,35 @@ name: Lleva el modelado de alcantarillados al siguiente nivel con PySWMM y la In
 summary: PySWMM es una librería de enlace de Python con el software SWMM (creado por la Agencia de Protección Ambiental de EE. UU. - EPA) para la creación, manipulación y estudio de la estructura, dinámica y funcionamiento de complejas redes de alcantarillado que incluyen la capacidad de realizar modelación hidrodinámica, de calidad del agua y optimización de sistemas.
 ---
 type: talk
+---
+datetime: 2018-02-09 15:20:00 -0500
+---
+datetime_end: 2018-02-09 16:00:00 -0500
+---
+description:
+
+En apoyo de la iniciativa de código abierto OpenWaterAnalytics, el proyecto PySWMM abarca el desarrollo de un bidning de Python para SWMM5 con el desarrollo en paralelo paralelo del [USEPA](https://www.epa.gov/) Modelo de gestión de aguas pluviales ([SWMM5](https://www.epa.gov/water-research/storm-water-management-model-swmm)) y la interfaz de programación de aplicaciones (API). PySWMM (junto con el codesarrollo de SWMM5-API) se está desarrollando para permitir que Python acceda al modelo de datos SWMM5 para facilitar el prototipado rápido permitiendo a los usuarios observar valores simulados durante el tiempo de simulación, cambiar las características controlables, como la configuración del vertedero y la bomba , así como cargar flujos generados externamente a un nodo durante el tiempo de simulación. El objetivo general es proporcionar a la comunidad una colección completa de funciones de interfaz de bajo nivel a través de las cuales el usuario puede acceder a todo el modelo de datos, así como a realizar modificaciones (captadores y instaladores). Hasta el trabajo reciente en la SWMM5-API extendida, las configuraciones de control complejas requerían unidades hidráulicas especiales no conectadas conocidas generalmente como "widgets" que debían incorporarse para rastrear los sistemas de estado (p. Ej., WWF, DWF, rampa ascendente, rampa descendente) . Con el desarrollo de PySWMM, los algoritmos de control ahora pueden desarrollarse exclusivamente en Python, lo que permite el uso de funciones y objetos, así como el almacenamiento y seguimiento de tendencias hidráulicas (promedios corrientes). La habilitación de reglas de controles complejos abre la puerta a prototipos más rápidos para marcos de control coordinados en toda la cuenca, tales como modelos basados ​​en agentes o optimización basada en el mercado y facilita más la implementación de técnicas de aprendizaje automático tales como una máquina de vectores de soporte para usar como herramientas de pronóstico . Algunas de estas herramientas se demuestran. Permitir que los usuarios asignen programáticamente valores de tasa de entrada a los nodos proporciona un marco para hacer que la ejecución del modelo sea más rápida. Los modelos pueden funcionar más rápido reemplazando una red de tuberías tributaria por una red neuronal capacitada. A medida que el proyecto evoluciona, SWMM-API proporcionará un marco completo de interfaz que brinda acceso completo al modelo de datos SWMM, resultados de simulación activa y estabilidad, y valores de salida simulados.
+
+**Contenido**
+
+La charla se dividirá en varias secciones que incluyen
+
+- Introducción (~ 2 minutos)
+- Iniciativa OWA y miembros del equipo (~ 3 minutos)
+- SWMM: Modelo de gestión de aguas pluviales (~ 5 minutos)
+- PySWMM: envoltorio de SWMM Python (~ 8 minutos)
+- Uso: `print ('Hello Pipe!')` (~ 8 minutos)
+- Ejemplos de casos de estudio (~ 5 minutos)
+- Preguntas y respuestas (~ 5 minutos)
+
+**Acerca de la iniciativa [Open Water Analytics](http://wateranalytics.org/) (OWA)**
+
+Open Water Analytics es el hogar de los proyectos de la comunidad para [EPANET] (https://github.com/OpenWaterAnalytics/epanet-dev) y [SWMM] (https://github.com/OpenWaterAnalytics/Stormwater-Management-Model/ ), y herramientas y tecnologías relacionadas. Somos una comunidad abierta para el intercambio de información e ideas relacionadas con la informática y el análisis en las industrias de agua y aguas residuales. Este colectivo informal en un paraguas que cubre muchos grupos y proyectos; los miembros con distintas afiliaciones trabajan juntos para elaborar el desarrollo actual y futuro de estas herramientas de software de misión crítica.
+
+- Visite la [organización en github](https://github.com/OpenWaterAnalytics/)!
+
+**¿Quién usa [PySWMM](https://github.com/OpenWaterAnalytics/)?**
+
+PySWMM es utilizado por ingenieros, modeladores e investigadores que desean optimizar la optimización del modelado de aguas pluviales, los controles y los resultados posteriores al procesamiento.
+---
+room: a-main-conference-hall

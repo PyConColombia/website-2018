@@ -1,6 +1,20 @@
 authors: sebastian-parada, maria-camila-guerrero-giraldo
 ---
-description: 
+description:
+
+Nuestro objetivo con este taller es introducir a los participantes en la programación funcional con python, ilustrando sus características, propiedades .
+
+**Lo que queremos lograr**
+
+- Realizar una revisión de conceptos fundamentales de la programación funcional.
+- Ilustrar a través de ejercicios y ejemplos cómo se trabaja la programación funcional en Python.
+- Generar inquietudes en los participantes del taller acerca de los alcances de la programación funcional.
+- Identificar herramientas propias de Python para el trabajo en programación funcional.
+
+**Metodología**
+El taller será divido en dos partes. La primera parte consiste en un introducción teórica a la programación funcional, que abarcara los siguientes items: > - Funciones de primera clase y de orden superior > - Funciones lambda > - Recursividad > - Ejecución ansiosa y perezosa > - Trabajo con listas
+
+La segunda parte se compone de ejercicios y ejemplo prácticos de programación funcional en Python.
 ---
 language: es
 ---
@@ -11,3 +25,9 @@ summary: Como estudiantes de Ingeniería de Sistemas, tuvimos ciertas dificultad
 type: workshop
 ---
 _slug: taller-basico-de-programacion-funcional-en-python
+---
+datetime: 2018-02-11 11:00:00 -0500
+---
+datetime_end: 2018-02-11 13:00:00 -0500
+---
+room: i-workshop-room-6

@@ -13,3 +13,12 @@ datetime: 2018-02-10 10:20:00 -0500
 datetime_end: 2018-02-10 11:00:00 -0500
 ---
 room: b-auxiliary-conference-hall-1
+---
+description:
+
+This project will offer a tool designed for the effective management of information in education in the future; the storage formats of this are tending to become simple text files, for their compatibility, ease of combination, for being light files among other advantages. Thinking about a complement for this type of file and the handling of the information in a futuristic vision, TalkScript2Media emerges.
+
+This tool will be designed to automate video flat text files using codes, images from slides and audio generated from TTS. It is important to highlight that this tool will be based on an existing one called Ari, which depends on the service of Amazon Polly for TTS, and its use is not easy for users who do not have knowledge of the R language.
+
+So the approach of TalkScript2Media is to generate a free package of easy access and management for the automation of presentations to video implemented in 
+python with the assistance of free TTS engines, ffmpeg and other free tools.

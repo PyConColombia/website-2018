@@ -15,3 +15,15 @@ datetime: 2018-02-09 13:00:00 -0500
 datetime_end: 2018-02-09 13:40:00 -0500
 ---
 room: b-auxiliary-conference-hall-1
+---
+description:
+
+A medida que servicios como AWS Lambda, Azure Cloud Functions entre otros se vuelven realmente baratos y populares, es natural considerar Serverless cuando se resuelve un problema. En la tierra Serverless Python es un ciudadano de primera clase, tiene un buen soporte y muchas herramientas están disponibles.
+
+Sin embargo, ¿Serverless significa "simple" o "fácil"? En esta charla, voy a guiarlo a través de los desafíos que mi equipo atravesó al diseñar una (i) canalización de procesamiento de flujo, y (ii) pequeñas herramientas de operaciones.
+
+La charla entrará en detalles sobre:
+- Los errores
+- Las herramientas que se integran bien con python
+- Cómo escribir código para serverless
+- Proceso de Integración Continua

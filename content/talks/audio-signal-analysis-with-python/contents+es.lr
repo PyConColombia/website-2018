@@ -2,10 +2,16 @@ name: Análisis de señales de audio con python
 ---
 summary: Usando Python para el análisis y procesamiento de la señal de audio.
 ---
-language: en
+language: es
 ---
 type: talk
 ---
 authors: jose-ricardo-zapata
 ---
 _slug: analisis-de-senales-de-audio-con-python
+---
+datetime: 2018-02-09 11:40:00 -0500
+---
+datetime_end: 2018-02-09 12:20:00 -0500
+---
+room: a-main-conference-hall

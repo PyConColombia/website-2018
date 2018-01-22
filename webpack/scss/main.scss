@@ -1144,3 +1144,6 @@ main [class*="pure-u-"]:last-child article {
 .schedule-multiple-item {
   padding-bottom:15px;
   padding-top:15px; }
+
+p > strong > a, p > a, body >a {
+  text-decoration:underline;}

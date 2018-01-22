@@ -13,3 +13,13 @@ datetime: 2018-02-09 09:30:00 -0500
 datetime_end: 2018-02-09 10:10:00 -0500
 ---
 room: b-auxiliary-conference-hall-1
+---
+description:
+
+Traditionally web applications, depending on their type, have been implemented using a server and a database for each client that uses it (Single-Tenant), this means that for each of them it is necessary to do support and maintenance activities, Not to mention the constant customizations requested by the clients, which, when carried out on a large scale (thousands or millions of clients) can become a nightmare for the developer teams.
+
+As an alternative to this problem, Multitenant Architectures emerged, which are a type of software architecture in which a single instance of an application is used by more than one client at a time, centralizing all development tasks and facilitating the I work with the clients of the applications. This type of architecture is essential, for example, in Software as a Service (Office 365, Google Drive, Slack, Adobe Suite, etc).
+
+One of the main characteristics of multitenant architectures is that (depending on the implementation) they streamline the development process, which is an inherent characteristic of the Python programming language. Now, if we combine both, we get a very elegant and fast development style for applications that support many clients.
+
+There are several ways to implement a multi-tenant architecture, with three main ones: Isolated, Semi-isolated and Not isolated, each with its advantages and disadvantages. For this talk an introduction will be given on how to implement a semi-isolated multitenant architecture using Django and Postgresql, in addition to commenting on common mistakes that exist, what good practices exist, what optimization practices can be used, among others.

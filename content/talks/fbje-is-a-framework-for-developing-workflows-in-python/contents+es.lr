@@ -9,3 +9,21 @@ name: FBJE es un marco utilizado en Facebook para desarrollar flujos de trabajo 
 summary: ¿Cómo administra Facebook una de las infraestructuras más grandes del planeta? Al usar Python, hemos creado un marco para desarrollar flujos de trabajo escalables que los ingenieros de Facebook utilizan para automatizar el ciclo de vida de nuestra infraestructura, de modo que pueda seguir compartiendo y conectarse con sus amigos y familiares.
 ---
 type: talk
+---
+datetime: 2018-02-09 09:30:00 -0500
+---
+datetime_end: 2018-02-09 10:10:00 -0500
+---
+description:
+
+Facebook tiene una de las infraestructuras más grandes jamás construidas, y está creciendo a un ritmo increíble.
+
+Python ha sido durante mucho tiempo uno de los idiomas preferidos para escribir automatizaciones en Facebook, pero el modelo de scripts tradicional ya no funcionaba debido a la mayor complejidad y el tiempo requerido para realizar operaciones a gran escala en la infraestructura.
+
+Por esta razón, hemos construido un marco común que nuestros ingenieros pueden usar para crear flujos de trabajo de automatización escalables usando Python llamado FBJE.
+
+Es extremadamente escalable ya que usa un programador distribuido para aprovechar múltiples nodos de trabajadores. A medida que los trabajadores se unen y abandonan el grupo de ejecución debido a la volatilidad del hardware, las tareas en ejecución migran automáticamente a nodos activos mientras persisten sus datos contextuales. Los registros de cada trabajo individual se reenvían y almacenan centralmente para que los usuarios accedan directamente, busquen o agreguen de varias maneras.
+
+Su capacidad de ejecutar trabajos de larga duración, acceder fácilmente a los registros y crear trabajos utilizando una API ha hecho que FBJE sea muy popular para implementar una variedad de flujos de trabajo de automatización que van desde el aprovisionamiento de hardware, implementación de software y auto reparación de alarmas.
+---
+room: a-main-conference-hall

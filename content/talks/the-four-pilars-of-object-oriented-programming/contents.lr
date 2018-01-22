@@ -13,3 +13,25 @@ datetime: 2018-02-11 08:30:00 -0500
 datetime_end: 2018-02-11 10:30:00 -0500
 ---
 room: i-workshop-room-6
+---
+description:
+
+The workshop will focus on explaining each of the four pillars (Abstraction, Encapsulation, Inheritance and Polymorphism) and with a simple language and examples of everyday life, to apply what has been learned to programming with Python. The workshop is a first approach to OOP (Object Oriented Programming), and aims to explain these pillars and their application.
+
+During the workshop it will be emphasized that everything in Python is an object and that the same logic and syntax used during the workshop will be used constantly during the development of software with this language. It will also analyze the most common errors and the logic behind them so that they do not happen again.
+
+The theme of the workshop includes the following topics (but is not limited to them):
+- Classes and Objects.
+- Attributes of an object
+- How to instantiate an object? How to access its attributes?
+- Create methods. How to access their methods?
+- Understand the 'self' parameter.
+- What is 'init' for?
+- 4 pillars: Absrtation, Encapsulation, Inheritance and Polymorphism.
+- In each subject, explanations and practical exercises.
+
+The methodology to be used will be theoretical and practical and will be divided into three phases:
+
+1. Presentation of the topic. The theme is explained and contextualized with an example of daily life. Although they do not explain it like this the text books, all the subjects in the programming have explanation, use and application in the daily life, reason why is the way in which the subject will be presented.
+2. Practice. Attendees are invited to do a controlled practice, with a couple of exercises that must be solved individually. Promoting individual work as a first phase makes it possible for participants to share the code with the person next to them. This method allows participants to get to know each other and makes it easier for them to have another point of view about how another person develops the same exercise.
+3. Production: Exercises are assigned in which the participants must apply the newly acquired knowledge to be able to solve them. As in the practical phase, individual work is promoted so that they can then share the solutions with the people seated at the same table. Other exercises will be assigned to solve during the session.
