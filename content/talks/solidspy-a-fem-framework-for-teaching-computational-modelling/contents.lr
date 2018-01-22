@@ -2,7 +2,7 @@ name: SolidsPy: A FEM  Framework for Teaching Computational  Modeling with Pytho
 ---
 authors: nicolas-guarin-zapata
 ---
-language: en
+language: es
 ---
 summary: We have created a finite element analysis code integrating several open source tools to teach computational modeling with Python at the undergraduate and graduate level. Its modular structure allows the students to code their own analyses to solve specific models through Python scripts.
 ---

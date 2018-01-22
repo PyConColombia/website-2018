@@ -2,7 +2,7 @@ name: Classifying human faces using Convolutional Neural Networks
 ---
 authors: moises-vargas
 ---
-language: en
+language: es
 ---
 summary: The objective of this workshop is to Introduce classic convolutional neural network (ConvNet) architecture LeNet-5 to the assistants using Python, Tensor-flow and Sci-kit learn. Assistants will learn basics and how to build a ConvNet classifying whether yes or not an image has a human face.
 ---

@@ -4,7 +4,7 @@ authors: juan-david-velasquez-henao
 ---
 datetime: 2018-02-11 11:00:00 -0500
 ---
-language: en
+language: es
 ---
 summary: In this talk, we introduce cashflows, an open source Python library to do financial computations. The package contains tools for many common computations including time value of the money models, simulating different types of loans, analyzing cash -lows, and bonds valuation, among others.
 ---

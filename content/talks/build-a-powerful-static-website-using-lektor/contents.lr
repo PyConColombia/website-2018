@@ -2,7 +2,7 @@ name: Build a powerful static website using Lektor
 ---
 authors: rafael-laverde
 ---
-language: en
+language: es
 ---
 summary: Building simple websites, like a blog, or a personal website do not require an interactive experience, using an static site generator like Lektor you could achieve the same functionality, without worrying about updates, security, performance, or cost; and deploy your site for free in Github Pages.
 ---

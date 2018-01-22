@@ -2,7 +2,7 @@ name: Python in the land of  Serverless
 ---
 authors: david-przybilla
 ---
-language: en
+language: es
 ---
 summary: One year ago I joined a team that favours Serverless, since then I’ve been building and maintaining lots of services using Serverless. With a pinch of Skepticism, I sailed through some of the challenges and tooling, I want to share with the community the pains and glory of it.
 ---
