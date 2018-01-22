@@ -2,7 +2,7 @@ _slug: deteccion-y-seguimiento-un-enfoque-de-vision-por-computadora
 ---
 authors: jorge-martinez
 ---
-language: en
+language: es
 ---
 name: Detección y seguimiento: un enfoque de visión por computadora
 ---
@@ -13,3 +13,9 @@ La literatura de visión por computadora muestra muchos métodos de seguimiento 
 Aquí, presento un algoritmo de seguimiento que combina ambos enfoques aprovechando problemas comunes presentados en videos.
 ---
 type: talk
+---
+datetime: 2018-02-10 13:30:00 -0500
+---
+datetime_end: 2018-02-10 16:10:00 -0500
+---
+room: c-auxiliary-conference-hall-2

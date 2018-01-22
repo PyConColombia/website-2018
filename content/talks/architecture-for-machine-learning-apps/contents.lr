@@ -2,7 +2,7 @@ name: Architecture for machine learning apps (Django flavored)
 ---
 authors: jorge-luis-galvis-quintero
 ---
-language: en
+language: es
 ---
 summary: Have you ever wondered how to integrate machine learning models with web Django applications? Through small snippets of code and a prepared example, I’ll show you how we are doing it at Dlabs.
 ---

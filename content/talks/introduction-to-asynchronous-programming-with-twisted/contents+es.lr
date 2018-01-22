@@ -2,10 +2,16 @@ _slug: introduccion-a-la-programacion-asincronica-con-twisted
 ---
 authors: jonathan-sandoval-cardona
 ---
-language: en
+language: es
 ---
 name: Introducción a la programación asincrónica con Python y Twisted
 ---
 summary: La programación asincrónica se ha vuelto muy popular con la introducción de asyncio a python stdlib. Asyncio fue influenciado en gran medida por Twisted. La programación asincrónica es una tendencia en Python. En esta charla, mostraré los conceptos básicos de programación asíncrona que son válidos en twisted y asyncio y una comparación.
 ---
 type: talk
+---
+datetime: 2018-02-09 10:40:00 -0500
+---
+datetime_end: 2018-02-09 11:30:00 -0500
+---
+room: b-auxiliary-conference-hall-1
