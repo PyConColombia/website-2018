@@ -1,15 +1,15 @@
-name: Linda
----
 category: Volunteer
 ---
+image: linda-gutierrez.jpg
+---
 last_name: Gutiérrez
+---
+name: Linda
 ---
 publish: yes
 ---
 github_handle: lgutie16
 ---
-image: linda-gutierrez.jpg
----
-information: Fullstack Developer
+information: Desarrolladora Fullstack
 ---
 twitter_handle: lgutie16
