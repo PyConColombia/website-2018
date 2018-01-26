@@ -7471,7 +7471,10 @@ input {
 .sponsor.sponsor-startup {
     height: 100px;
     max-height: 100px; }
-.sponsor a {
+    .sponsor.sponsor-partner {
+      height: 100px;
+      max-height: 100px; }
+  .sponsor a {
     display: table;
     vertical-align: middle;
     -webkit-filter: grayscale(100%);
