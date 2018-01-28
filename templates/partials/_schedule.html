@@ -122,8 +122,13 @@
             {{ render_room_author(talk, color='white') }}
             <div>
               {% set t_type = transbag('translate', this.alt, 'type_' + talk.type) %}
+              <small><b>{{ t_type }}
+              {%- if talk.language -%}
               {% set t_lang = transbag('translate', this.alt, talk.language) %}
-              <small><b>{{ t_type }} ({{ t_lang }}):</b>
+              ({{ t_lang }})
+              {%- endif -%}
+              :
+              </b>
                 <a class="link" style="color:white;" href="{{talk|url(alt=this.alt)}}">{{ talk.name }}</a>
               </small>
             </div>
