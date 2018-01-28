@@ -9,7 +9,6 @@
 {%- set t_resources = transbag('translate', this.alt, 'talk_resources') -%}
 {%- set t_location = transbag('translate', this.alt, 'location') -%}
 {%- set t_date_and_time = transbag('translate', this.alt, 'date_and_time') -%}
-{%- set t_lang = transbag('translate', this.alt, this.language) -%}
 {%- set t_day = transbag('translate', this.alt, this.datetime.strftime('%A')) -%}
 
 {% block title %}{{ this.title }}{% endblock %}
@@ -20,7 +19,12 @@
   <div class="col-lg-2"></div>
     <div class="col-lg-8">
       <h1 class="text-center">{{t_talk_type }}</h1>
-      <h2>{{ this.name }} <small>({{ t_lang }})</small></h2>
+      <h2>{{ this.name }} 
+      {%- if this.language -%}
+      {%- set t_lang = transbag('translate', this.alt, this.language) -%}
+      <small>({{ t_lang }})</small>
+      {%- endif -%}
+      </h2>
       <br>
       <dl>
         <dd></dd>
