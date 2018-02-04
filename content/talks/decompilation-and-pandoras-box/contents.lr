@@ -20,18 +20,7 @@ room: b-auxiliary-conference-hall-1
 ---
 description:
 
-In writing a cross-version decompiler for Python, [uncompyle6](https://pypi.python.org/pypi/uncompyle6) I needed some [cross-version](https://pypi.python.org/pypi/xdis) Python tools.
+I describe a novel method of showing more precise location information. Through that, you will learn a little bit about how the best overall Python decompiler, [uncompyle6](http://pypi.python.org/pyi/uncompyle6), does its job.
 
-I have recently written some [new tools])(https://pypi.python.org/pypi/xasm) which can help you:
+I then show off the "trepan" debuggers (http://pypi.python.org/pypi/trepan3k and http://python2-trepan.readthedocs.org) which integrate the decompiler, giving it the ability to do things that no other Python debugger currently can.
 
-- Make small patches to existing Python bytecode when you don’t have source
-- Craft efficient bytecode
-- Write an instruction-level optimizing compiler
-- Experiment with and learn about Python bytecode
-- Foil uncompyle6 so that it can’t disassemble bytecode (at least for now)
-
-Some things I may demo:
-- Convert bytecode from one Python version to another
-- Show the control flow of a Python program in pretty graphs
-- Use the assembler to remove tail recursion in a program
-- Cryptographically sign bytecode so that it is runnable, checkable before running, and checkable while running, since the signature is in a read-only section of code
