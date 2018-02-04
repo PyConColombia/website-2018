@@ -21,7 +21,7 @@
       <h1 class="text-center">{{t_talk_type }}</h1>
       <h2>{{ this.name }} 
       {%- if this.language -%}
-      {%- set t_lang = transbag('translate', this.alt, this.language) -%}
+      &nbsp;{%- set t_lang = transbag('translate', this.alt, this.language) -%}
       <small>({{ t_lang }})</small>
       {%- endif -%}
       </h2>

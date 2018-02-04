@@ -20,20 +20,9 @@ datetime_end: 2018-02-10 16:10:00 -0500
 ---
 description:
 
-Al escribir un descompilador de versiones cruzadas para Python, [uncompyle6](https://pypi.python.org/pypi/uncompyle6) necesitaba unas [herramientas de python](https://pypi.python.org/pypi/xdis)
+Voy a describir un método novedoso para mostrar información de *debugging* más precisa. A través de esto, aprenderás un poco sobre cómo el mejor descompilador general de Python, [uncompyle6] (http://pypi.python.org/pyi/uncompyle6), hace su trabajo.
 
-Recientemente escribí algunas [nuevas herramientas]) (https://pypi.python.org/pypi/xasm) que pueden ayudarlo a:
-
-- Hacer pequeños parches en el bytecode de Python existente cuando no tenga una fuente
-- Escribir Código de byte eficiente
-- Escribir un compilador de optimización de nivel de instrucción
-- Experimentar y aprender sobre el bytecode de Python
-- Dañar uncompyle6 para que no pueda desensamblar bytecode (al menos por ahora)
-
-Algunas cosas que puedo mostrar:
-- Convertir bytecode de una versión de Python a otra
-- Mostrar el flujo de control de un programa Python en gráficos bonitos
-- Usar el ensamblador para eliminar la recursividad de cola en un programa
-- Firmar Código de byte criptográficamente para que pueda ejecutarse, pueda verificarse antes de ejecutarse y pueda verificarse mientras se ejecuta, ya que la firma está en una sección de solo lectura del código
+Luego presentaré los depuradores "trepan" (http://pypi.python.org/pypi/trepan3k y http://python2-trepan.readthedocs.org) que integran el decompilador,
+brindándote la capacidad de hacer cosas que ningún otro depurador de Python actualmente puede.
 ---
 room: b-auxiliary-conference-hall-1
