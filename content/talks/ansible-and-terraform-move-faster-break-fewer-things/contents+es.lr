@@ -10,7 +10,7 @@ summary: Charla introductoria sobre el uso de Ansible y Terraform juntos. Estas 
 ---
 type: talk
 ---
-_hidden: no
+_hidden: yes
 ---
 datetime: 2018-02-11 11:00:00 -0500
 ---

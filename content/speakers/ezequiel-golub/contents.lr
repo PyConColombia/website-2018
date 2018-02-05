@@ -5,3 +5,5 @@ display_summary: no
 last_name: Golub
 ---
 publish: yes
+---
+_hidden: yes
