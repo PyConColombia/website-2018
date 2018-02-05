@@ -20,7 +20,7 @@ datetime_end: 2018-02-10 16:10:00 -0500
 ---
 description:
 
-Voy a describir un método novedoso para mostrar información de *debugging* más precisa. A través de esto, aprenderás un poco sobre cómo el mejor descompilador general de Python, [uncompyle6] (http://pypi.python.org/pyi/uncompyle6), hace su trabajo.
+Voy a describir un método novedoso para mostrar información de *debugging* más precisa. A través de esto, aprenderás un poco sobre cómo el mejor descompilador general de Python, [uncompyle6] (http://pypi.python.org/pypi/uncompyle6), hace su trabajo.
 
 Luego presentaré los depuradores "trepan" (http://pypi.python.org/pypi/trepan3k y http://python2-trepan.readthedocs.org) que integran el decompilador,
 brindándote la capacidad de hacer cosas que ningún otro depurador de Python actualmente puede.
