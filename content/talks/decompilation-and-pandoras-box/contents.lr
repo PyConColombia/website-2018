@@ -20,7 +20,7 @@ room: b-auxiliary-conference-hall-1
 ---
 description:
 
-I describe a novel method of showing more precise location information. Through that, you will learn a little bit about how the best overall Python decompiler, [uncompyle6](http://pypi.python.org/pyi/uncompyle6), does its job.
+I describe a novel method of showing more precise location information. Through that, you will learn a little bit about how the best overall Python decompiler, [uncompyle6](http://pypi.python.org/pypi/uncompyle6), does its job.
 
 I then show off the "trepan" debuggers (http://pypi.python.org/pypi/trepan3k and http://python2-trepan.readthedocs.org) which integrate the decompiler, giving it the ability to do things that no other Python debugger currently can.
 
