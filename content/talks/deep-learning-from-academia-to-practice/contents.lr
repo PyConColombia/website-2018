@@ -21,3 +21,5 @@ Everyone, regardless of their academic background, is able to create models of a
 This talk is aimed at all technology enthusiasts who want to learn to create intelligent services, making emphasis on the creation of microservices that can be consumed independently or orchestrated jointly towards specific solutions.
 
 Finally, a couple of practical applications will be presented using TensorFlow and a bit of fun though misunderstood, mathematical and statistical knowledge.
+---
+file: deep-learning-from-academia-to-practice.pdf

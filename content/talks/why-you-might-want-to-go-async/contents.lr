@@ -23,3 +23,5 @@ In the first part of the talk, I will dive into what asynchronous programming is
 Then I will explain how this actually works in Python, explaining the idea of an event loop, coroutines and cooperative multitasking.
 
 Finally, I will talk about why this may be beneficial, what kind of applications can really benefit from this and provide some examples from my experience.
+---
+file: why-you-might-want-to-go-async.pdf
