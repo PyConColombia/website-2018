@@ -21,7 +21,7 @@
     {{ talk.summary }}
     {% if talk.file %}
     <p>
-      <a class="link" href="{{- talk.file | url -}}"> {{ t_slides }}: {{ talk.file }}</a>
+      <a class="link" href="{{- talk | url(alt='en') -}}{{ talk.file }}"> {{ t_slides }}: {{ talk.file }}</a>
     </p>
     {% endif %}
     <br>
