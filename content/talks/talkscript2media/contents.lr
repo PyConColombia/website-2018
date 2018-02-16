@@ -22,3 +22,5 @@ This tool will be designed to automate video flat text files using codes, images
 
 So the approach of TalkScript2Media is to generate a free package of easy access and management for the automation of presentations to video implemented in 
 python with the assistance of free TTS engines, ffmpeg and other free tools.
+---
+file: talkscript2media.pdf
