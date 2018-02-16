@@ -7,6 +7,7 @@
 {%- set t_summary = transbag('translate', this.alt, 'talk_summary') -%}
 {%- set t_talk_description = transbag('translate', this.alt, 'talk_description') -%}
 {%- set t_resources = transbag('translate', this.alt, 'talk_resources') -%}
+{%- set t_slides = transbag('translate', this.alt, 'talk_slides') -%}
 {%- set t_location = transbag('translate', this.alt, 'location') -%}
 {%- set t_date_and_time = transbag('translate', this.alt, 'date_and_time') -%}
 {%- set t_day = transbag('translate', this.alt, this.datetime.strftime('%A')) -%}
@@ -19,7 +20,7 @@
   <div class="col-lg-2"></div>
     <div class="col-lg-8">
       <h1 class="text-center">{{t_talk_type }}</h1>
-      <h2>{{ this.name }} 
+      <h2>{{ this.name }}
       {%- if this.language -%}
       &nbsp;{%- set t_lang = transbag('translate', this.alt, this.language) -%}
       <small>({{ t_lang }})</small>
@@ -43,7 +44,13 @@
           <a class="link" href="{{current_author|url(alt=this.alt)}}">{{ current_author.name }} {{ current_author.last_name }} {% if current_author.country %}<small>({{ t_country_res }})</small>{% endif %}</a>{% if not loop.last %},&nbsp{% endif %}
         {%- endfor -%}
         </dd>
-        {%- if this.summary -%}        
+        {% if this.file %}
+            <dt>{{ t_slides }}:</dt>
+            <dd>
+            <a class="link" href="{{- this.file | url -}}"> {{ this.name }}</a>
+            </dd>
+        {% endif %}
+        {%- if this.summary -%}
         <dt>{{ t_summary }}:</dt>
         <dd>{{ this.summary }}</dd>
         {%- endif -%}
