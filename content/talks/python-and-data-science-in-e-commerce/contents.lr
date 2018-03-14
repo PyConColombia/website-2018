@@ -19,3 +19,5 @@ datetime: 2018-02-10 13:30:00 -0500
 datetime_end: 2018-02-10 14:10:00 -0500
 ---
 room: a-main-conference-hall
+---
+file: python-and-data-science-in-e-commerce.pdf

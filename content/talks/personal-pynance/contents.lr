@@ -29,3 +29,5 @@ Each example will be built from scratch and coded mostly in pandas!
 Why should you attend ‘Personal Py-nance’?
 
 (1) Financial literacy is so important! If you’re bad at it, financial institutions can and will take advantage of you (2) Most people don’t track their finances and if they do it’s with pen and paper or Excel (and both options suck!) (3) pandas is the best tool for data munging and preparation and is the bedrock for a lot of sexy machine learning in Python
+---
+file: personal-pynance.pdf

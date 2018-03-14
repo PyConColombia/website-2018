@@ -25,3 +25,5 @@ iQos, a free software for the evaluation of metrics quality of service in voice 
 The talk describes the Web environment developed in Flask to recreate VoIP calls through the manipulation of TCP/IP packets, according to the specifications of the RTP protocol, the use of REST services for performing QoS tests to from the integration of the backend and frontend in the system.
 
 The quality of service metrics to be evaluated are explained in terms of delay, packet loss and fluctuation in time (Jitter) to determine the feasibility of implementing VoIP in a data network.
+---
+file: iqos-voip-quality-of-service-tests.pdf

@@ -21,3 +21,5 @@ Machine learning models are becoming more and more popular nowadays. Usually, th
 In this talk I will give a general description of the architecture used at DLabs for this kind of projects; Docker, Celery, RabbitMQ, Django and many others tools will be covered in the context of a small example.
 
 The goal of this talk is to show from the experience an architectural approach for machine learning projects.
+---
+file: architecture-for-machine-learning-apps.pdf

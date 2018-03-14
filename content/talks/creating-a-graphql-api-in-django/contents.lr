@@ -21,3 +21,5 @@ GraphQL is a new standard for communicating with a backend server that allows qu
 I will present the differences we found when implementing Django Rest Framework and the differences we have in flexibility and speed to change the API when implementing GraphQL. I will show the implementation structure of a GraphQL API Common implementation challenges, such as the management of authentication and authorization of nodes and mutations.
 
 Finally I will give a brief description of the successful case of implementation in Colombia at Comparamejor.
+---
+file: creating-a-graphql-api-in-django.pdf
