@@ -23,3 +23,5 @@ As an alternative to this problem, Multitenant Architectures emerged, which are 
 One of the main characteristics of multitenant architectures is that (depending on the implementation) they streamline the development process, which is an inherent characteristic of the Python programming language. Now, if we combine both, we get a very elegant and fast development style for applications that support many clients.
 
 There are several ways to implement a multi-tenant architecture, with three main ones: Isolated, Semi-isolated and Not isolated, each with its advantages and disadvantages. For this talk an introduction will be given on how to implement a semi-isolated multitenant architecture using Django and Postgresql, in addition to commenting on common mistakes that exist, what good practices exist, what optimization practices can be used, among others.
+---
+file: multitenant-architectures-in-python.pdf
