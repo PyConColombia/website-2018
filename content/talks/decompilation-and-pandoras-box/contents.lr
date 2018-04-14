@@ -24,3 +24,5 @@ I describe a novel method of showing more precise location information. Through 
 
 I then show off the "trepan" debuggers (http://pypi.python.org/pypi/trepan3k and http://python2-trepan.readthedocs.org) which integrate the decompiler, giving it the ability to do things that no other Python debugger currently can.
 
+---
+url: http://rocky.github.io/pycon2018.co/#/
