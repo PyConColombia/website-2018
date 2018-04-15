@@ -6,6 +6,7 @@
   {% set talks = site.query('/talks', alt=this.alt).filter(F.type == type).order_by('_id') %}
   {%- set t_title = transbag('translate', this.alt, type) -%}
   {%- set t_slides = transbag('translate', this.alt, 'talk_slides') -%}
+  {%- set t_resources = transbag('translate', this.alt, 'talk_resources') -%}
   <h1 class="text-center">{{ t_title }} ({{ talks.count() }})</h1>
   <div>
   {%- for talk in talks -%}
@@ -22,6 +23,11 @@
     {% if talk.file %}
     <p>
       <a class="link" href="{{- talk | url(alt='en') -}}{{ talk.file }}"> {{ t_slides }}: {{ talk.file }}</a>
+    </p>
+    {% endif %}
+    {% if talk.url %}
+    <p>
+      <a class="link" href="{{ talk.url }}"> {{ t_resources }}: {{ talk.url }}</a>
     </p>
     {% endif %}
     <br>
