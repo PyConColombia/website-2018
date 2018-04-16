@@ -21,3 +21,5 @@ The talk is an introduction to asynchronous programming with Python, Twisted and
 I plan to introduces the basic concepts of async programming with python using Twisted, showing code for the most common tasks like async requests, async web programming, querying the db, and so on. I plan on comparing twisted with AsyncIO to show how similar they are (and how the differ).
 
 I’ve presented the a longer version of the talk to the development teams of two compaines. One of them is Apostar S.A. and the other is called Callzi. They use twisted and django for some of their services.
+---
+url: http://slcorvus.org/presentation.html
