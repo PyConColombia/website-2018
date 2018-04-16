@@ -21,3 +21,5 @@ The objective of the workshop will be to create a console application to manage 
 "Clean Architecture" promotes the separation between the logic of an application and its implementation, making it flexible, easy to test and independent of any framework or infrastructure (e.g. database, user interface).
 
 Python 3 is ideal for using clean architecture guidelines as it is a dynamic, object-oriented language with static typing (using annotations and mypy) which facilitates the representation of concepts such as dependency inversion and system modeling through of their entities and their interactions.
+---
+url: https://github.com/nubark/clean-architecture-python
