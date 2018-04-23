@@ -25,3 +25,5 @@ For this reason we have built a common framework that our engineers can use to b
 It is extremely scalable as it uses a distributed scheduler to leverage multiple worker nodes. As workers join and leave the execution pool due to hardware volatility, running jobs automatically migrate to active nodes while persisting their contextual data. Logs from each individual job are forwarded and stored centrally for users to access directly, searched or aggregated in various ways.
 
 Its ability of running long lasting jobs, easily access to logs and creating jobs using an API has made FBJE very popular for implementing a variety of automation workflows ranging from hardware provisioning, software deployment and alarms auto-remediation.
+---
+file: FBJE.pdf

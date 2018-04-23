@@ -23,3 +23,5 @@ We now have research pointing giving us significant hints. In October 2014 resea
 The classifiers most likely to be the bests are the random forest (RF) versions, the best of which (implemented in R and accessed via caret) achieves 94.1% of the maximum accuracy overcoming 90% in the 84.3% of the data sets.
 
 This talk will discuss the intuition behind this popular classifier. We will start with a decision tree, then move onto the random forest. Python examples will abound.
+---
+url: https://github.com/mattharrison/Jungle-PyconCo-2018

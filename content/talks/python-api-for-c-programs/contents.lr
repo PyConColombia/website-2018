@@ -25,3 +25,5 @@ This functionality of the language is very useful since it allows to increase th
 - You will learn to create your own APIs
 - Understand how those libraries that depend on other C programs work
 - We will use setuptools to configure the module installation
+---
+file: c-python.pptx
