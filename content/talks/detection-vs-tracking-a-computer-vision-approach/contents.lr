@@ -25,3 +25,5 @@ In computer vision, the goal of visual object tracking is to estimate the state 
 In general, every tracking approach requires an object detection approach as initialization, or in every frame of the video. Detection can be defined as finding instances of objects in images or videos using a previously trained model. A common method for object tracking is to apply object detection when the object appears for the first time, reducing the number of false detections. However, these detectors are slow and usually fail when using deformable objects. Also, detectors do not store object features that change in a video.
 
 The purpose of this talk is to show an object tracking algorithm based on a fusion of an object detector and a basic tracking algorithm. The resulting tracker can leverage strengths and overcome failures of each individual approach. Combining the knowledge of the general class of an object, which is learnt by the detector, with the specific instance of the object class is possible to overcome usual problems presented in videos, such as occlusions and deformation.
+---
+file: detection_vs_tracking.pptx
