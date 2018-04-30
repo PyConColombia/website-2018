@@ -12,10 +12,6 @@ install:
 script: "lektor build"
 deploy:
   - provider: script
-    script: "lektor deploy staging"
-    on:
-       branch: develop
-  - provider: script
     script: "lektor deploy production"
     on:
        branch: production
