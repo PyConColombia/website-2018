@@ -4,15 +4,11 @@ This is the repository for the pycon 2018 website at [pycon.co](https://pycon.co
 
 # Workflow
 
-There are 2 branches, `develop` and `production`.
-
-## Develop
-Default branch is develop and is deployed with gh-pages via Lektor to http://staging.pycon.co
+There is 1 branch, `production`.
 
 ## Production
-After test have been carried out by the QA Team, the changes from `develop`
-will be merged in `production` and deployed gh-pages via Lektor to http://pycon.co
-and http://2018.pycon.co
+
+Default branch is `production` and is deployed with gh-pages via Lektor to https://2018.pycon.co 
 
 # Run locally
 
