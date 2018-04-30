@@ -17,10 +17,6 @@ name = Español
 url_prefix = /es/
 locale = es
 
-[servers.staging]
-name = Staging
-target = ghpages+https://pyconcolombia/website-staging?cname=develop.pycon.co
-
 [servers.production]
 name = Production
 target = ghpages+https://pyconcolombia/website-production?cname=www.pycon.co
