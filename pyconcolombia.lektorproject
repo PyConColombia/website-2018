@@ -19,7 +19,7 @@ locale = es
 
 [servers.production]
 name = Production
-target = ghpages+https://pyconcolombia/website-production?cname=www.pycon.co
+target = ghpages+https://pyconcolombia/website-2018?cname=2018.pycon.co
 
 [themes]
 theme = unix
