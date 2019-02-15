@@ -2,6 +2,10 @@
 
 This is the repository for the pycon 2018 website at [pycon.co](https://pycon.co/), built using [lektor](https://www.getlektor.com)
 
+# Build Status
+
+[![Build Status](https://travis-ci.org/PyConColombia/website-2018.svg?branch=production)](https://travis-ci.org/PyConColombia/website-2018)
+
 # Workflow
 
 There is 1 branch, `production`.
